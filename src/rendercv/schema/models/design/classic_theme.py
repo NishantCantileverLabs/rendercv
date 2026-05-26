@@ -865,6 +865,21 @@ class Templates(BaseModelWithoutExtraKeys):
 
 class ClassicTheme(BaseModelWithoutExtraKeys):
     theme: Literal["classic"] = "classic"
+    degree: str | None = pydantic.Field(
+        default=None, description="Degree name for custom themes."
+    )
+    department: str | None = pydantic.Field(
+        default=None, description="Department name for custom themes."
+    )
+    institute: str | None = pydantic.Field(
+        default=None, description="Institute name for custom themes."
+    )
+    roll_no: str | None = pydantic.Field(
+        default=None, description="Roll number for custom themes."
+    )
+    gender: str | None = pydantic.Field(
+        default=None, description="Gender for custom themes."
+    )
     page: Page = pydantic.Field(default_factory=Page)
     colors: Colors = pydantic.Field(default_factory=Colors)
     typography: Typography = pydantic.Field(default_factory=Typography)

@@ -12,6 +12,7 @@ from rendercv.exception import RenderCVInternalError
 from rendercv.schema.models.rendercv_model import RenderCVModel
 
 from .path_resolver import resolve_rendercv_file_path
+from .templater.templater import templates_directory
 
 
 def generate_pdf(
@@ -40,6 +41,7 @@ def generate_pdf(
         rendercv_model._input_file_path, typst_path.parent
     )
     copy_photo_next_to_typst_file(rendercv_model, typst_path)
+    copy_theme_assets_next_to_typst_file(rendercv_model, typst_path)
     typst_compiler.compile(input=typst_path, format="pdf", output=pdf_path)
 
     return pdf_path
@@ -76,6 +78,7 @@ def generate_png(
         rendercv_model._input_file_path, typst_path.parent
     )
     copy_photo_next_to_typst_file(rendercv_model, typst_path)
+    copy_theme_assets_next_to_typst_file(rendercv_model, typst_path)
     png_files_bytes = typst_compiler.compile(input=typst_path, format="png")
 
     if not isinstance(png_files_bytes, list):
@@ -90,6 +93,54 @@ def generate_png(
         png_files.append(png_file)
 
     return png_files if png_files else None
+
+
+def generate_svg(
+    rendercv_model: RenderCVModel, typst_path: pathlib.Path | None
+) -> list[pathlib.Path] | None:
+    """Compile Typst source to SVG images using typst-py compiler.
+
+    Why:
+        SVG format provides infinitely scalable vector graphics.
+        Multi-page CVs produce multiple SVG files with sequential numbering.
+
+    Args:
+        rendercv_model: CV model for path resolution and photo handling.
+        typst_path: Path to Typst source file to compile.
+
+    Returns:
+        List of paths to generated SVG files, or None if generation disabled.
+    """
+    if rendercv_model.settings.render_command.dont_generate_svg or typst_path is None:
+        return None
+    svg_path = resolve_rendercv_file_path(
+        rendercv_model, rendercv_model.settings.render_command.svg_path
+    )
+
+    pattern = f"{svg_path.stem}_*.svg"
+    for existing_svg_file in svg_path.parent.glob(pattern):
+        if existing_svg_file.is_file():
+            existing_svg_file.unlink()
+
+    typst_compiler = get_typst_compiler(
+        rendercv_model._input_file_path, typst_path.parent
+    )
+    copy_photo_next_to_typst_file(rendercv_model, typst_path)
+    copy_theme_assets_next_to_typst_file(rendercv_model, typst_path)
+    svg_files_bytes = typst_compiler.compile(input=typst_path, format="svg")
+
+    if not isinstance(svg_files_bytes, list):
+        svg_files_bytes = [svg_files_bytes]
+
+    svg_files = []
+    for i, svg_file_bytes in enumerate(svg_files_bytes):
+        if svg_file_bytes is None:
+            raise RenderCVInternalError("Typst compiler returned None for SVG bytes")
+        svg_file = svg_path.parent / (svg_path.stem + f"_{i + 1}.svg")
+        svg_file.write_bytes(svg_file_bytes)
+        svg_files.append(svg_file)
+
+    return svg_files if svg_files else None
 
 
 def copy_photo_next_to_typst_file(
@@ -111,6 +162,23 @@ def copy_photo_next_to_typst_file(
         copy_to = typst_path.parent / photo_path.name
         if photo_path != copy_to:
             shutil.copy(photo_path, copy_to)
+
+
+def copy_theme_assets_next_to_typst_file(
+    rendercv_model: RenderCVModel, typst_path: pathlib.Path
+) -> None:
+    """Copy theme static assets (like SVG and PNG) to Typst file directory.
+
+    Why:
+        Typst restricts file access to the root directory during compilation.
+        Assets defined in custom themes must be copied alongside the source.
+    """
+    theme_name = rendercv_model.design.theme
+    theme_dir = templates_directory / theme_name
+    if theme_dir.exists():
+        for ext in ["*.png", "*.svg"]:
+            for asset in theme_dir.glob(ext):
+                shutil.copy(asset, typst_path.parent / asset.name)
 
 
 def read_version_from_typst_toml(typst_toml_path: pathlib.Path) -> str:

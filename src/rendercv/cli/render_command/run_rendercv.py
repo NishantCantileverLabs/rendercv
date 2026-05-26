@@ -9,7 +9,7 @@ import jinja2
 from rendercv.exception import RenderCVUserError, RenderCVUserValidationError
 from rendercv.renderer.html import generate_html
 from rendercv.renderer.markdown import generate_markdown
-from rendercv.renderer.pdf_png import generate_pdf, generate_png
+from rendercv.renderer.pdf_png import generate_pdf, generate_png, generate_svg
 from rendercv.renderer.typst import generate_typst
 from rendercv.schema.rendercv_model_builder import (
     BuildRendercvModelArguments,
@@ -164,6 +164,13 @@ def run_rendercv(
             "Generated PNG",
             progress,
             generate_png,
+            rendercv_model,
+            typst_path,
+        )
+        timed_step(
+            "Generated SVG",
+            progress,
+            generate_svg,
             rendercv_model,
             typst_path,
         )

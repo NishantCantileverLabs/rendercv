@@ -31,11 +31,13 @@ class BuildRendercvModelArguments(TypedDict, total=False):
     markdown_path: pathlib.Path | str | None
     html_path: pathlib.Path | str | None
     png_path: pathlib.Path | str | None
+    svg_path: pathlib.Path | str | None
     dont_generate_typst: bool | None
     dont_generate_html: bool | None
     dont_generate_markdown: bool | None
     dont_generate_pdf: bool | None
     dont_generate_png: bool | None
+    dont_generate_svg: bool | None
     overrides: dict[str, str] | None
 
 
@@ -139,11 +141,13 @@ def build_rendercv_dictionary(
         "markdown_path": kwargs.get("markdown_path"),
         "html_path": kwargs.get("html_path"),
         "png_path": kwargs.get("png_path"),
+        "svg_path": kwargs.get("svg_path"),
         "dont_generate_typst": kwargs.get("dont_generate_typst"),
         "dont_generate_html": kwargs.get("dont_generate_html"),
         "dont_generate_markdown": kwargs.get("dont_generate_markdown"),
         "dont_generate_pdf": kwargs.get("dont_generate_pdf"),
         "dont_generate_png": kwargs.get("dont_generate_png"),
+        "dont_generate_svg": kwargs.get("dont_generate_svg"),
     }
 
     for key, value in render_overrides.items():

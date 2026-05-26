@@ -2,7 +2,6 @@ import functools
 from typing import Any, Self
 
 import pydantic
-import pydantic_extra_types.phone_numbers as pydantic_phone_numbers
 
 from rendercv.exception import RenderCVInternalError
 
@@ -12,20 +11,14 @@ from .custom_connection import CustomConnection
 from .section import BaseRenderCVSection, Section, get_rendercv_sections
 from .social_network import SocialNetwork
 
-email_validator = pydantic.TypeAdapter[pydantic.EmailStr](pydantic.EmailStr)
-emails_validator = pydantic.TypeAdapter[list[pydantic.EmailStr]](
-    list[pydantic.EmailStr]
-)
+email_validator = pydantic.TypeAdapter[str](str)
+emails_validator = pydantic.TypeAdapter[list[str]](list[str])
 website_validator = pydantic.TypeAdapter[pydantic.HttpUrl](pydantic.HttpUrl)
 websites_validator = pydantic.TypeAdapter[list[pydantic.HttpUrl]](
     list[pydantic.HttpUrl]
 )
-phone_validator = pydantic.TypeAdapter[pydantic_phone_numbers.PhoneNumber](
-    pydantic_phone_numbers.PhoneNumber
-)
-phones_validator = pydantic.TypeAdapter[list[pydantic_phone_numbers.PhoneNumber]](
-    list[pydantic_phone_numbers.PhoneNumber]
-)
+phone_validator = pydantic.TypeAdapter[str](str)
+phones_validator = pydantic.TypeAdapter[list[str]](list[str])
 
 
 class Cv(BaseModelWithoutExtraKeys):
@@ -41,7 +34,7 @@ class Cv(BaseModelWithoutExtraKeys):
         default=None,
         examples=["New York, NY", "London, UK", "Istanbul, Türkiye"],
     )
-    email: pydantic.EmailStr | list[pydantic.EmailStr] | None = pydantic.Field(
+    email: str | list[str] | None = pydantic.Field(
         default=None,
         description="You can provide multiple emails as a list.",
         examples=[
@@ -55,11 +48,7 @@ class Cv(BaseModelWithoutExtraKeys):
         description="Photo file path (relative to the YAML file) or a URL.",
         examples=["photo.jpg", "images/profile.png", "https://example.com/photo.jpg"],
     )
-    phone: (
-        pydantic_phone_numbers.PhoneNumber
-        | list[pydantic_phone_numbers.PhoneNumber]
-        | None
-    ) = pydantic.Field(
+    phone: str | list[str] | None = pydantic.Field(
         default=None,
         description=(
             "Your phone number with country code in international format (e.g., +1 for"
@@ -178,15 +167,7 @@ class Cv(BaseModelWithoutExtraKeys):
     @classmethod
     def validate_list_or_scalar_fields(
         cls, value: Any, info: pydantic.ValidationInfo
-    ) -> (
-        pydantic.EmailStr
-        | pydantic.HttpUrl
-        | pydantic_phone_numbers.PhoneNumber
-        | list[pydantic.EmailStr]
-        | list[pydantic.HttpUrl]
-        | list[pydantic_phone_numbers.PhoneNumber]
-        | None
-    ):
+    ) -> str | pydantic.HttpUrl | list[str] | list[pydantic.HttpUrl] | None:
         """Validate fields that accept single value or list with type-specific errors.
 
         Why:
@@ -209,13 +190,10 @@ class Cv(BaseModelWithoutExtraKeys):
             raise RenderCVInternalError("field_name is None in validator")
 
         validators: tuple[
-            pydantic.TypeAdapter[pydantic.EmailStr]
-            | pydantic.TypeAdapter[pydantic.HttpUrl]
-            | pydantic.TypeAdapter[pydantic_phone_numbers.PhoneNumber],
+            pydantic.TypeAdapter[str] | pydantic.TypeAdapter[pydantic.HttpUrl],
             (
-                pydantic.TypeAdapter[list[pydantic.EmailStr]]
+                pydantic.TypeAdapter[list[str]]
                 | pydantic.TypeAdapter[list[pydantic.HttpUrl]]
-                | pydantic.TypeAdapter[list[pydantic_phone_numbers.PhoneNumber]]
             ),
         ] = {
             "website": (website_validator, websites_validator),
@@ -229,9 +207,7 @@ class Cv(BaseModelWithoutExtraKeys):
         return validators[0].validate_python(value)
 
     @pydantic.field_serializer("phone")
-    def serialize_phone(
-        self, phone: pydantic_phone_numbers.PhoneNumber | None
-    ) -> str | None:
+    def serialize_phone(self, phone: str | None) -> str | None:
         """Remove tel: prefix from phone number for clean serialization.
 
         Why:

@@ -9,7 +9,7 @@
       "type": "string"
     },
     "ArabicLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "arabic",
@@ -124,6 +124,9 @@
           "engineeringclassic": "#/$defs/EngineeringclassicTheme",
           "engineeringresumes": "#/$defs/EngineeringresumesTheme",
           "harvard": "#/$defs/HarvardTheme",
+          "iitb": "#/$defs/IitbTheme",
+          "iith": "#/$defs/IithTheme",
+          "iitk": "#/$defs/IitkTheme",
           "ink": "#/$defs/InkTheme",
           "moderncv": "#/$defs/ModerncvTheme",
           "opal": "#/$defs/OpalTheme",
@@ -146,6 +149,15 @@
         },
         {
           "$ref": "#/$defs/HarvardTheme"
+        },
+        {
+          "$ref": "#/$defs/IitbTheme"
+        },
+        {
+          "$ref": "#/$defs/IithTheme"
+        },
+        {
+          "$ref": "#/$defs/IitkTheme"
         },
         {
           "$ref": "#/$defs/InkTheme"
@@ -195,13 +207,78 @@
       "type": "object"
     },
     "ClassicTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "classic",
           "default": "classic",
           "title": "Theme",
           "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
@@ -235,7 +312,7 @@
       "type": "object"
     },
     "CustomConnection": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "description": "User-defined contact method with custom icon and URL.\n\nWhy:\n    Built-in social networks cover common platforms, but users need\n    arbitrary contact methods (personal websites, custom platforms).\n    CustomConnection provides a FontAwesome icon, display text, and\n    optional URL for any contact channel.",
       "properties": {
         "fontawesome_icon": {
@@ -270,7 +347,7 @@
       "type": "object"
     },
     "Cv": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "anyOf": [
@@ -451,7 +528,7 @@
       "type": "object"
     },
     "DanishLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "danish",
@@ -549,7 +626,7 @@
       "type": "object"
     },
     "DutchLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "dutch",
@@ -811,13 +888,78 @@
       "type": "object"
     },
     "EmberTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "ember",
           "default": "ember",
           "title": "Theme",
           "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__2"
@@ -851,13 +993,78 @@
       "type": "object"
     },
     "EngineeringclassicTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "engineeringclassic",
           "default": "engineeringclassic",
           "title": "Theme",
           "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
@@ -891,13 +1098,78 @@
       "type": "object"
     },
     "EngineeringresumesTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "engineeringresumes",
           "default": "engineeringresumes",
           "title": "Theme",
           "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__3"
@@ -931,7 +1203,7 @@
       "type": "object"
     },
     "EnglishLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "english",
@@ -1192,7 +1464,7 @@
       "type": "object"
     },
     "FrenchLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "french",
@@ -1290,7 +1562,7 @@
       "type": "object"
     },
     "GermanLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "german",
@@ -1388,13 +1660,78 @@
       "type": "object"
     },
     "HarvardTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "harvard",
           "default": "harvard",
           "title": "Theme",
           "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__4"
@@ -1428,7 +1765,7 @@
       "type": "object"
     },
     "HebrewLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "hebrew",
@@ -1526,7 +1863,7 @@
       "type": "object"
     },
     "HindiLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "hindi",
@@ -1624,7 +1961,7 @@
       "type": "object"
     },
     "HungarianLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "hungarian",
@@ -1721,8 +2058,323 @@
       "title": "HungarianLocale",
       "type": "object"
     },
+    "IitbTheme": {
+      "additionalProperties": true,
+      "properties": {
+        "theme": {
+          "const": "iitb",
+          "default": "iitb",
+          "title": "Theme",
+          "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
+        "page": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__5"
+        },
+        "colors": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__1"
+        },
+        "typography": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__6"
+        },
+        "links": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__1"
+        },
+        "header": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__1"
+        },
+        "section_titles": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__6"
+        },
+        "sections": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__1"
+        },
+        "entries": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__1"
+        },
+        "templates": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__1"
+        }
+      },
+      "title": "IitbTheme",
+      "type": "object"
+    },
+    "IithTheme": {
+      "additionalProperties": true,
+      "properties": {
+        "theme": {
+          "const": "iith",
+          "default": "iith",
+          "title": "Theme",
+          "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
+        "page": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
+        },
+        "colors": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__1"
+        },
+        "typography": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__1"
+        },
+        "links": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__1"
+        },
+        "header": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__1"
+        },
+        "section_titles": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__7"
+        },
+        "sections": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__6"
+        },
+        "entries": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__1"
+        },
+        "templates": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__1"
+        }
+      },
+      "title": "IithTheme",
+      "type": "object"
+    },
+    "IitkTheme": {
+      "additionalProperties": true,
+      "properties": {
+        "theme": {
+          "const": "iitk",
+          "default": "iitk",
+          "title": "Theme",
+          "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
+        "page": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
+        },
+        "colors": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__1"
+        },
+        "typography": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__1"
+        },
+        "links": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__1"
+        },
+        "header": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__1"
+        },
+        "section_titles": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__1"
+        },
+        "sections": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__1"
+        },
+        "entries": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__1"
+        },
+        "templates": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__1"
+        }
+      },
+      "title": "IitkTheme",
+      "type": "object"
+    },
     "IndonesianLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "indonesian",
@@ -1820,7 +2472,7 @@
       "type": "object"
     },
     "InkTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "ink",
@@ -1828,14 +2480,79 @@
           "title": "Theme",
           "type": "string"
         },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
         "page": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__5"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__6"
         },
         "colors": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__5"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__6"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__7"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__5"
@@ -1844,10 +2561,10 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__6"
         },
         "section_titles": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__6"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__8"
         },
         "sections": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__6"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__7"
         },
         "entries": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__6"
@@ -1860,7 +2577,7 @@
       "type": "object"
     },
     "ItalianLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "italian",
@@ -1958,7 +2675,7 @@
       "type": "object"
     },
     "JapaneseLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "japanese",
@@ -2056,7 +2773,7 @@
       "type": "object"
     },
     "KoreanLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "korean",
@@ -2309,7 +3026,7 @@
       ]
     },
     "MandarinChineseLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "mandarin_chinese",
@@ -2407,13 +3124,78 @@
       "type": "object"
     },
     "ModerncvTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "moderncv",
           "default": "moderncv",
           "title": "Theme",
           "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
@@ -2422,7 +3204,7 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__1"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__7"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__8"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__6"
@@ -2431,10 +3213,10 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__7"
         },
         "section_titles": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__7"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__9"
         },
         "sections": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__7"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__8"
         },
         "entries": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__7"
@@ -2582,7 +3364,7 @@
       "type": "object"
     },
     "NorwegianBokm_lLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "norwegian_bokmål",
@@ -2680,7 +3462,7 @@
       "type": "object"
     },
     "NorwegianNynorskLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "norwegian_nynorsk",
@@ -2827,7 +3609,7 @@
       "type": "object"
     },
     "OneLineEntryTemplate": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**LABEL:** DETAILS",
@@ -2840,7 +3622,7 @@
       "type": "object"
     },
     "OpalTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "opal",
@@ -2848,14 +3630,79 @@
           "title": "Theme",
           "type": "string"
         },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
         "page": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__6"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__7"
         },
         "colors": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__6"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__8"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__9"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__7"
@@ -2864,10 +3711,10 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__8"
         },
         "section_titles": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__8"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__10"
         },
         "sections": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__8"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__9"
         },
         "entries": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__8"
@@ -2889,7 +3736,7 @@
       "type": "string"
     },
     "PersianLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "persian",
@@ -2999,7 +3846,7 @@
       "type": "string"
     },
     "PortugueseLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "portuguese",
@@ -3217,7 +4064,7 @@
       "type": "object"
     },
     "PublicationEntryTemplate": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**TITLE**\nSUMMARY\nAUTHORS\nURL (JOURNAL)",
@@ -3236,7 +4083,7 @@
       "type": "object"
     },
     "RenderCommand": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "output_folder": {
           "$ref": "#/$defs/PlannedPathRelativeToInput",
@@ -3293,6 +4140,11 @@
           "default": "OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.png",
           "description": "Output path for PNG files, relative to the input YAML file. The default value is `OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.png`.\n\nThe following placeholders can be used:\n\n- OUTPUT_FOLDER: The output folder path (e.g., rendercv_output)\n- MONTH_NAME: Full name of the month (e.g., January)\n- MONTH_ABBREVIATION: Abbreviation of the month (e.g., Jan)\n- MONTH: Month as a number (e.g., 1)\n- MONTH_IN_TWO_DIGITS: Month as a number in two digits (e.g., 01)\n- DAY: Day of the month (e.g., 5)\n- DAY_IN_TWO_DIGITS: Day of the month in two digits (e.g., 05)\n- YEAR: Year as a number (e.g., 2024)\n- YEAR_IN_TWO_DIGITS: Year as a number in two digits (e.g., 24)\n- NAME: The name of the CV owner (e.g., John Doe)\n- NAME_IN_SNAKE_CASE: The name of the CV owner in snake case (e.g., John_Doe)\n- NAME_IN_LOWER_SNAKE_CASE: The name of the CV owner in lower snake case (e.g., john_doe)\n- NAME_IN_UPPER_SNAKE_CASE: The name of the CV owner in upper snake case (e.g., JOHN_DOE)\n- NAME_IN_KEBAB_CASE: The name of the CV owner in kebab case (e.g., John-Doe)\n- NAME_IN_LOWER_KEBAB_CASE: The name of the CV owner in lower kebab case (e.g., john-doe)\n- NAME_IN_UPPER_KEBAB_CASE: The name of the CV owner in upper kebab case (e.g., JOHN-DOE)\n"
         },
+        "svg_path": {
+          "$ref": "#/$defs/PlannedPathRelativeToInput",
+          "default": "OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.svg",
+          "description": "Output path for SVG files, relative to the input YAML file. The default value is `OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.svg`.\n\nThe following placeholders can be used:\n\n- OUTPUT_FOLDER: The output folder path (e.g., rendercv_output)\n- MONTH_NAME: Full name of the month (e.g., January)\n- MONTH_ABBREVIATION: Abbreviation of the month (e.g., Jan)\n- MONTH: Month as a number (e.g., 1)\n- MONTH_IN_TWO_DIGITS: Month as a number in two digits (e.g., 01)\n- DAY: Day of the month (e.g., 5)\n- DAY_IN_TWO_DIGITS: Day of the month in two digits (e.g., 05)\n- YEAR: Year as a number (e.g., 2024)\n- YEAR_IN_TWO_DIGITS: Year as a number in two digits (e.g., 24)\n- NAME: The name of the CV owner (e.g., John Doe)\n- NAME_IN_SNAKE_CASE: The name of the CV owner in snake case (e.g., John_Doe)\n- NAME_IN_LOWER_SNAKE_CASE: The name of the CV owner in lower snake case (e.g., john_doe)\n- NAME_IN_UPPER_SNAKE_CASE: The name of the CV owner in upper snake case (e.g., JOHN_DOE)\n- NAME_IN_KEBAB_CASE: The name of the CV owner in kebab case (e.g., John-Doe)\n- NAME_IN_LOWER_KEBAB_CASE: The name of the CV owner in lower kebab case (e.g., john-doe)\n- NAME_IN_UPPER_KEBAB_CASE: The name of the CV owner in upper kebab case (e.g., JOHN-DOE)\n"
+        },
         "dont_generate_markdown": {
           "default": false,
           "description": "Skip Markdown generation. This also disables HTML generation. The default value is `false`.",
@@ -3322,6 +4174,12 @@
           "description": "Skip PNG generation. The default value is `false`.",
           "title": "Don't Generate PNG",
           "type": "boolean"
+        },
+        "dont_generate_svg": {
+          "default": false,
+          "description": "Skip SVG generation. The default value is `false`.",
+          "title": "Don't Generate SVG",
+          "type": "boolean"
         }
       },
       "title": "RenderCommand",
@@ -3348,7 +4206,7 @@
       "type": "object"
     },
     "RussianLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "russian",
@@ -3446,13 +4304,78 @@
       "type": "object"
     },
     "Sb2novTheme": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "theme": {
           "const": "sb2nov",
           "default": "sb2nov",
           "title": "Theme",
           "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
@@ -3461,7 +4384,7 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__7"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__9"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__10"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__8"
@@ -3470,10 +4393,10 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__9"
         },
         "section_titles": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__9"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__11"
         },
         "sections": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__9"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__10"
         },
         "entries": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__9"
@@ -3502,7 +4425,7 @@
       "type": "string"
     },
     "Settings": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "current_date": {
           "anyOf": [
@@ -3544,7 +4467,7 @@
       "type": "object"
     },
     "SocialNetwork": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "network": {
           "$ref": "#/$defs/SocialNetworkName"
@@ -3589,7 +4512,7 @@
       "type": "string"
     },
     "SpanishLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "spanish",
@@ -3687,7 +4610,7 @@
       "type": "object"
     },
     "TurkishLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "turkish",
@@ -3788,7 +4711,7 @@
       "type": "string"
     },
     "VietnameseLocale": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "language": {
           "const": "vietnamese",
@@ -3886,7 +4809,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Bold__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": true,
@@ -3917,7 +4840,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Bold__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": true,
@@ -3948,7 +4871,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Bold__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": false,
@@ -3979,7 +4902,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Bold__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": false,
@@ -4010,7 +4933,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Bold__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": true,
@@ -4041,7 +4964,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Bold__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": false,
@@ -4072,7 +4995,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Bold__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": true,
@@ -4103,7 +5026,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "default": "rgb(0, 0, 0)",
@@ -4214,7 +5137,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "default": "rgb(35, 31, 32)",
@@ -4277,7 +5200,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "default": "rgb(0, 0, 0)",
@@ -4358,7 +5281,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "default": "rgb(0, 0, 0)",
@@ -4439,7 +5362,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "default": "rgb(0, 0, 0)",
@@ -4508,7 +5431,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "default": "rgb(0, 0, 0)",
@@ -4577,7 +5500,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "default": "rgb(0, 0, 0)",
@@ -4658,7 +5581,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Connections__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "phone_number_format": {
           "$ref": "#/$defs/PhoneNumberFormatType",
@@ -4699,7 +5622,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Connections__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "phone_number_format": {
           "$ref": "#/$defs/PhoneNumberFormatType",
@@ -4740,7 +5663,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Connections__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "phone_number_format": {
           "$ref": "#/$defs/PhoneNumberFormatType",
@@ -4781,7 +5704,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Connections__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "phone_number_format": {
           "$ref": "#/$defs/PhoneNumberFormatType",
@@ -4822,7 +5745,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Connections__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "phone_number_format": {
           "$ref": "#/$defs/PhoneNumberFormatType",
@@ -4863,7 +5786,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Connections__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "phone_number_format": {
           "$ref": "#/$defs/PhoneNumberFormatType",
@@ -4904,7 +5827,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Connections__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "phone_number_format": {
           "$ref": "#/$defs/PhoneNumberFormatType",
@@ -4945,7 +5868,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION**, AREA\nSUMMARY\nHIGHLIGHTS",
@@ -4977,7 +5900,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION** -- LOCATION\n*DEGREE_WITH_AREA*\nSUMMARY\nHIGHLIGHTS",
@@ -5009,7 +5932,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION**, DEGREE_WITH_AREA -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5041,7 +5964,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION**, DEGREE_WITH_AREA -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5073,7 +5996,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION**, DEGREE_WITH_AREA -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5105,7 +6028,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION** -- LOCATION\n*DEGREE_WITH_AREA*\nSUMMARY\nHIGHLIGHTS",
@@ -5137,7 +6060,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION**, DEGREE_WITH_AREA -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5169,7 +6092,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION** -- LOCATION\nDEGREE_WITH_AREA\nSUMMARY\nHIGHLIGHTS",
@@ -5201,7 +6124,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__EducationEntryTemplate__9": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**INSTITUTION**\n*DEGREE* *in* *AREA*\nSUMMARY\nHIGHLIGHTS",
@@ -5233,7 +6156,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5280,7 +6203,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5327,7 +6250,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5374,7 +6297,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5421,7 +6344,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5468,7 +6391,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5515,7 +6438,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5562,7 +6485,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5609,7 +6532,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Entries__9": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "date_and_location_width": {
           "$ref": "#/$defs/TypstDimension",
@@ -5656,7 +6579,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**COMPANY**, POSITION\nSUMMARY\nHIGHLIGHTS",
@@ -5675,7 +6598,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**COMPANY** -- LOCATION\n*POSITION*\nSUMMARY\nHIGHLIGHTS",
@@ -5694,7 +6617,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**POSITION**, COMPANY -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5713,7 +6636,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**POSITION**, COMPANY -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5732,7 +6655,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**COMPANY**, POSITION -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5751,7 +6674,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**COMPANY** -- LOCATION\n*POSITION*\nSUMMARY\nHIGHLIGHTS",
@@ -5770,7 +6693,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**POSITION**, COMPANY -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5789,7 +6712,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**COMPANY**, *POSITION* -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -5808,7 +6731,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__9": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**POSITION**\n*COMPANY*\nSUMMARY\nHIGHLIGHTS",
@@ -5827,7 +6750,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__FontFamily": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily",
@@ -5859,7 +6782,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__FontSize__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
@@ -5891,7 +6814,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__FontSize__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
@@ -5923,7 +6846,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__FontSize__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
@@ -5955,7 +6878,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__FontSize__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
@@ -5987,7 +6910,39 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__FontSize__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for body text. The default value is `10pt`."
+        },
+        "name": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "14pt",
+          "description": "The font size for the name. The default value is `14pt`."
+        },
+        "headline": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for the headline. The default value is `10pt`."
+        },
+        "connections": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for connections. The default value is `10pt`."
+        },
+        "section_titles": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for section titles. The default value is `10pt`."
+        }
+      },
+      "title": "FontSize",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__FontSize__6": {
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
@@ -6018,8 +6973,8 @@
       "title": "FontSize",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__FontSize__6": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__FontSize__7": {
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
@@ -6050,8 +7005,8 @@
       "title": "FontSize",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__FontSize__7": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__FontSize__8": {
+      "additionalProperties": true,
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
@@ -6083,7 +7038,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6139,7 +7094,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6195,7 +7150,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6251,7 +7206,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6307,7 +7262,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6363,7 +7318,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6419,7 +7374,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6475,7 +7430,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6531,7 +7486,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Header__9": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "alignment": {
           "$ref": "#/$defs/Alignment",
@@ -6587,7 +7542,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6624,7 +7579,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6661,7 +7616,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6698,7 +7653,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6735,7 +7690,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6772,7 +7727,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6809,7 +7764,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6846,7 +7801,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Highlights__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "bullet": {
           "$ref": "#/$defs/Bullet",
@@ -6883,7 +7838,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": false,
@@ -6902,7 +7857,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": true,
@@ -6921,7 +7876,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": false,
@@ -6940,7 +7895,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": true,
@@ -6959,7 +7914,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": true,
@@ -6978,7 +7933,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": true,
@@ -6997,7 +7952,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": false,
@@ -7016,7 +7971,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Links__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "underline": {
           "default": true,
@@ -7035,7 +7990,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME**\nSUMMARY\nHIGHLIGHTS",
@@ -7054,7 +8009,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME** -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -7073,7 +8028,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME** -- **LOCATION**\nSUMMARY\nHIGHLIGHTS",
@@ -7092,7 +8047,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME** -- **LOCATION**\nSUMMARY\nHIGHLIGHTS",
@@ -7111,7 +8066,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME** -- **LOCATION**\nSUMMARY\nHIGHLIGHTS",
@@ -7130,7 +8085,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME** -- **LOCATION**\nSUMMARY\nHIGHLIGHTS",
@@ -7149,7 +8104,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME** -- **LOCATION**\nSUMMARY\nHIGHLIGHTS",
@@ -7168,7 +8123,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME** -- LOCATION\nSUMMARY\nHIGHLIGHTS",
@@ -7187,7 +8142,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__NormalEntryTemplate__9": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "main_column": {
           "default": "**NAME**\nSUMMARY\nHIGHLIGHTS",
@@ -7206,7 +8161,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Page__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "size": {
           "$ref": "#/$defs/PageSize",
@@ -7250,7 +8205,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Page__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "size": {
           "$ref": "#/$defs/PageSize",
@@ -7294,7 +8249,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Page__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "size": {
           "$ref": "#/$defs/PageSize",
@@ -7338,7 +8293,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Page__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "size": {
           "$ref": "#/$defs/PageSize",
@@ -7382,7 +8337,51 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Page__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
+      "properties": {
+        "size": {
+          "$ref": "#/$defs/PageSize",
+          "default": "a4",
+          "description": "The page size. Use 'a4' (international standard) or 'us-letter' (US standard). The default value is `a4`."
+        },
+        "top_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.75in",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.75in`."
+        },
+        "bottom_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.2in",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.2in`."
+        },
+        "left_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.35in",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.35in`."
+        },
+        "right_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.35in",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.35in`."
+        },
+        "show_footer": {
+          "default": true,
+          "description": "Show the footer at the bottom of pages. The default value is `true`.",
+          "title": "Show Footer",
+          "type": "boolean"
+        },
+        "show_top_note": {
+          "default": true,
+          "description": "Show the top note at the top of the first page. The default value is `true`.",
+          "title": "Show Top Note",
+          "type": "boolean"
+        }
+      },
+      "title": "Page",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Page__6": {
+      "additionalProperties": true,
       "properties": {
         "size": {
           "$ref": "#/$defs/PageSize",
@@ -7425,8 +8424,8 @@
       "title": "Page",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Page__6": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__Page__7": {
+      "additionalProperties": true,
       "properties": {
         "size": {
           "$ref": "#/$defs/PageSize",
@@ -7470,7 +8469,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SectionTitles__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "type": {
           "$ref": "#/$defs/SectionTitleType",
@@ -7496,8 +8495,62 @@
       "title": "SectionTitles",
       "type": "object"
     },
+    "rendercv__schema__models__design__classic_theme__SectionTitles__10": {
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/SectionTitleType",
+          "default": "centered_without_line",
+          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `centered_without_line`."
+        },
+        "line_thickness": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.4pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.4pt`."
+        },
+        "space_above": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.55cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.55cm`."
+        },
+        "space_below": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.25cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.25cm`."
+        }
+      },
+      "title": "SectionTitles",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__SectionTitles__11": {
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/SectionTitleType",
+          "default": "with_full_line",
+          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `with_full_line`."
+        },
+        "line_thickness": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.5pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5pt`."
+        },
+        "space_above": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5cm`."
+        },
+        "space_below": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.3cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3cm`."
+        }
+      },
+      "title": "SectionTitles",
+      "type": "object"
+    },
     "rendercv__schema__models__design__classic_theme__SectionTitles__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "type": {
           "$ref": "#/$defs/SectionTitleType",
@@ -7524,7 +8577,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SectionTitles__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "type": {
           "$ref": "#/$defs/SectionTitleType",
@@ -7551,7 +8604,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SectionTitles__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "type": {
           "$ref": "#/$defs/SectionTitleType",
@@ -7578,7 +8631,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SectionTitles__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "type": {
           "$ref": "#/$defs/SectionTitleType",
@@ -7605,7 +8658,61 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SectionTitles__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/SectionTitleType",
+          "default": "without_line",
+          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `without_line`."
+        },
+        "line_thickness": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.5pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5pt`."
+        },
+        "space_above": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.015em",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.015em`."
+        },
+        "space_below": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.015em",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.015em`."
+        }
+      },
+      "title": "SectionTitles",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__SectionTitles__7": {
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/SectionTitleType",
+          "default": "with_partial_line",
+          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `with_partial_line`."
+        },
+        "line_thickness": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.5pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5pt`."
+        },
+        "space_above": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.15em",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.15em`."
+        },
+        "space_below": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.015em",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.015em`."
+        }
+      },
+      "title": "SectionTitles",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__SectionTitles__8": {
+      "additionalProperties": true,
       "properties": {
         "type": {
           "$ref": "#/$defs/SectionTitleType",
@@ -7631,8 +8738,8 @@
       "title": "SectionTitles",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__SectionTitles__7": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__SectionTitles__9": {
+      "additionalProperties": true,
       "properties": {
         "type": {
           "$ref": "#/$defs/SectionTitleType",
@@ -7658,62 +8765,8 @@
       "title": "SectionTitles",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__SectionTitles__8": {
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "$ref": "#/$defs/SectionTitleType",
-          "default": "centered_without_line",
-          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `centered_without_line`."
-        },
-        "line_thickness": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.4pt",
-          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.4pt`."
-        },
-        "space_above": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.55cm",
-          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.55cm`."
-        },
-        "space_below": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.25cm",
-          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.25cm`."
-        }
-      },
-      "title": "SectionTitles",
-      "type": "object"
-    },
-    "rendercv__schema__models__design__classic_theme__SectionTitles__9": {
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "$ref": "#/$defs/SectionTitleType",
-          "default": "with_full_line",
-          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `with_full_line`."
-        },
-        "line_thickness": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.5pt",
-          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5pt`."
-        },
-        "space_above": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.5cm",
-          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5cm`."
-        },
-        "space_below": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.3cm",
-          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3cm`."
-        }
-      },
-      "title": "SectionTitles",
-      "type": "object"
-    },
     "rendercv__schema__models__design__classic_theme__Sections__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7755,8 +8808,40 @@
       "title": "Sections",
       "type": "object"
     },
+    "rendercv__schema__models__design__classic_theme__Sections__10": {
+      "additionalProperties": true,
+      "properties": {
+        "allow_page_break": {
+          "default": true,
+          "description": "Allow page breaks within sections. If false, sections that don't fit will start on a new page. The default value is `true`.",
+          "title": "Allow Page Break",
+          "type": "boolean"
+        },
+        "space_between_regular_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.2em",
+          "description": "Vertical space between entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.2em`."
+        },
+        "space_between_text_based_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.3em",
+          "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "show_time_spans_in": {
+          "default": [],
+          "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Show Time Spans In",
+          "type": "array"
+        }
+      },
+      "title": "Sections",
+      "type": "object"
+    },
     "rendercv__schema__models__design__classic_theme__Sections__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7788,7 +8873,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Sections__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7820,7 +8905,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Sections__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7852,7 +8937,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Sections__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7884,7 +8969,50 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Sections__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
+      "properties": {
+        "allow_page_break": {
+          "default": true,
+          "description": "Allow page breaks within sections. If false, sections that don't fit will start on a new page. The default value is `true`.",
+          "title": "Allow Page Break",
+          "type": "boolean"
+        },
+        "space_between_regular_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.5em",
+          "description": "Vertical space between entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5em`."
+        },
+        "space_between_text_based_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.3em",
+          "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "show_time_spans_in": {
+          "default": [
+            "experience"
+          ],
+          "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `['experience']`.",
+          "examples": [
+            [
+              "Experience"
+            ],
+            [
+              "Experience",
+              "Education"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Show Time Spans In",
+          "type": "array"
+        }
+      },
+      "title": "Sections",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Sections__7": {
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7915,8 +9043,8 @@
       "title": "Sections",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Sections__7": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__Sections__8": {
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7947,8 +9075,8 @@
       "title": "Sections",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Sections__8": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__Sections__9": {
+      "additionalProperties": true,
       "properties": {
         "allow_page_break": {
           "default": true,
@@ -7979,40 +9107,8 @@
       "title": "Sections",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Sections__9": {
-      "additionalProperties": false,
-      "properties": {
-        "allow_page_break": {
-          "default": true,
-          "description": "Allow page breaks within sections. If false, sections that don't fit will start on a new page. The default value is `true`.",
-          "title": "Allow Page Break",
-          "type": "boolean"
-        },
-        "space_between_regular_entries": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "1.2em",
-          "description": "Vertical space between entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.2em`."
-        },
-        "space_between_text_based_entries": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.3em",
-          "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
-        },
-        "show_time_spans_in": {
-          "default": [],
-          "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
-          "items": {
-            "type": "string"
-          },
-          "title": "Show Time Spans In",
-          "type": "array"
-        }
-      },
-      "title": "Sections",
-      "type": "object"
-    },
     "rendercv__schema__models__design__classic_theme__SmallCaps__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": false,
@@ -8043,7 +9139,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SmallCaps__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": false,
@@ -8074,7 +9170,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SmallCaps__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": false,
@@ -8105,7 +9201,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SmallCaps__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "default": false,
@@ -8136,7 +9232,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Summary__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
@@ -8153,7 +9249,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Summary__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
@@ -8170,7 +9266,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Summary__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
@@ -8187,7 +9283,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Summary__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
@@ -8204,7 +9300,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Summary__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
@@ -8221,7 +9317,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Summary__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
@@ -8238,7 +9334,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Summary__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
@@ -8255,7 +9351,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8312,7 +9408,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8369,7 +9465,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8426,7 +9522,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8483,7 +9579,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8540,7 +9636,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8597,7 +9693,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8654,7 +9750,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8711,7 +9807,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Templates__9": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "footer": {
           "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
@@ -8768,7 +9864,59 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Typography__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
+      "properties": {
+        "line_spacing": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.6em",
+          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.6em`."
+        },
+        "alignment": {
+          "default": "justified",
+          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `justified`.",
+          "enum": [
+            "left",
+            "justified",
+            "justified-with-no-hyphenation"
+          ],
+          "title": "Alignment",
+          "type": "string"
+        },
+        "date_and_location_column_alignment": {
+          "$ref": "#/$defs/Alignment",
+          "default": "right",
+          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
+        },
+        "font_family": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
+            },
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            }
+          ],
+          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
+          "title": "Font Family"
+        },
+        "font_size": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__1",
+          "description": "Font sizes for different elements."
+        },
+        "small_caps": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__1",
+          "description": "Small caps styling for different elements."
+        },
+        "bold": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__1",
+          "description": "Bold styling for different elements."
+        }
+      },
+      "title": "Typography",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Typography__10": {
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -8820,7 +9968,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Typography__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -8872,7 +10020,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Typography__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -8924,7 +10072,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Typography__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -8976,7 +10124,7 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Typography__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -9028,7 +10176,59 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Typography__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
+      "properties": {
+        "line_spacing": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.45em",
+          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.45em`."
+        },
+        "alignment": {
+          "default": "justified",
+          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `justified`.",
+          "enum": [
+            "left",
+            "justified",
+            "justified-with-no-hyphenation"
+          ],
+          "title": "Alignment",
+          "type": "string"
+        },
+        "date_and_location_column_alignment": {
+          "$ref": "#/$defs/Alignment",
+          "default": "right",
+          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
+        },
+        "font_family": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
+            },
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            }
+          ],
+          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
+          "title": "Font Family"
+        },
+        "font_size": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__5",
+          "description": "Font sizes for different elements."
+        },
+        "small_caps": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__1",
+          "description": "Small caps styling for different elements."
+        },
+        "bold": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__1",
+          "description": "Bold styling for different elements."
+        }
+      },
+      "title": "Typography",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Typography__7": {
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -9064,7 +10264,7 @@
           "title": "Font Family"
         },
         "font_size": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__5",
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__6",
           "description": "Font sizes for different elements."
         },
         "small_caps": {
@@ -9079,8 +10279,8 @@
       "title": "Typography",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Typography__7": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__Typography__8": {
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -9116,7 +10316,7 @@
           "title": "Font Family"
         },
         "font_size": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__6",
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__7",
           "description": "Font sizes for different elements."
         },
         "small_caps": {
@@ -9131,8 +10331,8 @@
       "title": "Typography",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Typography__8": {
-      "additionalProperties": false,
+    "rendercv__schema__models__design__classic_theme__Typography__9": {
+      "additionalProperties": true,
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
@@ -9168,7 +10368,7 @@
           "title": "Font Family"
         },
         "font_size": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__7",
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__8",
           "description": "Font sizes for different elements."
         },
         "small_caps": {
@@ -9177,58 +10377,6 @@
         },
         "bold": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__7",
-          "description": "Bold styling for different elements."
-        }
-      },
-      "title": "Typography",
-      "type": "object"
-    },
-    "rendercv__schema__models__design__classic_theme__Typography__9": {
-      "additionalProperties": false,
-      "properties": {
-        "line_spacing": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.6em",
-          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.6em`."
-        },
-        "alignment": {
-          "default": "justified",
-          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `justified`.",
-          "enum": [
-            "left",
-            "justified",
-            "justified-with-no-hyphenation"
-          ],
-          "title": "Alignment",
-          "type": "string"
-        },
-        "date_and_location_column_alignment": {
-          "$ref": "#/$defs/Alignment",
-          "default": "right",
-          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
-        },
-        "font_family": {
-          "anyOf": [
-            {
-              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
-            },
-            {
-              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
-            }
-          ],
-          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
-          "title": "Font Family"
-        },
-        "font_size": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__1",
-          "description": "Font sizes for different elements."
-        },
-        "small_caps": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__1",
-          "description": "Small caps styling for different elements."
-        },
-        "bold": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__1",
           "description": "Bold styling for different elements."
         }
       },
@@ -9258,7 +10406,7 @@
       "type": "string"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__1": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE in AREA",
@@ -9271,7 +10419,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__10": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE di AREA",
@@ -9284,7 +10432,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__11": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE in AREA",
@@ -9297,7 +10445,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__12": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "AREA DEGREE",
@@ -9310,7 +10458,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__13": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "AREA DEGREE",
@@ -9323,7 +10471,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__14": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "AREA DEGREE",
@@ -9336,7 +10484,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__15": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE i AREA",
@@ -9349,7 +10497,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__16": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE i AREA",
@@ -9362,7 +10510,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__17": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE در AREA",
@@ -9375,7 +10523,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__18": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE em AREA",
@@ -9388,7 +10536,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__19": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE в AREA",
@@ -9401,7 +10549,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__2": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE في AREA",
@@ -9414,7 +10562,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__20": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE en AREA",
@@ -9427,7 +10575,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__21": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "AREA, DEGREE",
@@ -9440,7 +10588,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__22": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE ngành AREA",
@@ -9453,7 +10601,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__3": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE i AREA",
@@ -9466,7 +10614,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__4": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE in AREA",
@@ -9479,7 +10627,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__5": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE en AREA",
@@ -9492,7 +10640,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__6": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE in AREA",
@@ -9505,7 +10653,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__7": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE בAREA",
@@ -9518,7 +10666,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__8": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "AREA में DEGREE",
@@ -9531,7 +10679,7 @@
       "type": "object"
     },
     "rendercv__schema__models__locale__english_locale__Phrases__9": {
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "degree_with_area": {
           "default": "DEGREE AREA szakon",
@@ -9544,7 +10692,7 @@
       "type": "object"
     }
   },
-  "additionalProperties": false,
+  "additionalProperties": true,
   "description": "Resume builder for academics and engineers",
   "properties": {
     "cv": {

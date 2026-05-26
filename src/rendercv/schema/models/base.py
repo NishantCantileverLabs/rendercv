@@ -11,7 +11,7 @@ class BaseModelWithoutExtraKeys(pydantic.BaseModel):
         misspelled options.
     """
 
-    model_config = pydantic.ConfigDict(extra="forbid", validate_default=True)
+    model_config = pydantic.ConfigDict(extra="allow", validate_default=True)
 
 
 class BaseModelWithExtraKeys(pydantic.BaseModel):

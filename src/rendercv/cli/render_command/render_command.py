@@ -120,6 +120,17 @@ def cli_command_render(
             ),
         ),
     ] = None,
+    svg_path: Annotated[
+        pathlib.Path | None,
+        typer.Option(
+            "--svg-path",
+            "-svg",
+            help=(
+                "Save the generated SVG files to the specified path, relative to the"
+                " input file."
+            ),
+        ),
+    ] = None,
     dont_generate_markdown: Annotated[
         bool | None,
         typer.Option(
@@ -164,6 +175,14 @@ def cli_command_render(
             "--dont-generate-png",
             "-nopng",
             help="If provided, the PNG file will not be generated.",
+        ),
+    ] = None,
+    dont_generate_svg: Annotated[
+        bool | None,
+        typer.Option(
+            "--dont-generate-svg",
+            "-nosvg",
+            help="If provided, the SVG file will not be generated.",
         ),
     ] = None,
     watch: Annotated[
@@ -219,11 +238,13 @@ def cli_command_render(
         "markdown_path": markdown_path,
         "html_path": html_path,
         "png_path": png_path,
+        "svg_path": svg_path,
         "dont_generate_typst": dont_generate_typst,
         "dont_generate_html": dont_generate_html,
         "dont_generate_markdown": dont_generate_markdown,
         "dont_generate_pdf": dont_generate_pdf,
         "dont_generate_png": dont_generate_png,
+        "dont_generate_svg": dont_generate_svg,
         "overrides": parse_override_arguments(extra_data_model_override_arguments),
     }
 

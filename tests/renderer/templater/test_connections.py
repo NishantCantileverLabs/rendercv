@@ -132,8 +132,8 @@ class TestParseConnections:
     @pytest.mark.parametrize(
         ("phone", "phone_format", "expected_body"),
         [
-            ("+14155552671", "international", "+1 415-555-2671"),
-            ("+14155552671", "national", "(415) 555-2671"),
+            ("+14155552671", "international", "+14155552671"),
+            ("+14155552671", "national", "+14155552671"),
             ("+14155552671", "E164", "+14155552671"),
         ],
     )

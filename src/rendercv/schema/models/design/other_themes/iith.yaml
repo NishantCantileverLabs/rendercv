@@ -1,0 +1,7 @@
+design:
+  section_titles:
+    space_above: 0.15em
+    space_below: 0.015em
+  sections:
+    space_between_regular_entries: 0.5em
+  theme: iith

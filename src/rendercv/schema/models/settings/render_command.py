@@ -84,6 +84,14 @@ class RenderCommand(BaseModelWithoutExtraKeys):
             f"{file_path_placeholders_description}"
         ),
     )
+    svg_path: PlannedPathRelativeToInput = pydantic.Field(
+        default=pathlib.Path("OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.svg"),
+        description=(
+            "Output path for SVG files, relative to the input YAML file. The default"
+            " value is `OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CV.svg`.\n\n"
+            f"{file_path_placeholders_description}"
+        ),
+    )
     dont_generate_markdown: bool = pydantic.Field(
         default=False,
         title="Don't Generate Markdown",
@@ -114,4 +122,9 @@ class RenderCommand(BaseModelWithoutExtraKeys):
         default=False,
         title="Don't Generate PNG",
         description="Skip PNG generation. The default value is `false`.",
+    )
+    dont_generate_svg: bool = pydantic.Field(
+        default=False,
+        title="Don't Generate SVG",
+        description="Skip SVG generation. The default value is `false`.",
     )

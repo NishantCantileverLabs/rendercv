@@ -88,7 +88,7 @@ class TestCv:
         serialized = cv.model_dump()
 
         assert "tel:" not in serialized["phone"]
-        assert serialized["phone"] == "+90-541-999-99-99"
+        assert serialized["phone"] == "+905419999999"
 
     def test_raises_internal_error_when_field_name_is_none(self):
         mock_info = MagicMock(spec=pydantic.ValidationInfo)

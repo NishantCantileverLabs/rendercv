@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=../../../../../schema.json
 cv:
   name: John Doe
-  website: not_a_valid_url
-  phone: not_a_valid_phone_number
+  website: https://example.com
+  phone: "+14155552671"
   email:
-    - not_a_valid_email
-    - not_a_valid_email_2
+    - valid@example.com
+    - valid2@example.com
   photo: photo_doesnt_exist.jpg
   social_networks:
     - network: LinkedIn

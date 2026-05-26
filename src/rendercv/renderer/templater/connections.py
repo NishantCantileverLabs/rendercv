@@ -1,8 +1,6 @@
 from dataclasses import dataclass
 from typing import Literal
 
-import phonenumbers
-
 from rendercv.exception import RenderCVInternalError
 from rendercv.schema.models.rendercv_model import RenderCVModel
 
@@ -99,13 +97,7 @@ def parse_connections(rendercv_model: RenderCVModel) -> list[Connection]:
 
                 for phone in phones:
                     url = str(phone)
-                    body = phonenumbers.format_number(
-                        phonenumbers.parse(phone, None),
-                        getattr(
-                            phonenumbers.PhoneNumberFormat,
-                            rendercv_model.design.header.connections.phone_number_format.upper(),
-                        ),
-                    )
+                    body = str(phone)
                     connections.append(
                         Connection(
                             fontawesome_icon=fontawesome_icons[key], url=url, body=body

@@ -1,0 +1,26 @@
+design:
+  page:
+    bottom_margin: 0.2in
+    left_margin: 0.35in
+    right_margin: 0.35in
+    size: a4
+    top_margin: 0.75in
+  section_titles:
+    space_above: 0.015em
+    space_below: 0.015em
+    type: without_line
+  theme: iitb
+  typography:
+    font_family:
+      body: Libertinus Sans
+      connections: Libertinus Sans
+      headline: Libertinus Sans
+      name: Libertinus Sans
+      section_titles: Libertinus Sans
+    font_size:
+      body: 10pt
+      connections: 10pt
+      headline: 10pt
+      name: 14pt
+      section_titles: 10pt
+    line_spacing: 0.45em

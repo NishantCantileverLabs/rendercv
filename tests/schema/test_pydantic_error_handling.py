@@ -129,7 +129,7 @@ class TestParseValidationErrorsWithOverlaySources:
         main_yaml = (
             "cv:\n"
             "  name: John Doe\n"
-            "  phone: not_a_valid_phone\n"
+            "  photo: photo_doesnt_exist.jpg\n"
             "design:\n"
             "  theme: classic\n"
         )
@@ -149,7 +149,7 @@ class TestParseValidationErrorsWithOverlaySources:
             assert error.yaml_source == "main_yaml_file"
 
     def test_mixed_errors_from_main_and_overlay(self):
-        main_yaml = "cv:\n  name: John Doe\n  phone: not_a_valid_phone\n"
+        main_yaml = "cv:\n  name: John Doe\n  photo: photo_doesnt_exist.jpg\n"
         design_yaml = "design:\n  theme: not_a_valid_theme\n"
 
         main_cm = read_yaml(main_yaml)
