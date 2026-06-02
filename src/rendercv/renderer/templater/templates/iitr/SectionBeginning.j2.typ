@@ -18,4 +18,7 @@
   columns: (22%, 1fr),
   column-gutter: 1em,
   row-gutter: 1.5mm,
+{% elif snake_case_section_title == "area_of_interest" %}
+#[
+#show list: it => it.children.map(i => i.body).join(", ")
 {% endif %}

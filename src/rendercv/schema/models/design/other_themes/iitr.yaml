@@ -8,11 +8,11 @@ design:
   theme: iitr
   typography:
     font_family:
-      body: Arial, Helvetica, Liberation Sans, sans-serif
-      connections: Arial, Helvetica, Liberation Sans, sans-serif
-      headline: Arial, Helvetica, Liberation Sans, sans-serif
-      name: Arial, Helvetica, Liberation Sans, sans-serif
-      section_titles: Arial, Helvetica, Liberation Sans, sans-serif
+      body: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      connections: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      headline: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      name: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      section_titles: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
     font_size:
       body: 9.5pt
       connections: 9.5pt

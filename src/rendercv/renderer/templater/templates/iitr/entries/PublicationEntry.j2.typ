@@ -1,1 +1,1 @@
-- {{ entry.authors|join(", ") }}, "{{ entry.title }}", in *{{ entry.journal }}*, {{ entry.date_string }}
+- {{ entry.authors|join(", ") }}, "{{ entry.title }}", in *{{ entry.journal }}*, {{ entry.DATE }}

@@ -1,7 +1,7 @@
 #entry(
   [{{ entry.position }}],
   [{{ entry.company }}],
-  [{{ entry.date_string }}],
+  [{{ entry.DATE }}],
   [
     {% for item in entry.highlights %}
     - {{ item }}

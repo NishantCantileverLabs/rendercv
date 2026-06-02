@@ -1,7 +1,7 @@
 #entry(
   [{{ entry.name }}],
   [{{ entry.location if entry.location else '' }}],
-  [{{ entry.date_string }}],
+  [{{ entry.DATE }}],
   [
     {% for item in entry.highlights %}
     - {{ item }}

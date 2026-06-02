@@ -17,7 +17,7 @@
 // HELPER FUNCTIONS
 // ==========================================
 #let section(title) = {
-  v(0.5em)
+  v(-0.2em)
   grid(
     columns: (22%, auto),
     align: bottom,
