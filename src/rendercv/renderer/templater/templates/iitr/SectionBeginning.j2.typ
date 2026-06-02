@@ -1,0 +1,21 @@
+#section("{{ section_title }}")
+
+{% if entry_type == "EducationEntry" %}
+#table(
+  columns: (1.2fr, 3fr, 4.5fr, 1.5fr),
+  align: (col, row) => {
+    if row == 0 { center + horizon }
+    else { (center, left, left, center).at(col) + horizon }
+  },
+  stroke: 0.5pt,
+  [Year], [Degree/Examination], [Institution/Board], [CGPA/ \ Percentage],
+{% elif snake_case_section_title == "references" %}
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 2em,
+{% elif entry_type == "OneLineEntry" %}
+#grid(
+  columns: (22%, 1fr),
+  column-gutter: 1em,
+  row-gutter: 1.5mm,
+{% endif %}
