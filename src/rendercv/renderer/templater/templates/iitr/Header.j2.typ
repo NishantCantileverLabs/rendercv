@@ -22,7 +22,7 @@
       columns: (auto, auto),
       column-gutter: 2mm,
       align(right + horizon)[Indian Institute of \ Technology \ Roorkee],
-      image("iitr.svg", width: 2cm)
+      image("logo.svg", width: 2cm)
     )
   ]
 )
