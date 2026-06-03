@@ -2,7 +2,7 @@
 
 {% if entry_type == "EducationEntry" %}
 #table(
-  columns: (1.2fr, 3fr, 4.5fr, 1.5fr),
+  columns: (auto, auto, 1fr, auto),
   align: (col, row) => {
     if row == 0 { center + horizon }
     else { (center, left, left, center).at(col) + horizon }
