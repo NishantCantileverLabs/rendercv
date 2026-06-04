@@ -52,7 +52,7 @@ def download_photo_from_url(rendercv_model: RenderCVModel) -> None:
         try:
             req = urllib.request.Request(
                 url_str,
-                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"},
             )
             with urllib.request.urlopen(req, timeout=30) as response:
                 destination.write_bytes(response.read())

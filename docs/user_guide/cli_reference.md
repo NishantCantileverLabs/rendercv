@@ -9,6 +9,7 @@ RenderCV provides a command-line interface with three main commands:
 - **`rendercv new`** - Generate a sample CV to get started
 - **`rendercv render`** - Generate PDF, Markdown, HTML, and PNG from your YAML input
 - **`rendercv create-theme`** - Create a custom theme with editable templates
+- **`rendercv adopt-template`** - Create a custom theme from a Typst prototype file
 
 !!! tip "New to command line?"
     Commands are typed in your terminal/command prompt. Options starting with `--` modify behavior:
@@ -156,3 +157,15 @@ rendercv create-theme "mytheme"
 ```
 
 This creates a `mytheme/` folder with template files you can edit. See [Override Default Templates](how_to/override_default_templates.md) for details.
+
+## `rendercv adopt-template`
+
+Create a custom theme from a Typst prototype file with comment markers.
+
+**Basic usage:**
+
+```bash
+rendercv adopt-template mytheme --prototype my-design.typ
+```
+
+This creates a `mytheme/` folder with Jinja2 templates, `__init__.py`, and entry templates derived from your prototype. See [Adopt a Typst Prototype](how_to/adopt_template.md) for the full guide.
