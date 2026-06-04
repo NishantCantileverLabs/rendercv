@@ -13,6 +13,7 @@
 #grid(
   columns: (1fr, 1fr),
   column-gutter: 2em,
+  row-gutter: 1.5mm,
 {% elif entry_type == "OneLineEntry" %}
 #grid(
   columns: (22%, 1fr),
