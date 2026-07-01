@@ -12,7 +12,7 @@
     right: {{ design.page.right_margin }}
   )
 )
-#set text(font: "{{ design.typography.font_family.body }}", size: {{ design.typography.font_size.body }})
+#set text(font: "{{ design.typography.font_family.body }}", size: {{ design.typography.font_size.body }}, kerning: true, costs: (runt: 200%), hyphenate: false)
 #set par(leading: {{ design.typography.line_spacing }}, spacing: {{ design.typography.line_spacing }})
 #set block(spacing: 0.65em)
 #set list(tight: true, marker: ([•], [◦]))

@@ -11,7 +11,7 @@
     right: {{ design.page.right_margin }}
   )
 )
-#set text(font: "{{ design.typography.font_family.body }}", size: {{ design.typography.font_size.body }})
+#set text(font: "{{ design.typography.font_family.body }}", size: {{ design.typography.font_size.body }}, kerning: true, costs: (runt: 200%), hyphenate: false)
 #set par(spacing: {{ design.typography.line_spacing }})
 #set list(indent: 0pt, body-indent: 4pt, tight: true)
 #set block(spacing: 0.38em)
@@ -80,11 +80,8 @@
     details.push(cells.at(i+1))
   }
 
-  // Set the first columns to auto for content size, and the last one to 1fr
-  // to expand and flush the table to the right edge.
-  let cols = range(0, labels.len()).map(i => {
-    if i == labels.len() - 1 { 1fr } else { auto }
-  })
+  // Set all columns to auto for dynamic adaptive width based on content
+  let cols = (auto, auto)
 
   // Force table container to fill width completely
   box(width: 100%)[
