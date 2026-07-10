@@ -110,6 +110,8 @@ def render_full_template(
             file_type,
             f"SectionEnding.j2.{extension}",
             rendercv_model,
+            section_title=rendercv_section.title,
+            snake_case_section_title=rendercv_section.snake_case_title,
             entry_type=rendercv_section.entry_type,
         )
         entry_codes = []

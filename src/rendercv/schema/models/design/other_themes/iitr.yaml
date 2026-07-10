@@ -1,0 +1,21 @@
+design:
+  page:
+    size: a4
+    left_margin: 1.25cm
+    right_margin: 1.25cm
+    top_margin: 1cm
+    bottom_margin: 1cm
+  theme: iitr
+  typography:
+    font_family:
+      body: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      connections: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      headline: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      name: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+      section_titles: Helvetica Neue, Arial, Helvetica, Liberation Sans, sans-serif
+    font_size:
+      body: 9.5pt
+      connections: 9.5pt
+      headline: 9.5pt
+      name: 15pt
+      section_titles: 11pt
