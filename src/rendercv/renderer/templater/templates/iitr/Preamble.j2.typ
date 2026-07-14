@@ -11,6 +11,9 @@
 #set text(
   font: ({{ design.typography.font_family.body.split(',') | map('trim') | map('tojson') | join(', ') }}),
   size: {{ design.typography.font_size.body }},
+  kerning: true,
+  costs: (runt: 200%),
+  hyphenate: false,
 )
 
 // ==========================================
