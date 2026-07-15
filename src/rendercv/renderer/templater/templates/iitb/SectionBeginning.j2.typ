@@ -12,5 +12,6 @@
     [*Examination*], [*University*], [*Institute*], [*Year*], [*CPI/%*],
     table.hline(),
 {% elif entry_type == "OneLineEntry" %}
-#set list(marker: none, body-indent: 0pt, indent: 0pt)
+#block([
+  #set list(marker: none, body-indent: 0pt, indent: 0pt)
 {% endif %}
