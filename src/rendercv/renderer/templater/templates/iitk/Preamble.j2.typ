@@ -73,17 +73,28 @@
 
 #let transposed-table(..cells) = {
   let cells = cells.pos()
-  let table-cells = ()
+  let labels = ()
+  let details = ()
   for i in range(0, cells.len(), step: 2) {
-    table-cells.push(table.cell(fill: luma(200))[#cells.at(i)])
-    table-cells.push([#cells.at(i+1)])
+    labels.push(table.cell(align: center + horizon)[#cells.at(i)])
+    details.push(table.cell(align: left + horizon)[#cells.at(i+1)])
+  }
+
+  let num-cols = labels.len()
+  let cols = ()
+  for i in range(num-cols) {
+    if i == 0 or i == num-cols - 1 {
+      cols.push(1fr)
+    } else {
+      cols.push(auto)
+    }
   }
 
   table(
-    columns: (auto, 1fr),
+    columns: cols,
     stroke: 0.5pt + black,
-    align: (center + horizon, left + horizon),
     inset: 3pt,
-    ..table-cells
+    ..labels,
+    ..details
   )
 }
