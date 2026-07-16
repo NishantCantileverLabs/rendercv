@@ -73,24 +73,17 @@
 
 #let transposed-table(..cells) = {
   let cells = cells.pos()
-  let labels = ()
-  let details = ()
+  let table-cells = ()
   for i in range(0, cells.len(), step: 2) {
-    labels.push(cells.at(i))
-    details.push(cells.at(i+1))
+    table-cells.push(table.cell(fill: luma(200))[#cells.at(i)])
+    table-cells.push([#cells.at(i+1)])
   }
 
-  // Set all columns to auto for dynamic adaptive width based on content
-  let cols = (auto, auto)
-
-  // Force table container to fill width completely
-  box(width: 100%)[
-    #table(
-      columns: cols,
-      stroke: 0.5pt + black,
-      align: left,
-      ..labels,
-      ..details
-    )
-  ]
+  table(
+    columns: (auto, 1fr),
+    stroke: 0.5pt + black,
+    align: (center + horizon, left + horizon),
+    inset: 3pt,
+    ..table-cells
+  )
 }
