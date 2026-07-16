@@ -76,21 +76,25 @@
   let labels = ()
   let details = ()
   for i in range(0, cells.len(), step: 2) {
-    labels.push(cells.at(i))
-    details.push(cells.at(i+1))
+    labels.push(table.cell(align: center + horizon)[#cells.at(i)])
+    details.push(table.cell(align: left + horizon)[#cells.at(i+1)])
   }
 
-  // Set all columns to auto for dynamic adaptive width based on content
-  let cols = (auto, auto)
+  let num-cols = labels.len()
+  let cols = ()
+  for i in range(num-cols) {
+    if i == 0 or i == num-cols - 1 {
+      cols.push(1fr)
+    } else {
+      cols.push(auto)
+    }
+  }
 
-  // Force table container to fill width completely
-  box(width: 100%)[
-    #table(
-      columns: cols,
-      stroke: 0.5pt + black,
-      align: left,
-      ..labels,
-      ..details
-    )
-  ]
+  table(
+    columns: cols,
+    stroke: 0.5pt + black,
+    inset: 3pt,
+    ..labels,
+    ..details
+  )
 }
