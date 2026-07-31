@@ -11,7 +11,7 @@
     right: {{ design.page.right_margin }}
   )
 )
-#set text(font: "{{ design.typography.font_family.body }}", size: {{ design.typography.font_size.body }}, kerning: true, costs: (runt: 200%), hyphenate: false)
+#set text(font: ({{ design.typography.font_family.body.split(',') | map('trim') | map('tojson') | join(', ') }}), size: {{ design.typography.font_size.body }}, kerning: true, costs: (runt: 200%), hyphenate: false)
 #set par(spacing: {{ design.typography.line_spacing }})
 #set list(indent: 0pt, body-indent: 4pt, tight: true)
 #set block(spacing: 0.38em)
@@ -21,7 +21,11 @@
 #set document(
   title: "{{ cv.name }}",
   author: "{{ cv.name }}",
-  date: auto,
+  date: datetime(
+    year: {{ settings._resolved_current_date.year }},
+    month: {{ settings._resolved_current_date.month }},
+    day: {{ settings._resolved_current_date.day }},
+  ),
 )
 
 #let section-header(title, right-text: none) = {

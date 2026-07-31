@@ -12,10 +12,18 @@
     right: 0.7in
   )
 )
-#set text(font: "Source Sans 3", size: 10pt)
+#set text(font: ("Source Sans 3"), size: 10pt, kerning: true, costs: (runt: 200%), hyphenate: false)
 #set par(leading: 0.6em, spacing: 0.6em)
 #set block(spacing: 0.65em)
 #set list(tight: true, marker: ([•], [◦]))
+
+#set document(
+  date: datetime(
+    year: 2025,
+    month: 11,
+    day: 30,
+  ),
+)
 
 #let section-header(title) = {
   v(0.15em)
