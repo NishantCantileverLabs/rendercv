@@ -114,7 +114,7 @@ class TestEscapeTypstCharacters:
         ),
         (
             "* test",
-            "#sym.ast.basic test",
+            "- test",
         ),
         (
             "*test",
@@ -148,7 +148,7 @@ class TestEscapeTypstCharacters:
         ),
         (
             "#test-typst-command",
-            "#test-typst-command",
+            r"\#test-typst-command",
         ),
         (
             "#test-typst-command(a, b)",
@@ -185,6 +185,30 @@ class TestEscapeTypstCharacters:
             "$a=5_4^3 % & #$ \\# $aaaa ___ &&$",
         ),
         ("60%", "60\\%"),
+        # Bare #word without arguments is a hashtag in prose, not a command
+        ("visit #tag", r"visit \#tag"),
+        ("Email me at a@b.com or visit #tag", r"Email me at a\@b.com or visit \#tag"),
+        # Inline math ($...$) is preserved like $$...$$ blocks
+        ("Use $x^2 + y$ here", "Use $x^2 + y$ here"),
+        ("Result: $a/b$", "Result: $a/b$"),
+        # Links
+        (
+            '[Google](https://www.google.com/search?q="quoted")',
+            '#link("https://www.google.com/search?q=")[Google]',
+        ),
+        ("[no url]()", "no url"),
+        # Emphasis spanning lines within a paragraph
+        ("**bold\nspanning**", "#strong[bold\nspanning]"),
+        # Lists
+        ("1. first\n2. second", "1. first\n2. second"),
+        ("- a\n- b", "- a\n- b"),
+        ("- a\n  - b", "- a\n  - b"),
+        ("- a\n    - b", "- a\n  - b"),
+        # Blockquotes
+        ("> quote", "#quote[quote]"),
+        # Indented code
+        ("    code here", "`code here`"),
+        ("3 * 4", "3 #sym.ast.basic 4"),
         (
             (
                 "!!! summary\n"
