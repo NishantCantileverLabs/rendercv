@@ -127,9 +127,12 @@
           "iitb": "#/$defs/IitbTheme",
           "iith": "#/$defs/IithTheme",
           "iitk": "#/$defs/IitkTheme",
+          "iitr": "#/$defs/IitrTheme",
           "ink": "#/$defs/InkTheme",
           "moderncv": "#/$defs/ModerncvTheme",
           "opal": "#/$defs/OpalTheme",
+          "plain": "#/$defs/PlainTheme",
+          "plainaccent": "#/$defs/PlainaccentTheme",
           "sb2nov": "#/$defs/Sb2novTheme"
         },
         "propertyName": "theme"
@@ -160,6 +163,9 @@
           "$ref": "#/$defs/IitkTheme"
         },
         {
+          "$ref": "#/$defs/IitrTheme"
+        },
+        {
           "$ref": "#/$defs/InkTheme"
         },
         {
@@ -167,6 +173,12 @@
         },
         {
           "$ref": "#/$defs/OpalTheme"
+        },
+        {
+          "$ref": "#/$defs/PlainTheme"
+        },
+        {
+          "$ref": "#/$defs/PlainaccentTheme"
         },
         {
           "$ref": "#/$defs/Sb2novTheme"
@@ -2373,6 +2385,111 @@
       "title": "IitkTheme",
       "type": "object"
     },
+    "IitrTheme": {
+      "additionalProperties": true,
+      "properties": {
+        "theme": {
+          "const": "iitr",
+          "default": "iitr",
+          "title": "Theme",
+          "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
+        "page": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__6"
+        },
+        "colors": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__1"
+        },
+        "typography": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__7"
+        },
+        "links": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__1"
+        },
+        "header": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__1"
+        },
+        "section_titles": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__1"
+        },
+        "sections": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__1"
+        },
+        "entries": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__1"
+        },
+        "templates": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__1"
+        }
+      },
+      "title": "IitrTheme",
+      "type": "object"
+    },
     "IndonesianLocale": {
       "additionalProperties": true,
       "properties": {
@@ -2546,13 +2663,13 @@
           "title": "Gender"
         },
         "page": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__6"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__7"
         },
         "colors": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__5"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__7"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__8"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__5"
@@ -3204,7 +3321,7 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__1"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__8"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__9"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__6"
@@ -3696,13 +3813,13 @@
           "title": "Gender"
         },
         "page": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__7"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__8"
         },
         "colors": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__6"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__9"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__10"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__7"
@@ -3840,6 +3957,216 @@
         "E164"
       ],
       "type": "string"
+    },
+    "PlainTheme": {
+      "additionalProperties": true,
+      "properties": {
+        "theme": {
+          "const": "plain",
+          "default": "plain",
+          "title": "Theme",
+          "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
+        "page": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__9"
+        },
+        "colors": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__7"
+        },
+        "typography": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__11"
+        },
+        "links": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__1"
+        },
+        "header": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__1"
+        },
+        "section_titles": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__11"
+        },
+        "sections": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__10"
+        },
+        "entries": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__1"
+        },
+        "templates": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__9"
+        }
+      },
+      "title": "PlainTheme",
+      "type": "object"
+    },
+    "PlainaccentTheme": {
+      "additionalProperties": true,
+      "properties": {
+        "theme": {
+          "const": "plainaccent",
+          "default": "plainaccent",
+          "title": "Theme",
+          "type": "string"
+        },
+        "degree": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Degree name for custom themes.",
+          "title": "Degree"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Department name for custom themes.",
+          "title": "Department"
+        },
+        "institute": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Institute name for custom themes.",
+          "title": "Institute"
+        },
+        "roll_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Roll number for custom themes.",
+          "title": "Roll No"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Gender for custom themes.",
+          "title": "Gender"
+        },
+        "page": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__10"
+        },
+        "colors": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__8"
+        },
+        "typography": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__12"
+        },
+        "links": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__1"
+        },
+        "header": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__1"
+        },
+        "section_titles": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__12"
+        },
+        "sections": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__11"
+        },
+        "entries": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__1"
+        },
+        "templates": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__10"
+        }
+      },
+      "title": "PlainaccentTheme",
+      "type": "object"
     },
     "PlannedPathRelativeToInput": {
       "format": "path",
@@ -4381,10 +4708,10 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
         },
         "colors": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__7"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Colors__9"
         },
         "typography": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__10"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Typography__13"
         },
         "links": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Links__8"
@@ -4393,16 +4720,16 @@
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Header__9"
         },
         "section_titles": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__11"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SectionTitles__13"
         },
         "sections": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__10"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Sections__12"
         },
         "entries": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Entries__9"
         },
         "templates": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__9"
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Templates__11"
         }
       },
       "title": "Sb2novTheme",
@@ -5500,6 +5827,156 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Colors__7": {
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "default": "rgb(0, 0, 0)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(0, 0, 0)`.",
+          "format": "color",
+          "title": "Body",
+          "type": "string"
+        },
+        "name": {
+          "default": "rgb(0, 0, 0)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(0, 0, 0)`.",
+          "format": "color",
+          "title": "Name",
+          "type": "string"
+        },
+        "headline": {
+          "default": "rgb(0, 0, 0)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(0, 0, 0)`.",
+          "format": "color",
+          "title": "Headline",
+          "type": "string"
+        },
+        "connections": {
+          "default": "rgb(0, 0, 0)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(0, 0, 0)`.",
+          "format": "color",
+          "title": "Connections",
+          "type": "string"
+        },
+        "section_titles": {
+          "default": "rgb(0, 0, 0)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(0, 0, 0)`.",
+          "format": "color",
+          "title": "Section Titles",
+          "type": "string"
+        },
+        "links": {
+          "default": "rgb(0, 0, 0)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(0, 0, 0)`.",
+          "format": "color",
+          "title": "Links",
+          "type": "string"
+        },
+        "footer": {
+          "default": "rgb(128, 128, 128)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(128, 128, 128)`.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "format": "color",
+          "title": "Footer",
+          "type": "string"
+        },
+        "top_note": {
+          "default": "rgb(128, 128, 128)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(128, 128, 128)`.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "format": "color",
+          "title": "Top Note",
+          "type": "string"
+        }
+      },
+      "title": "Colors",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Colors__8": {
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "default": "rgb(0, 0, 0)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(0, 0, 0)`.",
+          "format": "color",
+          "title": "Body",
+          "type": "string"
+        },
+        "name": {
+          "default": "rgb(106, 90, 158)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(106, 90, 158)`.",
+          "format": "color",
+          "title": "Name",
+          "type": "string"
+        },
+        "headline": {
+          "default": "rgb(106, 90, 158)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(106, 90, 158)`.",
+          "format": "color",
+          "title": "Headline",
+          "type": "string"
+        },
+        "connections": {
+          "default": "rgb(106, 90, 158)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(106, 90, 158)`.",
+          "format": "color",
+          "title": "Connections",
+          "type": "string"
+        },
+        "section_titles": {
+          "default": "rgb(106, 90, 158)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(106, 90, 158)`.",
+          "format": "color",
+          "title": "Section Titles",
+          "type": "string"
+        },
+        "links": {
+          "default": "rgb(106, 90, 158)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(106, 90, 158)`.",
+          "format": "color",
+          "title": "Links",
+          "type": "string"
+        },
+        "footer": {
+          "default": "rgb(128, 128, 128)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(128, 128, 128)`.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "format": "color",
+          "title": "Footer",
+          "type": "string"
+        },
+        "top_note": {
+          "default": "rgb(128, 128, 128)",
+          "description": "The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. The default value is `rgb(128, 128, 128)`.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "format": "color",
+          "title": "Top Note",
+          "type": "string"
+        }
+      },
+      "title": "Colors",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Colors__9": {
       "additionalProperties": true,
       "properties": {
         "body": {
@@ -6813,6 +7290,70 @@
       "title": "FontSize",
       "type": "object"
     },
+    "rendercv__schema__models__design__classic_theme__FontSize__10": {
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for body text. The default value is `10pt`."
+        },
+        "name": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "28pt",
+          "description": "The font size for the name. The default value is `28pt`."
+        },
+        "headline": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for the headline. The default value is `10pt`."
+        },
+        "connections": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for connections. The default value is `10pt`."
+        },
+        "section_titles": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "14pt",
+          "description": "The font size for section titles. The default value is `14pt`."
+        }
+      },
+      "title": "FontSize",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__FontSize__11": {
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for body text. The default value is `10pt`."
+        },
+        "name": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "22pt",
+          "description": "The font size for the name. The default value is `22pt`."
+        },
+        "headline": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for the headline. The default value is `10pt`."
+        },
+        "connections": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "The font size for connections. The default value is `10pt`."
+        },
+        "section_titles": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "12pt",
+          "description": "The font size for section titles. The default value is `12pt`."
+        }
+      },
+      "title": "FontSize",
+      "type": "object"
+    },
     "rendercv__schema__models__design__classic_theme__FontSize__2": {
       "additionalProperties": true,
       "properties": {
@@ -6946,6 +7487,38 @@
       "properties": {
         "body": {
           "$ref": "#/$defs/TypstDimension",
+          "default": "9.5pt",
+          "description": "The font size for body text. The default value is `9.5pt`."
+        },
+        "name": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "15pt",
+          "description": "The font size for the name. The default value is `15pt`."
+        },
+        "headline": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "9.5pt",
+          "description": "The font size for the headline. The default value is `9.5pt`."
+        },
+        "connections": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "9.5pt",
+          "description": "The font size for connections. The default value is `9.5pt`."
+        },
+        "section_titles": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "11pt",
+          "description": "The font size for section titles. The default value is `11pt`."
+        }
+      },
+      "title": "FontSize",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__FontSize__7": {
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/TypstDimension",
           "default": "10pt",
           "description": "The font size for body text. The default value is `10pt`."
         },
@@ -6973,7 +7546,7 @@
       "title": "FontSize",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__FontSize__7": {
+    "rendercv__schema__models__design__classic_theme__FontSize__8": {
       "additionalProperties": true,
       "properties": {
         "body": {
@@ -7005,7 +7578,7 @@
       "title": "FontSize",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__FontSize__8": {
+    "rendercv__schema__models__design__classic_theme__FontSize__9": {
       "additionalProperties": true,
       "properties": {
         "body": {
@@ -8204,6 +8777,50 @@
       "title": "Page",
       "type": "object"
     },
+    "rendercv__schema__models__design__classic_theme__Page__10": {
+      "additionalProperties": true,
+      "properties": {
+        "size": {
+          "$ref": "#/$defs/PageSize",
+          "default": "a4",
+          "description": "The page size. Use 'a4' (international standard) or 'us-letter' (US standard). The default value is `a4`."
+        },
+        "top_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
+        },
+        "bottom_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
+        },
+        "left_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
+        },
+        "right_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
+        },
+        "show_footer": {
+          "default": false,
+          "description": "Show the footer at the bottom of pages. The default value is `true`.",
+          "title": "Show Footer",
+          "type": "boolean"
+        },
+        "show_top_note": {
+          "default": false,
+          "description": "Show the top note at the top of the first page. The default value is `true`.",
+          "title": "Show Top Note",
+          "type": "boolean"
+        }
+      },
+      "title": "Page",
+      "type": "object"
+    },
     "rendercv__schema__models__design__classic_theme__Page__2": {
       "additionalProperties": true,
       "properties": {
@@ -8385,6 +9002,50 @@
       "properties": {
         "size": {
           "$ref": "#/$defs/PageSize",
+          "default": "a4",
+          "description": "The page size. Use 'a4' (international standard) or 'us-letter' (US standard). The default value is `a4`."
+        },
+        "top_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1cm`."
+        },
+        "bottom_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1cm`."
+        },
+        "left_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.25cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.25cm`."
+        },
+        "right_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.25cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.25cm`."
+        },
+        "show_footer": {
+          "default": true,
+          "description": "Show the footer at the bottom of pages. The default value is `true`.",
+          "title": "Show Footer",
+          "type": "boolean"
+        },
+        "show_top_note": {
+          "default": true,
+          "description": "Show the top note at the top of the first page. The default value is `true`.",
+          "title": "Show Top Note",
+          "type": "boolean"
+        }
+      },
+      "title": "Page",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Page__7": {
+      "additionalProperties": true,
+      "properties": {
+        "size": {
+          "$ref": "#/$defs/PageSize",
           "default": "us-letter",
           "description": "The page size. Use 'a4' (international standard) or 'us-letter' (US standard). The default value is `us-letter`."
         },
@@ -8424,7 +9085,7 @@
       "title": "Page",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Page__7": {
+    "rendercv__schema__models__design__classic_theme__Page__8": {
       "additionalProperties": true,
       "properties": {
         "size": {
@@ -8451,6 +9112,50 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "0.65in",
           "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.65in`."
+        },
+        "show_footer": {
+          "default": false,
+          "description": "Show the footer at the bottom of pages. The default value is `true`.",
+          "title": "Show Footer",
+          "type": "boolean"
+        },
+        "show_top_note": {
+          "default": false,
+          "description": "Show the top note at the top of the first page. The default value is `true`.",
+          "title": "Show Top Note",
+          "type": "boolean"
+        }
+      },
+      "title": "Page",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Page__9": {
+      "additionalProperties": true,
+      "properties": {
+        "size": {
+          "$ref": "#/$defs/PageSize",
+          "default": "a4",
+          "description": "The page size. Use 'a4' (international standard) or 'us-letter' (US standard). The default value is `a4`."
+        },
+        "top_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
+        },
+        "bottom_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
+        },
+        "left_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
+        },
+        "right_margin": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.5cm",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.5cm`."
         },
         "show_footer": {
           "default": false,
@@ -8523,6 +9228,60 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__SectionTitles__11": {
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/SectionTitleType",
+          "default": "with_partial_line",
+          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `with_partial_line`."
+        },
+        "line_thickness": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.5pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5pt`."
+        },
+        "space_above": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "12pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `12pt`."
+        },
+        "space_below": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "4pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `4pt`."
+        }
+      },
+      "title": "SectionTitles",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__SectionTitles__12": {
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/SectionTitleType",
+          "default": "with_partial_line",
+          "description": "Section title visual style. Use 'with_partial_line' for a line next to the title, 'with_full_line' for a line across the page, 'without_line' for no line, 'moderncv' for the ModernCV style, 'centered_without_line' for a centered title with no line, 'centered_with_partial_line' for a centered title with baseline partial lines on both sides, 'centered_with_centered_partial_line' for a centered title with middle-aligned lines on both sides, or 'centered_with_full_line' for a full-width line underneath. The default value is `with_partial_line`."
+        },
+        "line_thickness": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.5pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.5pt`."
+        },
+        "space_above": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "10pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `10pt`."
+        },
+        "space_below": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "4pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `4pt`."
+        }
+      },
+      "title": "SectionTitles",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__SectionTitles__13": {
       "additionalProperties": true,
       "properties": {
         "type": {
@@ -8809,6 +9568,70 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Sections__10": {
+      "additionalProperties": true,
+      "properties": {
+        "allow_page_break": {
+          "default": true,
+          "description": "Allow page breaks within sections. If false, sections that don't fit will start on a new page. The default value is `true`.",
+          "title": "Allow Page Break",
+          "type": "boolean"
+        },
+        "space_between_regular_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.2em",
+          "description": "Vertical space between entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.2em`."
+        },
+        "space_between_text_based_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.3em",
+          "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "show_time_spans_in": {
+          "default": [],
+          "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Show Time Spans In",
+          "type": "array"
+        }
+      },
+      "title": "Sections",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Sections__11": {
+      "additionalProperties": true,
+      "properties": {
+        "allow_page_break": {
+          "default": true,
+          "description": "Allow page breaks within sections. If false, sections that don't fit will start on a new page. The default value is `true`.",
+          "title": "Allow Page Break",
+          "type": "boolean"
+        },
+        "space_between_regular_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "1.2em",
+          "description": "Vertical space between entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `1.2em`."
+        },
+        "space_between_text_based_entries": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.3em",
+          "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "show_time_spans_in": {
+          "default": [],
+          "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Show Time Spans In",
+          "type": "array"
+        }
+      },
+      "title": "Sections",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Sections__12": {
       "additionalProperties": true,
       "properties": {
         "allow_page_break": {
@@ -9407,6 +10230,120 @@
       "title": "Templates",
       "type": "object"
     },
+    "rendercv__schema__models__design__classic_theme__Templates__10": {
+      "additionalProperties": true,
+      "properties": {
+        "footer": {
+          "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
+          "description": "Template for the footer. Available placeholders:\n- `NAME`: The CV owner's name from `cv.name`\n- `PAGE_NUMBER`: Current page number\n- `TOTAL_PAGES`: Total number of pages\n- `CURRENT_DATE`: Formatted date based on `design.templates.single_date`\n- `MONTH_NAME`: Full month name (e.g., January)\n- `MONTH_ABBREVIATION`: Abbreviated month name (e.g., Jan)\n- `MONTH`: Month number (e.g., 1)\n- `MONTH_IN_TWO_DIGITS`: Zero-padded month (e.g., 01)\n- `DAY`: Day of the month (e.g., 5)\n- `DAY_IN_TWO_DIGITS`: Zero-padded day (e.g., 05)\n- `YEAR`: Full year (e.g., 2025)\n- `YEAR_IN_TWO_DIGITS`: Two-digit year (e.g., 25)\n\nThe default value is `*NAME -- PAGE_NUMBER/TOTAL_PAGES*`.",
+          "title": "Footer",
+          "type": "string"
+        },
+        "top_note": {
+          "default": "*LAST_UPDATED CURRENT_DATE*",
+          "description": "Template for the top note. Available placeholders:\n- `LAST_UPDATED`: Localized \"last updated\" text from `locale.last_updated`\n- `CURRENT_DATE`: Formatted date based on `design.templates.single_date`\n- `NAME`: The CV owner's name from `cv.name`\n- `MONTH_NAME`: Full month name (e.g., January)\n- `MONTH_ABBREVIATION`: Abbreviated month name (e.g., Jan)\n- `MONTH`: Month number (e.g., 1)\n- `MONTH_IN_TWO_DIGITS`: Zero-padded month (e.g., 01)\n- `DAY`: Day of the month (e.g., 5)\n- `DAY_IN_TWO_DIGITS`: Zero-padded day (e.g., 05)\n- `YEAR`: Full year (e.g., 2025)\n- `YEAR_IN_TWO_DIGITS`: Two-digit year (e.g., 25)\n\nThe default value is `*LAST_UPDATED CURRENT_DATE*`.",
+          "title": "Top Note",
+          "type": "string"
+        },
+        "single_date": {
+          "default": "MONTH_ABBREVIATION YEAR",
+          "description": "Template for single dates. Available placeholders:\n- `MONTH_NAME`: Full month name (e.g., January)\n- `MONTH_ABBREVIATION`: Abbreviated month name (e.g., Jan)\n- `MONTH`: Month number (e.g., 1)\n- `MONTH_IN_TWO_DIGITS`: Zero-padded month (e.g., 01)\n- `DAY`: Day of the month (e.g., 5)\n- `DAY_IN_TWO_DIGITS`: Zero-padded day (e.g., 05)\n- `YEAR`: Full year (e.g., 2025)\n- `YEAR_IN_TWO_DIGITS`: Two-digit year (e.g., 25)\n\nThe default value is `MONTH_ABBREVIATION YEAR`.",
+          "title": "Single Date",
+          "type": "string"
+        },
+        "date_range": {
+          "default": "START_DATE - END_DATE",
+          "description": "Template for date ranges. Available placeholders:\n- `START_DATE`: Formatted start date based on `design.templates.single_date`\n- `END_DATE`: Formatted end date based on `design.templates.single_date` (or \"present\"/\"ongoing\" for current positions)\n\nThe default value is `START_DATE - END_DATE`.",
+          "title": "Date Range",
+          "type": "string"
+        },
+        "time_span": {
+          "default": "HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS",
+          "description": "Template for time spans (duration calculations). Available placeholders:\n- `HOW_MANY_YEARS`: Number of years (e.g., 2)\n- `YEARS`: Localized word for \"years\" from `locale.years` (or singular \"year\")\n- `HOW_MANY_MONTHS`: Number of months (e.g., 3)\n- `MONTHS`: Localized word for \"months\" from `locale.months` (or singular \"month\")\n\nThe default value is `HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS`.",
+          "title": "Time Span",
+          "type": "string"
+        },
+        "one_line_entry": {
+          "$ref": "#/$defs/OneLineEntryTemplate",
+          "description": "Template for one-line entries."
+        },
+        "education_entry": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__EducationEntryTemplate__1",
+          "description": "Template for education entries."
+        },
+        "normal_entry": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__NormalEntryTemplate__1",
+          "description": "Template for normal entries."
+        },
+        "experience_entry": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__1",
+          "description": "Template for experience entries."
+        },
+        "publication_entry": {
+          "$ref": "#/$defs/PublicationEntryTemplate",
+          "description": "Template for publication entries."
+        }
+      },
+      "title": "Templates",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Templates__11": {
+      "additionalProperties": true,
+      "properties": {
+        "footer": {
+          "default": "*NAME -- PAGE_NUMBER/TOTAL_PAGES*",
+          "description": "Template for the footer. Available placeholders:\n- `NAME`: The CV owner's name from `cv.name`\n- `PAGE_NUMBER`: Current page number\n- `TOTAL_PAGES`: Total number of pages\n- `CURRENT_DATE`: Formatted date based on `design.templates.single_date`\n- `MONTH_NAME`: Full month name (e.g., January)\n- `MONTH_ABBREVIATION`: Abbreviated month name (e.g., Jan)\n- `MONTH`: Month number (e.g., 1)\n- `MONTH_IN_TWO_DIGITS`: Zero-padded month (e.g., 01)\n- `DAY`: Day of the month (e.g., 5)\n- `DAY_IN_TWO_DIGITS`: Zero-padded day (e.g., 05)\n- `YEAR`: Full year (e.g., 2025)\n- `YEAR_IN_TWO_DIGITS`: Two-digit year (e.g., 25)\n\nThe default value is `*NAME -- PAGE_NUMBER/TOTAL_PAGES*`.",
+          "title": "Footer",
+          "type": "string"
+        },
+        "top_note": {
+          "default": "*LAST_UPDATED CURRENT_DATE*",
+          "description": "Template for the top note. Available placeholders:\n- `LAST_UPDATED`: Localized \"last updated\" text from `locale.last_updated`\n- `CURRENT_DATE`: Formatted date based on `design.templates.single_date`\n- `NAME`: The CV owner's name from `cv.name`\n- `MONTH_NAME`: Full month name (e.g., January)\n- `MONTH_ABBREVIATION`: Abbreviated month name (e.g., Jan)\n- `MONTH`: Month number (e.g., 1)\n- `MONTH_IN_TWO_DIGITS`: Zero-padded month (e.g., 01)\n- `DAY`: Day of the month (e.g., 5)\n- `DAY_IN_TWO_DIGITS`: Zero-padded day (e.g., 05)\n- `YEAR`: Full year (e.g., 2025)\n- `YEAR_IN_TWO_DIGITS`: Two-digit year (e.g., 25)\n\nThe default value is `*LAST_UPDATED CURRENT_DATE*`.",
+          "title": "Top Note",
+          "type": "string"
+        },
+        "single_date": {
+          "default": "MONTH_ABBREVIATION YEAR",
+          "description": "Template for single dates. Available placeholders:\n- `MONTH_NAME`: Full month name (e.g., January)\n- `MONTH_ABBREVIATION`: Abbreviated month name (e.g., Jan)\n- `MONTH`: Month number (e.g., 1)\n- `MONTH_IN_TWO_DIGITS`: Zero-padded month (e.g., 01)\n- `DAY`: Day of the month (e.g., 5)\n- `DAY_IN_TWO_DIGITS`: Zero-padded day (e.g., 05)\n- `YEAR`: Full year (e.g., 2025)\n- `YEAR_IN_TWO_DIGITS`: Two-digit year (e.g., 25)\n\nThe default value is `MONTH_ABBREVIATION YEAR`.",
+          "title": "Single Date",
+          "type": "string"
+        },
+        "date_range": {
+          "default": "START_DATE – END_DATE",
+          "description": "Template for date ranges. Available placeholders:\n- `START_DATE`: Formatted start date based on `design.templates.single_date`\n- `END_DATE`: Formatted end date based on `design.templates.single_date` (or \"present\"/\"ongoing\" for current positions)\n\nThe default value is `START_DATE – END_DATE`.",
+          "title": "Date Range",
+          "type": "string"
+        },
+        "time_span": {
+          "default": "HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS",
+          "description": "Template for time spans (duration calculations). Available placeholders:\n- `HOW_MANY_YEARS`: Number of years (e.g., 2)\n- `YEARS`: Localized word for \"years\" from `locale.years` (or singular \"year\")\n- `HOW_MANY_MONTHS`: Number of months (e.g., 3)\n- `MONTHS`: Localized word for \"months\" from `locale.months` (or singular \"month\")\n\nThe default value is `HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS`.",
+          "title": "Time Span",
+          "type": "string"
+        },
+        "one_line_entry": {
+          "$ref": "#/$defs/OneLineEntryTemplate",
+          "description": "Template for one-line entries."
+        },
+        "education_entry": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__EducationEntryTemplate__9",
+          "description": "Template for education entries."
+        },
+        "normal_entry": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__NormalEntryTemplate__9",
+          "description": "Template for normal entries."
+        },
+        "experience_entry": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__9",
+          "description": "Template for experience entries."
+        },
+        "publication_entry": {
+          "$ref": "#/$defs/PublicationEntryTemplate",
+          "description": "Template for publication entries."
+        }
+      },
+      "title": "Templates",
+      "type": "object"
+    },
     "rendercv__schema__models__design__classic_theme__Templates__2": {
       "additionalProperties": true,
       "properties": {
@@ -9828,8 +10765,8 @@
           "type": "string"
         },
         "date_range": {
-          "default": "START_DATE – END_DATE",
-          "description": "Template for date ranges. Available placeholders:\n- `START_DATE`: Formatted start date based on `design.templates.single_date`\n- `END_DATE`: Formatted end date based on `design.templates.single_date` (or \"present\"/\"ongoing\" for current positions)\n\nThe default value is `START_DATE – END_DATE`.",
+          "default": "START_DATE - END_DATE",
+          "description": "Template for date ranges. Available placeholders:\n- `START_DATE`: Formatted start date based on `design.templates.single_date`\n- `END_DATE`: Formatted end date based on `design.templates.single_date` (or \"present\"/\"ongoing\" for current positions)\n\nThe default value is `START_DATE - END_DATE`.",
           "title": "Date Range",
           "type": "string"
         },
@@ -9844,15 +10781,15 @@
           "description": "Template for one-line entries."
         },
         "education_entry": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__EducationEntryTemplate__9",
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__EducationEntryTemplate__1",
           "description": "Template for education entries."
         },
         "normal_entry": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__NormalEntryTemplate__9",
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__NormalEntryTemplate__1",
           "description": "Template for normal entries."
         },
         "experience_entry": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__9",
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__ExperienceEntryTemplate__1",
           "description": "Template for experience entries."
         },
         "publication_entry": {
@@ -9916,6 +10853,162 @@
       "type": "object"
     },
     "rendercv__schema__models__design__classic_theme__Typography__10": {
+      "additionalProperties": true,
+      "properties": {
+        "line_spacing": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.6em",
+          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.6em`."
+        },
+        "alignment": {
+          "default": "left",
+          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `left`.",
+          "enum": [
+            "left",
+            "justified",
+            "justified-with-no-hyphenation"
+          ],
+          "title": "Alignment",
+          "type": "string"
+        },
+        "date_and_location_column_alignment": {
+          "$ref": "#/$defs/Alignment",
+          "default": "right",
+          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
+        },
+        "font_family": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
+            },
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            }
+          ],
+          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
+          "title": "Font Family"
+        },
+        "font_size": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__9",
+          "description": "Font sizes for different elements."
+        },
+        "small_caps": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__4",
+          "description": "Small caps styling for different elements."
+        },
+        "bold": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__7",
+          "description": "Bold styling for different elements."
+        }
+      },
+      "title": "Typography",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Typography__11": {
+      "additionalProperties": true,
+      "properties": {
+        "line_spacing": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.6em",
+          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.6em`."
+        },
+        "alignment": {
+          "default": "justified",
+          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `justified`.",
+          "enum": [
+            "left",
+            "justified",
+            "justified-with-no-hyphenation"
+          ],
+          "title": "Alignment",
+          "type": "string"
+        },
+        "date_and_location_column_alignment": {
+          "$ref": "#/$defs/Alignment",
+          "default": "right",
+          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
+        },
+        "font_family": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
+            },
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            }
+          ],
+          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
+          "title": "Font Family"
+        },
+        "font_size": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__10",
+          "description": "Font sizes for different elements."
+        },
+        "small_caps": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__1",
+          "description": "Small caps styling for different elements."
+        },
+        "bold": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__1",
+          "description": "Bold styling for different elements."
+        }
+      },
+      "title": "Typography",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Typography__12": {
+      "additionalProperties": true,
+      "properties": {
+        "line_spacing": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.6em",
+          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.6em`."
+        },
+        "alignment": {
+          "default": "left",
+          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `left`.",
+          "enum": [
+            "left",
+            "justified",
+            "justified-with-no-hyphenation"
+          ],
+          "title": "Alignment",
+          "type": "string"
+        },
+        "date_and_location_column_alignment": {
+          "$ref": "#/$defs/Alignment",
+          "default": "right",
+          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
+        },
+        "font_family": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
+            },
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            }
+          ],
+          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
+          "title": "Font Family"
+        },
+        "font_size": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__11",
+          "description": "Font sizes for different elements."
+        },
+        "small_caps": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__1",
+          "description": "Small caps styling for different elements."
+        },
+        "bold": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__1",
+          "description": "Bold styling for different elements."
+        }
+      },
+      "title": "Typography",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Typography__13": {
       "additionalProperties": true,
       "properties": {
         "line_spacing": {
@@ -10232,8 +11325,8 @@
       "properties": {
         "line_spacing": {
           "$ref": "#/$defs/TypstDimension",
-          "default": "0.55em",
-          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.55em`."
+          "default": "0.6em",
+          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.6em`."
         },
         "alignment": {
           "default": "justified",
@@ -10268,6 +11361,58 @@
           "description": "Font sizes for different elements."
         },
         "small_caps": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__1",
+          "description": "Small caps styling for different elements."
+        },
+        "bold": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__1",
+          "description": "Bold styling for different elements."
+        }
+      },
+      "title": "Typography",
+      "type": "object"
+    },
+    "rendercv__schema__models__design__classic_theme__Typography__8": {
+      "additionalProperties": true,
+      "properties": {
+        "line_spacing": {
+          "$ref": "#/$defs/TypstDimension",
+          "default": "0.55em",
+          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.55em`."
+        },
+        "alignment": {
+          "default": "justified",
+          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `justified`.",
+          "enum": [
+            "left",
+            "justified",
+            "justified-with-no-hyphenation"
+          ],
+          "title": "Alignment",
+          "type": "string"
+        },
+        "date_and_location_column_alignment": {
+          "$ref": "#/$defs/Alignment",
+          "default": "right",
+          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
+        },
+        "font_family": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
+            },
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            }
+          ],
+          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
+          "title": "Font Family"
+        },
+        "font_size": {
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__7",
+          "description": "Font sizes for different elements."
+        },
+        "small_caps": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__3",
           "description": "Small caps styling for different elements."
         },
@@ -10279,7 +11424,7 @@
       "title": "Typography",
       "type": "object"
     },
-    "rendercv__schema__models__design__classic_theme__Typography__8": {
+    "rendercv__schema__models__design__classic_theme__Typography__9": {
       "additionalProperties": true,
       "properties": {
         "line_spacing": {
@@ -10316,7 +11461,7 @@
           "title": "Font Family"
         },
         "font_size": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__7",
+          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__8",
           "description": "Font sizes for different elements."
         },
         "small_caps": {
@@ -10325,58 +11470,6 @@
         },
         "bold": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__6",
-          "description": "Bold styling for different elements."
-        }
-      },
-      "title": "Typography",
-      "type": "object"
-    },
-    "rendercv__schema__models__design__classic_theme__Typography__9": {
-      "additionalProperties": true,
-      "properties": {
-        "line_spacing": {
-          "$ref": "#/$defs/TypstDimension",
-          "default": "0.6em",
-          "description": "Space between lines of text. Larger values create more vertical space. The default value is `0.6em`."
-        },
-        "alignment": {
-          "default": "left",
-          "description": "Text alignment. Options: 'left', 'justified' (spreads text across full width), 'justified-with-no-hyphenation' (justified without word breaks). The default value is `left`.",
-          "enum": [
-            "left",
-            "justified",
-            "justified-with-no-hyphenation"
-          ],
-          "title": "Alignment",
-          "type": "string"
-        },
-        "date_and_location_column_alignment": {
-          "$ref": "#/$defs/Alignment",
-          "default": "right",
-          "description": "Alignment for dates and locations in entries. Options: 'left', 'center', 'right'. The default value is `right`."
-        },
-        "font_family": {
-          "anyOf": [
-            {
-              "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontFamily"
-            },
-            {
-              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
-            }
-          ],
-          "description": "The font family. You can provide a single font name as a string (applies to all elements), or a dictionary with keys 'body', 'name', 'headline', 'connections', and 'section_titles' to customize each element. Any system font can be used.",
-          "title": "Font Family"
-        },
-        "font_size": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__FontSize__8",
-          "description": "Font sizes for different elements."
-        },
-        "small_caps": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__SmallCaps__4",
-          "description": "Small caps styling for different elements."
-        },
-        "bold": {
-          "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Bold__7",
           "description": "Bold styling for different elements."
         }
       },
