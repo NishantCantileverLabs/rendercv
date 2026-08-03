@@ -46,6 +46,19 @@ class RenderCVUserError(ValueError):
 
     message: str | None = field(default=None)
 
+    def __str__(self) -> str:
+        """Return the user-facing message as the string representation.
+
+        Why:
+            Programmatic callers (e.g., the web API) surface errors via
+            ``str()``. A meaningful string lets them show the actual error
+            instead of an empty representation.
+
+        Returns:
+            The error message, or a fallback when none was provided.
+        """
+        return self.message or "An unknown error occurred."
+
 
 @dataclass
 class RenderCVUserValidationError(ValueError):
@@ -59,6 +72,18 @@ class RenderCVUserValidationError(ValueError):
 
     validation_errors: list[RenderCVValidationError]
 
+    def __str__(self) -> str:
+        """Return all validation error messages as a single string.
+
+        Why:
+            Programmatic callers surface errors via ``str()`` and should see
+            every problem found in the YAML input, not just an empty string.
+
+        Returns:
+            Newline-separated validation error messages.
+        """
+        return "\n".join(error.message for error in self.validation_errors)
+
 
 @dataclass
 class RenderCVInternalError(RuntimeError):
@@ -71,3 +96,11 @@ class RenderCVInternalError(RuntimeError):
     """
 
     message: str
+
+    def __str__(self) -> str:
+        """Return the internal error message as the string representation.
+
+        Returns:
+            The error message.
+        """
+        return self.message

@@ -1,11 +1,9 @@
 import pathlib
 
-import pytest
-import typer
-
 from rendercv.cli.render_command.progress_panel import (
     CompletedStep,
     ProgressPanel,
+    build_validation_errors_table,
     format_validation_error_location,
 )
 from rendercv.exception import RenderCVUserError, RenderCVValidationError
@@ -163,27 +161,25 @@ class TestProgressPanelPrintProgressPanel:
 
 
 class TestProgressPanelPrintUserError:
-    def test_exits_with_code_1(self):
+    def test_displays_error_without_raising(self):
         panel = ProgressPanel(quiet=True)
         error = RenderCVUserError(message="Test error message")
 
-        with pytest.raises(typer.Exit) as exc_info:
-            panel.print_user_error(error)
+        panel.print_user_error(error)
 
-        assert exc_info.value.exit_code == 1
+        assert len(panel.completed_steps) == 0
 
     def test_handles_error_without_message(self):
         panel = ProgressPanel(quiet=True)
         error = RenderCVUserError(message=None)
 
-        with pytest.raises(typer.Exit) as exc_info:
-            panel.print_user_error(error)
+        panel.print_user_error(error)
 
-        assert exc_info.value.exit_code == 1
+        assert len(panel.completed_steps) == 0
 
 
 class TestProgressPanelPrintValidationErrors:
-    def test_exits_with_code_1(self):
+    def test_displays_errors_without_raising(self):
         panel = ProgressPanel(quiet=True)
         errors: list[RenderCVValidationError] = [
             RenderCVValidationError(
@@ -195,10 +191,9 @@ class TestProgressPanelPrintValidationErrors:
             )
         ]
 
-        with pytest.raises(typer.Exit) as exc_info:
-            panel.print_validation_errors(errors)
+        panel.print_validation_errors(errors)
 
-        assert exc_info.value.exit_code == 1
+        assert len(panel.completed_steps) == 0
 
     def test_clears_completed_steps_before_displaying_errors(self):
         panel = ProgressPanel(quiet=True)
@@ -215,11 +210,9 @@ class TestProgressPanelPrintValidationErrors:
             )
         ]
 
-        with pytest.raises(typer.Exit):
-            panel.print_validation_errors(errors)
+        panel.print_validation_errors(errors)
 
-        # We can't check this after the exception, but the implementation shows
-        # it clears steps before displaying
+        assert len(panel.completed_steps) == 0
 
     def test_handles_multiple_validation_errors(self):
         panel = ProgressPanel(quiet=True)
@@ -240,10 +233,9 @@ class TestProgressPanelPrintValidationErrors:
             ),
         ]
 
-        with pytest.raises(typer.Exit) as exc_info:
-            panel.print_validation_errors(errors)
+        panel.print_validation_errors(errors)
 
-        assert exc_info.value.exit_code == 1
+        assert len(panel.completed_steps) == 0
 
     def test_handles_yaml_parse_error_with_no_location(self):
         panel = ProgressPanel(quiet=True)
@@ -257,10 +249,26 @@ class TestProgressPanelPrintValidationErrors:
             )
         ]
 
-        with pytest.raises(typer.Exit) as exc_info:
-            panel.print_validation_errors(errors)
+        panel.print_validation_errors(errors)
 
-        assert exc_info.value.exit_code == 1
+        assert len(panel.completed_steps) == 0
+
+
+class TestBuildValidationErrorsTable:
+    def test_builds_table_with_error_rows(self):
+        errors: list[RenderCVValidationError] = [
+            RenderCVValidationError(
+                schema_location=("cv", "email"),
+                yaml_location=((2, 3), (2, 8)),
+                yaml_source="main_yaml_file",
+                input="not-an-email",
+                message="Invalid email format",
+            )
+        ]
+
+        table = build_validation_errors_table(errors)
+
+        assert table.row_count == 1
 
 
 class TestProgressPanelClear:

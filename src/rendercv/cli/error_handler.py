@@ -5,7 +5,9 @@ import rich.panel
 import typer
 from rich import print
 
-from rendercv.exception import RenderCVUserError
+from rendercv.exception import RenderCVUserError, RenderCVUserValidationError
+
+from .render_command.progress_panel import build_validation_errors_table
 
 
 def handle_user_errors[**P](function: Callable[P, None]) -> Callable[P, None]:
@@ -36,8 +38,19 @@ def handle_user_errors[**P](function: Callable[P, None]) -> Callable[P, None]:
     def wrapper(*args: P.args, **kwargs: P.kwargs) -> None:
         try:
             return function(*args, **kwargs)
+        except RenderCVUserValidationError as e:
+            if not kwargs.get("quiet", False):
+                print(
+                    rich.panel.Panel(
+                        build_validation_errors_table(e.validation_errors),
+                        title="[bold red]There are validation errors![/bold red]",
+                        title_align="left",
+                        border_style="bold red",
+                    )
+                )
+            raise typer.Exit(code=1) from e
         except RenderCVUserError as e:
-            if e.message:
+            if e.message and not kwargs.get("quiet", False):
                 print(
                     rich.panel.Panel(
                         e.message,

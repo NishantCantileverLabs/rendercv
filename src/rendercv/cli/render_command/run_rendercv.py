@@ -131,10 +131,21 @@ def run_rendercv(
 ) -> None:
     """Execute complete CV generation pipeline with progress tracking and error handling.
 
+    Why:
+        This is the library entry point used by the CLI, watch mode, example
+        scripts, and the web API. It raises the actual error so callers can
+        surface it; the CLI layer is responsible for displaying errors and
+        setting the exit code.
+
     Args:
         input_file_path: Path to the main YAML input file.
         progress: Progress panel for output display.
         kwargs: Optional YAML overlay strings, output paths, and generation flags.
+
+    Raises:
+        RenderCVUserError: If the input cannot be read or the pipeline fails
+            with a recoverable user error.
+        RenderCVUserValidationError: If the input file has validation errors.
     """
     try:
         main_yaml = input_file_path.read_text(encoding="utf-8")
@@ -188,18 +199,16 @@ def run_rendercv(
             md_path,
         )
         progress.finish_progress()
-    except RenderCVUserError as e:
-        progress.print_user_error(e)
+    except RenderCVUserError:
+        raise
     except jinja2.exceptions.TemplateSyntaxError as e:
-        progress.print_user_error(
-            RenderCVUserError(
-                message=(
-                    f"There is a problem with the template ({e.filename}) at line"
-                    f" {e.lineno}!\n\n{e}"
-                )
+        raise RenderCVUserError(
+            message=(
+                f"There is a problem with the template ({e.filename}) at line"
+                f" {e.lineno}!\n\n{e}"
             )
-        )
+        ) from e
     except OSError as e:
-        progress.print_user_error(RenderCVUserError(message=f"OS Error: {e}"))
-    except RenderCVUserValidationError as e:
-        progress.print_validation_errors(e.validation_errors)
+        raise RenderCVUserError(message=f"OS Error: {e}") from e
+    except RenderCVUserValidationError:
+        raise
