@@ -1317,8 +1317,8 @@ update-entry-figures = [
 
 [[package]]
 name = "rendercv-fonts"
-version = "0.5.1"
-source = { git = "https://github.com/NishantCantileverLabs/rendercv-fonts.git#be0f6bac09675080e5ddd48b0254c67fff70817a" }
+version = "0.5.2"
+source = { git = "https://github.com/NishantCantileverLabs/rendercv-fonts.git#7295a0eb8f1954c0eff75e6c3697a88e5ce4029f" }
 
 [[package]]
 name = "requests"
