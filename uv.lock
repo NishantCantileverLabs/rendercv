@@ -1210,6 +1210,7 @@ dependencies = [
     { name = "pydantic", extra = ["email"] },
     { name = "pydantic-extra-types" },
     { name = "ruamel-yaml" },
+    { name = "tylax" },
 ]
 
 [package.optional-dependencies]
@@ -1260,6 +1261,7 @@ requires-dist = [
     { name = "pydantic-extra-types", specifier = ">=2.11.0" },
     { name = "rendercv-fonts", marker = "extra == 'full'", specifier = ">=0.5.1" },
     { name = "ruamel-yaml", specifier = ">=0.19.1" },
+    { name = "tylax", specifier = ">=0.3.7" },
     { name = "typer", marker = "extra == 'full'", specifier = ">=0.24.1" },
     { name = "typst", marker = "extra == 'full'", specifier = ">=0.14.8" },
     { name = "watchdog", marker = "extra == 'full'", specifier = ">=6.0.0" },
@@ -1443,6 +1445,19 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/17/9f/f54bf3be01d2c2ed731d10a5afa3324dc66f987a6ae0a4a6cbfa2323d080/ty-0.0.24-py3-none-win32.whl", hash = "sha256:83013fb3a4764a8f8bcc6ca11ff8bdfd8c5f719fc249241cb2b8916e80778eb1", size = 9781542, upload-time = "2026-03-19T16:56:11.588Z" },
     { url = "https://files.pythonhosted.org/packages/fb/49/c004c5cc258b10b3a145666e9a9c28ae7678bc958c8926e8078d5d769081/ty-0.0.24-py3-none-win_amd64.whl", hash = "sha256:748a60eb6912d1cf27aaab105ffadb6f4d2e458a3fcadfbd3cf26db0d8062eeb", size = 10764801, upload-time = "2026-03-19T16:55:42.752Z" },
     { url = "https://files.pythonhosted.org/packages/e2/59/006a074e185bfccf5e4c026015245ab4fcd2362b13a8d24cf37a277909a9/ty-0.0.24-py3-none-win_arm64.whl", hash = "sha256:280a3d31e86d0721947238f17030c33f0911cae851d108ea9f4e3ab12a5ed01f", size = 10194093, upload-time = "2026-03-19T16:55:48.303Z" },
+]
+
+[[package]]
+name = "tylax"
+version = "0.3.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/57/2c/40a9183332c663064a144f518d138b3263370e9d3f81e36320d1fd27d63f/tylax-0.3.7.tar.gz", hash = "sha256:f93312b43a60d932e7ab4d27d8541abc0be50567bf56246fc2db47bb8cb022dd", size = 383007, upload-time = "2026-07-18T06:07:27.737Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a2/a3/58ae2dfd8324b4840510e7fc6c1b962ed8d2ae35f9ca1d969b29538936df/tylax-0.3.7-cp310-abi3-macosx_10_12_x86_64.whl", hash = "sha256:f75a432faa4c118a7bd6cf0155b90a18437e4b520ea069b03dbc7d5467e2c6cb", size = 1424890, upload-time = "2026-07-18T06:07:19.168Z" },
+    { url = "https://files.pythonhosted.org/packages/13/19/38c81684472480d0e5c78d31ee6eb23d6fda89e44902ae68733a2cdcc56a/tylax-0.3.7-cp310-abi3-macosx_11_0_arm64.whl", hash = "sha256:b0100677eb0fd079ab07a1af64a1516289b9f174833af302dd80046e58993247", size = 1375310, upload-time = "2026-07-18T06:07:21.046Z" },
+    { url = "https://files.pythonhosted.org/packages/58/b6/bac826928676e9ef1cda1662f181fd08acc5faa3b2a80e27b9874438961c/tylax-0.3.7-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:09c1ec7f6e01a3c07e11c8cbcd048ccd1f5da875446847550c2ae0aa06545dff", size = 1410512, upload-time = "2026-07-18T06:07:22.772Z" },
+    { url = "https://files.pythonhosted.org/packages/b5/ec/74c6365141d73d04393361507b215ab2178f390905db7d4073fdda850d31/tylax-0.3.7-cp310-abi3-manylinux_2_34_x86_64.whl", hash = "sha256:478dc2047687f6ca5e984597ba39179d1fa8f03a7a809c8f7e53a5467d615313", size = 1466986, upload-time = "2026-07-18T06:07:24.278Z" },
+    { url = "https://files.pythonhosted.org/packages/c9/c8/f3b932d19585ff87e60838d52692e21baaa52b3a7c3e86f8aa4e2d73131a/tylax-0.3.7-cp310-abi3-win_amd64.whl", hash = "sha256:4562070fba2b162c0d27681f52f3a8e446c8ad71200dc39e70e426794e50905d", size = 1427216, upload-time = "2026-07-18T06:07:26.029Z" },
 ]
 
 [[package]]
