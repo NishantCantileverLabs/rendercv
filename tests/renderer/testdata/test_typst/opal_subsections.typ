@@ -5,7 +5,7 @@
 #show: rendercv.with(
   name: "Jane Doe",
   title: "Jane Doe - CV",
-  footer: context { [#emph[Jane Doe -- #str(here().page())/#str(counter(page).final().first())]] },
+  footer: context { [#emph[Jane Doe -- #str(here().page())\/#str(counter(page).final().first())]] },
   top-note: [ #emph[Last updated in Nov 2025] ],
   locale-catalog-language: "en",
   text-direction: ltr,

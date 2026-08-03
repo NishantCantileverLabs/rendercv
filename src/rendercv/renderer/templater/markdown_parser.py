@@ -3,6 +3,7 @@ from xml.etree.ElementTree import Element
 
 import markdown
 import markdown.core
+import markdown.preprocessors
 import tylax
 
 

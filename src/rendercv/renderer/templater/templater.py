@@ -152,6 +152,34 @@ def render_full_template(
     return code
 
 
+def theme_uses_rendercv_package(rendercv_model: RenderCVModel) -> bool:
+    """Check if the theme's effective Preamble imports the rendercv typst package.
+
+    Why:
+        The `reversed-numbered-entries` container markup is only available in
+        themes that import the rendercv typst package. Self-contained themes
+        such as the IIT themes define their own templates and do not provide
+        this function, so ReversedNumberedEntry sections must be left unwrapped
+        for them.
+
+    Args:
+        rendercv_model: CV model with theme information.
+
+    Returns:
+        True if the theme's Preamble template imports the rendercv package.
+    """
+    jinja2_environment = get_jinja2_environment(rendercv_model._input_file_path)
+    loader = jinja2_environment.loader
+    if loader is None:
+        raise RuntimeError("The Jinja2 environment has no loader.")
+    template_name = f"{rendercv_model.design.theme}/Preamble.j2.typ"
+    try:
+        source, _, _ = loader.get_source(jinja2_environment, template_name)
+    except jinja2.TemplateNotFound:
+        source, _, _ = loader.get_source(jinja2_environment, "typst/Preamble.j2.typ")
+    return "@preview/rendercv" in source
+
+
 def render_section_entries(
     rendercv_model: RenderCVModel,
     file_type: Literal["typst", "markdown"],
@@ -171,17 +199,20 @@ def render_section_entries(
         entry_codes.append(entry_code)
 
     entries_code = "\n\n".join(entry_codes)
-    return wrap_entries_code(file_type, entry_type, entries_code)
+    return wrap_entries_code(rendercv_model, file_type, entry_type, entries_code)
 
 
 def wrap_entries_code(
-    file_type: Literal["typst", "markdown"], entry_type: str, entries_code: str
+    rendercv_model: RenderCVModel,
+    file_type: Literal["typst", "markdown"],
+    entry_type: str,
+    entries_code: str,
 ) -> str:
     """Wrap rendered entry blocks for entry types that need extra container markup."""
     if entries_code == "" or entry_type != "ReversedNumberedEntry":
         return entries_code
 
-    if file_type == "typst":
+    if file_type == "typst" and theme_uses_rendercv_package(rendercv_model):
         return f"#reversed-numbered-entries(\n  [\n\n{entries_code}\n  ],\n)"
 
     return entries_code

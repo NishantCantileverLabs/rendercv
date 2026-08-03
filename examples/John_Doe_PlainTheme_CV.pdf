@@ -4230,20 +4230,22 @@ endobj
 
 321 0 obj
 <<
+  /Title (John Doe - CV)
+  /Author (John Doe)
   /Creator (Typst 0.14.2)
-  /ModDate (D:20260731122236Z)
-  /CreationDate (D:20260731122236Z)
+  /ModDate (D:20260803000000Z)
+  /CreationDate (D:20260803000000Z)
 >>
 endobj
 
 322 0 obj
 <<
-  /Length 996
+  /Length 1146
   /Type /Metadata
   /Subtype /XML
 >>
 stream
-<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="xmp-writer"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"  xmlns:xmp="http://ns.adobe.com/xap/1.0/"  xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"  xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"  xmlns:pdf="http://ns.adobe.com/pdf/1.3/" ><xmp:CreatorTool>Typst 0.14.2</xmp:CreatorTool><dc:language><rdf:Bag><rdf:li>en</rdf:li></rdf:Bag></dc:language><xmp:ModifyDate>2026-07-31T12:22:36+00:00</xmp:ModifyDate><xmp:CreateDate>2026-07-31T12:22:36+00:00</xmp:CreateDate><xmpTPg:NPages>3</xmpTPg:NPages><dc:format>application/pdf</dc:format><xmpMM:InstanceID>cb/TDHiIcXSouu9HAziUOw==</xmpMM:InstanceID><xmpMM:DocumentID>cb/TDHiIcXSouu9HAziUOw==</xmpMM:DocumentID><xmpMM:RenditionClass>proof</xmpMM:RenditionClass><pdf:PDFVersion>1.7</pdf:PDFVersion></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="xmp-writer"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"  xmlns:xmp="http://ns.adobe.com/xap/1.0/"  xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"  xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"  xmlns:pdf="http://ns.adobe.com/pdf/1.3/" ><dc:title><rdf:Alt><rdf:li xml:lang="x-default">John Doe - CV</rdf:li></rdf:Alt></dc:title><dc:creator><rdf:Seq><rdf:li>John Doe</rdf:li></rdf:Seq></dc:creator><xmp:CreatorTool>Typst 0.14.2</xmp:CreatorTool><dc:language><rdf:Bag><rdf:li>en</rdf:li></rdf:Bag></dc:language><xmp:ModifyDate>2026-08-03T00:00:00Z</xmp:ModifyDate><xmp:CreateDate>2026-08-03T00:00:00Z</xmp:CreateDate><xmpTPg:NPages>3</xmpTPg:NPages><dc:format>application/pdf</dc:format><xmpMM:InstanceID>4CkdIi6hsDPCN6TsS09byQ==</xmpMM:InstanceID><xmpMM:DocumentID>H6jLMSR4DEYCGHEKAoXV/g==</xmpMM:DocumentID><xmpMM:RenditionClass>proof</xmpMM:RenditionClass><pdf:PDFVersion>1.7</pdf:PDFVersion></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>
 endstream
 endobj
 
@@ -4588,15 +4590,15 @@ xref
 0000117980 00000 n
 0000118273 00000 n
 0000119980 00000 n
-0000120097 00000 n
-0000121183 00000 n
+0000120143 00000 n
+0000121380 00000 n
 trailer
 <<
   /Size 324
   /Root 323 0 R
   /Info 321 0 R
-  /ID [(cb/TDHiIcXSouu9HAziUOw==) (cb/TDHiIcXSouu9HAziUOw==)]
+  /ID [(H6jLMSR4DEYCGHEKAoXV/g==) (4CkdIi6hsDPCN6TsS09byQ==)]
 >>
 startxref
-121402
+121599
 %%EOF

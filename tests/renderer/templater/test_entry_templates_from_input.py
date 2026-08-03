@@ -627,7 +627,7 @@ class TestRemoveNotProvidedPlaceholders:
         fields = {"PREFIX": "a", "SUFFIX": "b"}
         assume(missing_key not in ("PREFIX", "SUFFIX"))
         result = remove_not_provided_placeholders(templates, fields)
-        assert missing_key not in result["main"]
+        assert f"{{{missing_key}}}" not in result["main"]
 
 
 class TestRenderEntryTemplatesInternalErrors:

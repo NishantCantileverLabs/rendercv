@@ -88,9 +88,9 @@ class Cv(BaseModelWithoutExtraKeys):
     name: str | None = pydantic.Field(default=None, examples=['John Doe', 'Jane Smith'])
     headline: str | None = pydantic.Field(default=None, examples=['Software Engineer', 'Data Scientist', 'Product Manager'])
     location: str | None = pydantic.Field(default=None, examples=['New York, NY', 'London, UK', 'Istanbul, Türkiye'])
-    email: pydantic.EmailStr | list[pydantic.EmailStr] | None = pydantic.Field(default=None, examples=['john.doe@example.com', ['john.doe.1@example.com', 'john.doe.2@example.com']])
+    email: str | list[str] | None = pydantic.Field(default=None, examples=['john.doe@example.com', ['john.doe.1@example.com', 'john.doe.2@example.com']])
     photo: ExistingPathRelativeToInput | pydantic.HttpUrl | None = pydantic.Field(default=None, union_mode='left_to_right', examples=['photo.jpg', 'images/profile.png', 'https://example.com/photo.jpg'])
-    phone: pydantic_phone_numbers.PhoneNumber | list[pydantic_phone_numbers.PhoneNumber] | None = pydantic.Field(default=None, examples=['+1-234-567-8900', ['+1-234-567-8900', '+44 20 1234 5678']])
+    phone: str | list[str] | None = pydantic.Field(default=None, examples=['+1-234-567-8900', ['+1-234-567-8900', '+44 20 1234 5678']])
     website: pydantic.HttpUrl | list[pydantic.HttpUrl] | None = pydantic.Field(default=None, examples=['https://johndoe.com', ['https://johndoe.com', 'https://www.janesmith.dev']])
     social_networks: list[SocialNetwork] | None = pydantic.Field(default=None)
     custom_connections: list[CustomConnection] | None = pydantic.Field(default=None, examples=[[{'placeholder': 'Book a call', 'url': 'https://cal.com/johndoe', 'fontawesome_icon': 'calendar-days'}]])
@@ -442,6 +442,11 @@ This shows every available design field with its default value. All themes share
 ```yaml
 design:
   theme: classic
+  degree:
+  department:
+  institute:
+  roll_no:
+  gender:
   page:
     size: us-letter
     top_margin: 0.7in

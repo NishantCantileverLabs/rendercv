@@ -64,7 +64,7 @@
   [#link("https://orcid.org/0000-0000-0000-0000", icon: false, if-underline: false, if-color: false)[#connection-with-icon("orcid")[0000-0000-0000-0000]]],
   [#link("https://scholar.google.com/citations?user=F8IyYrQAAAAJ", icon: false, if-underline: false, if-color: false)[#connection-with-icon("graduation-cap")[Google Scholar]]],
   [#link("https://example.com/@johndoe", icon: false, if-underline: false, if-color: false)[#connection-with-icon("mastodon")[\@johndoe\@example.com]]],
-  [#link("https://stackoverflow.com/users/12323/johndoe", icon: false, if-underline: false, if-color: false)[#connection-with-icon("stack-overflow")[12323/johndoe]]],
+  [#link("https://stackoverflow.com/users/12323/johndoe", icon: false, if-underline: false, if-color: false)[#connection-with-icon("stack-overflow")[12323\/johndoe]]],
   [#link("https://gitlab.com/johndoe", icon: false, if-underline: false, if-color: false)[#connection-with-icon("gitlab")[johndoe]]],
   [#link("https://researchgate.net/profile/johndoe", icon: false, if-underline: false, if-color: false)[#connection-with-icon("researchgate")[johndoe]]],
   [#link("https://youtube.com/@johndoe", icon: false, if-underline: false, if-color: false)[#connection-with-icon("youtube")[johndoe]]],
@@ -3692,11 +3692,16 @@ Third text with #link("https://example.com")[link] and more content.
 + This is a numbered entry.
 #v(0.01em)
 #section-heading("REVERSED NUMBERED ENTRIES")
-+ This is a reversed numbered entry.
+#reversed-numbered-entries(
+  [
 
 + This is a reversed numbered entry.
 
 + This is a reversed numbered entry.
+
++ This is a reversed numbered entry.
+  ],
+)
 #v(0.01em)
 #section-heading("A SECTION & WITH \% SPECIAL CHARACTERS")
 #block[

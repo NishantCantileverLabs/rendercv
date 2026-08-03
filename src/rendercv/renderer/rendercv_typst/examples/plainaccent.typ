@@ -10,8 +10,8 @@
   title: "John Doe - CV",
   date: datetime(
     year: 2026,
-    month: 7,
-    day: 31,
+    month: 8,
+    day: 3,
   ),
 )
 #set page(
@@ -105,7 +105,7 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
   [BS — Computer Engineering],
   [Sept 2014 - June 2018],
   body: [
-- GPA: 3.97/4.00, Valedictorian
+- GPA: 3.97\/4.00, Valedictorian
 - Fulbright Scholarship recipient for Graduate Studies
   ]
 )
@@ -256,6 +256,9 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 + Hardware-Aware Neural Architecture Search Method (US Patent 11,456,789)
 #v(0.01em)
 #section-heading("Invited Talks")
+#reversed-numbered-entries(
+  [
+
 + Scaling Laws for Efficient Inference — Stanford HAI Symposium (2024)
 
 + Building AI Infrastructure for the Next Decade — TechCrunch Disrupt (2024)
@@ -263,4 +266,6 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 + From Research to Production: Lessons in ML Systems — NeurIPS Workshop (2023)
 
 + Efficient Deep Learning: A Practitioner's Perspective — Google Tech Talk (2022)
+  ],
+)
 #v(0.01em)

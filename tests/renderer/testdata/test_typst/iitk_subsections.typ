@@ -11,7 +11,7 @@
     right: 0.7in
   )
 )
-#set text(font: "Source Sans 3", size: 10pt, kerning: true, costs: (runt: 200%), hyphenate: false)
+#set text(font: ("Source Sans 3"), size: 10pt, kerning: true, costs: (runt: 200%), hyphenate: false)
 #set par(spacing: 0.6em)
 #set list(indent: 0pt, body-indent: 4pt, tight: true)
 #set block(spacing: 0.38em)
@@ -21,7 +21,11 @@
 #set document(
   title: "Jane Doe",
   author: "Jane Doe",
-  date: auto,
+  date: datetime(
+    year: 2025,
+    month: 11,
+    day: 30,
+  ),
 )
 
 #let section-header(title, right-text: none) = {
@@ -130,11 +134,6 @@ Research Scientist #h(1fr) #contact-info.join([ | ])
 #text(weight: "bold")[Recent Milestones]
 
 
-#reversed-numbered-entries(
-  [
-
 + Rolled out subsection rendering
 
 + Added schema and snapshot coverage
-  ],
-)

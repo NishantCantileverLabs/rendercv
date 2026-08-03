@@ -12,10 +12,18 @@
     right: 0.35in
   )
 )
-#set text(font: "Libertinus Sans", size: 10pt, kerning: true, costs: (runt: 200%), hyphenate: false)
+#set text(font: ("Libertinus Sans"), size: 10pt, kerning: true, costs: (runt: 200%), hyphenate: false)
 #set par(leading: 0.45em, spacing: 0.45em)
 #set block(spacing: 0.65em)
 #set list(tight: true, marker: ([•], [◦]))
+
+#set document(
+  date: datetime(
+    year: 2025,
+    month: 11,
+    day: 30,
+  ),
+)
 
 #let section-header(title) = {
   v(0.015em)
@@ -64,12 +72,7 @@ Built a research platform that supports **mixed subsection entry types**.
 #text(weight: "bold")[Recent Milestones]
 
 
-#reversed-numbered-entries(
-  [
-
 + Rolled out subsection rendering
 
 + Added schema and snapshot coverage
-  ],
-)
 #v(0.01em)

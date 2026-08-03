@@ -43,13 +43,14 @@ def cli_command_web(
 ):
     """Start the RenderCV web editor and server."""
     typer.echo(f"Starting RenderCV web editor on http://{host}:{port}")
-    
+
     if not no_browser:
+
         def open_browser():
             # Wait for uvicorn to bind to port and start accepting requests
             time.sleep(1.2)
             webbrowser.open(f"http://{host}:{port}")
-            
+
         browser_thread = threading.Thread(target=open_browser, daemon=True)
         browser_thread.start()
 
