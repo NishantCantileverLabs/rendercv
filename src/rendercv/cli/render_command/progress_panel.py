@@ -6,7 +6,6 @@ import rich.console
 import rich.live
 import rich.panel
 import rich.table
-import typer
 
 from rendercv.exception import RenderCVUserError, RenderCVValidationError
 
@@ -34,6 +33,37 @@ def format_validation_error_location(error_object: RenderCVValidationError) -> s
     if start_line == end_line:
         return f"{error_object.yaml_source}: line {start_line}"
     return f"{error_object.yaml_source}: line {start_line} to line {end_line}"
+
+
+def build_validation_errors_table(
+    errors: list[RenderCVValidationError],
+) -> rich.table.Table:
+    """Build a table listing validation errors with their locations.
+
+    Why:
+        Both the live progress panel (watch mode) and the CLI error handler
+        display validation errors as a table. A shared builder keeps the
+        formatting consistent and avoids duplication.
+
+    Args:
+        errors: List of validation errors with location, input, and message.
+
+    Returns:
+        A Rich table with Location, Input Value, and Explanation columns.
+    """
+    table = rich.table.Table(expand=True, show_lines=True, box=rich.box.ROUNDED)
+    table.add_column("Location", style="cyan", no_wrap=True)
+    table.add_column("Input Value", style="magenta", no_wrap=True)
+    table.add_column("Explanation", style="orange4")
+
+    for error_object in errors:
+        table.add_row(
+            format_validation_error_location(error_object),
+            error_object.input,
+            error_object.message,
+        )
+
+    return table
 
 
 class ProgressPanel(rich.live.Live):
@@ -118,7 +148,12 @@ class ProgressPanel(rich.live.Live):
         )
 
     def print_user_error(self, user_error: RenderCVUserError) -> None:
-        """Display error panel and exit with error code.
+        """Display an error panel for the given user error.
+
+        Why:
+            Watch mode shows render errors inside the live panel and keeps
+            running. This method only displays; raising the actual error is
+            the caller's responsibility.
 
         Args:
             user_error: User-facing error to display.
@@ -132,10 +167,9 @@ class ProgressPanel(rich.live.Live):
                 border_style="bold red",
             )
         )
-        raise typer.Exit(code=1)
 
     def print_validation_errors(self, errors: list[RenderCVValidationError]) -> None:
-        """Display validation errors in table format and exit.
+        """Display validation errors in table format.
 
         Why:
             Pydantic validation errors are parsed into user-friendly messages with
@@ -145,28 +179,14 @@ class ProgressPanel(rich.live.Live):
             errors: List of validation errors with location, input, and message.
         """
         self.completed_steps.clear()
-        table = rich.table.Table(expand=True, show_lines=True, box=rich.box.ROUNDED)
-        table.add_column("Location", style="cyan", no_wrap=True)
-        table.add_column("Input Value", style="magenta", no_wrap=True)
-        table.add_column("Explanation", style="orange4")
-
-        for error_object in errors:
-            table.add_row(
-                format_validation_error_location(error_object),
-                error_object.input,
-                error_object.message,
-            )
-
         self.update(
             rich.panel.Panel(
-                table,
+                build_validation_errors_table(errors),
                 title="[bold red]There are validation errors![/bold red]",
                 title_align="left",
                 border_style="bold red",
             )
         )
-
-        raise typer.Exit(code=1)
 
     def clear(self) -> None:
         """Clear all completed steps and panel display."""

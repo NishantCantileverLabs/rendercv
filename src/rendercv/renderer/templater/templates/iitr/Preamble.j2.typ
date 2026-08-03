@@ -1,3 +1,11 @@
+#set document(
+  date: datetime(
+    year: {{ settings._resolved_current_date.year }},
+    month: {{ settings._resolved_current_date.month }},
+    day: {{ settings._resolved_current_date.day }},
+  ),
+)
+
 #set page(
   paper: "{{ design.page.size }}",
   margin: (

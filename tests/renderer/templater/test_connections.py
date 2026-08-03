@@ -1,6 +1,5 @@
 from typing import Literal, get_args
 
-import pydantic
 import pytest
 
 from rendercv.exception import RenderCVInternalError
@@ -151,8 +150,7 @@ class TestParseConnections:
 
         connections = parse_connections(model)
 
-        # Pydantic's HttpUrl adds trailing slash
-        assert connections[0].url == "https://example.com/"
+        assert connections[0].url == "https://example.com"
         assert connections[0].body == "example.com"
 
     def test_location_has_no_url(self):
@@ -240,7 +238,7 @@ class TestParseConnections:
         custom_connection = CustomConnection(
             fontawesome_icon="calendar-days",
             placeholder="Book a call",
-            url=pydantic.HttpUrl("https://cal.com/johndoe"),
+            url="https://cal.com/johndoe",
         )
         cv = create_cv(
             key_order=["custom_connections"],
@@ -253,7 +251,7 @@ class TestParseConnections:
         assert len(connections) == 1
         connection = connections[0]
         assert connection.fontawesome_icon == "calendar-days"
-        assert connection.url == str(custom_connection.url)
+        assert connection.url == "https://cal.com/johndoe"
         assert connection.body == "Book a call"
 
     def test_custom_connection_without_url_is_plain(self):
@@ -359,7 +357,7 @@ class TestComputeConnectionsForMarkdown:
         custom_connection = CustomConnection(
             fontawesome_icon="calendar-days",
             placeholder="Book a call",
-            url=pydantic.HttpUrl("https://cal.com/johndoe"),
+            url="https://cal.com/johndoe",
         )
         cv = create_cv(
             key_order=["custom_connections"],
@@ -369,8 +367,7 @@ class TestComputeConnectionsForMarkdown:
 
         result = compute_connections_for_markdown(model)
 
-        expected_url = str(custom_connection.url)
-        assert result[0] == f"[Book a call]({expected_url})"
+        assert result[0] == "[Book a call](https://cal.com/johndoe)"
 
     def test_custom_connection_without_url_is_plain_text(self):
         custom_connection = CustomConnection(

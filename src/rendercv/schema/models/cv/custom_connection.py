@@ -13,6 +13,21 @@ class CustomConnection(BaseModelWithoutExtraKeys):
         optional URL for any contact channel.
     """
 
-    fontawesome_icon: str
-    placeholder: str
-    url: pydantic.HttpUrl | None
+    fontawesome_icon: str | None = pydantic.Field(
+        default=None,
+        description=(
+            "The Font Awesome icon name to render (from"
+            " https://fontawesome.com/search)."
+        ),
+        examples=["calendar-days", "link"],
+    )
+    placeholder: str | None = pydantic.Field(
+        default=None,
+        description="The displayed text of the connection.",
+        examples=["Book a call", "Portfolio"],
+    )
+    url: str | None = pydantic.Field(
+        default=None,
+        description="A URL link for the connection.",
+        examples=["https://cal.com/johndoe", "https://portfolio.com"],
+    )

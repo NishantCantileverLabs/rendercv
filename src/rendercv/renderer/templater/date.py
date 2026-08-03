@@ -73,6 +73,39 @@ def date_object_to_string(
     )
 
 
+def format_date_value(
+    date: str | int, *, locale: Locale, single_date_template: str
+) -> str:
+    """Format a single date value, passing through values that cannot be parsed.
+
+    Why:
+        Dates may be partially typed (e.g., "2023-0") during incremental rendering.
+        Standard dates get localized formatting, while unparsable values pass
+        through unchanged so rendering never fails mid-keystroke.
+
+    Args:
+        date: Date as integer year, ISO date string, or "present".
+        locale: Locale providing present translation.
+        single_date_template: Template for formatting standard dates.
+
+    Returns:
+        Formatted date string or the original value.
+    """
+    if isinstance(date, int):
+        # Only year is provided
+        return str(date)
+    if date == "present":
+        return locale.present
+    try:
+        date_object = get_date_object(date)
+        return date_object_to_string(
+            date_object, locale=locale, single_date_template=single_date_template
+        )
+    except (RenderCVInternalError, ValueError):
+        # Then it is a custom or partially typed date string (e.g., "2023-0")
+        return str(date)
+
+
 def format_date_range(
     start_date: str | int,
     end_date: str | int,
@@ -110,27 +143,12 @@ def format_date_range(
     Returns:
         Formatted date range string.
     """
-    if isinstance(start_date, int):
-        # Then it means only the year is provided
-        start_date = str(start_date)
-    else:
-        # Then it means start_date is either in YYYY-MM-DD or YYYY-MM format
-        date_object = get_date_object(start_date)
-        start_date = date_object_to_string(
-            date_object, locale=locale, single_date_template=single_date_template
-        )
-
-    if end_date == "present":
-        end_date = locale.present
-    elif isinstance(end_date, int):
-        # Then it means only the year is provided
-        end_date = str(end_date)
-    else:
-        # Then it means end_date is either in YYYY-MM-DD or YYYY-MM format
-        date_object = get_date_object(end_date)
-        end_date = date_object_to_string(
-            date_object, locale=locale, single_date_template=single_date_template
-        )
+    start_date = format_date_value(
+        start_date, locale=locale, single_date_template=single_date_template
+    )
+    end_date = format_date_value(
+        end_date, locale=locale, single_date_template=single_date_template
+    )
 
     placeholders: dict[str, str] = {
         "START_DATE": start_date,
@@ -173,22 +191,9 @@ def format_single_date(
     Returns:
         Formatted date string or original custom text.
     """
-    if isinstance(date, int):
-        # Only year is provided
-        date_string = str(date)
-    elif date == "present":
-        date_string = locale.present
-    else:
-        try:
-            date_object = get_date_object(date)
-            date_string = date_object_to_string(
-                date_object, locale=locale, single_date_template=single_date_template
-            )
-        except RenderCVInternalError:
-            # Then it is a custom date string (e.g., "My Custom Date")
-            date_string = str(date)
-
-    return date_string
+    return format_date_value(
+        date, locale=locale, single_date_template=single_date_template
+    )
 
 
 def compute_time_span_string(

@@ -13,10 +13,8 @@ from .social_network import SocialNetwork
 
 email_validator = pydantic.TypeAdapter[str](str)
 emails_validator = pydantic.TypeAdapter[list[str]](list[str])
-website_validator = pydantic.TypeAdapter[pydantic.HttpUrl](pydantic.HttpUrl)
-websites_validator = pydantic.TypeAdapter[list[pydantic.HttpUrl]](
-    list[pydantic.HttpUrl]
-)
+website_validator = pydantic.TypeAdapter[str](str)
+websites_validator = pydantic.TypeAdapter[list[str]](list[str])
 phone_validator = pydantic.TypeAdapter[str](str)
 phones_validator = pydantic.TypeAdapter[list[str]](list[str])
 
@@ -61,7 +59,7 @@ class Cv(BaseModelWithoutExtraKeys):
             ["+1-234-567-8900", "+44 20 1234 5678"],
         ],
     )
-    website: pydantic.HttpUrl | list[pydantic.HttpUrl] | None = pydantic.Field(
+    website: str | list[str] | None = pydantic.Field(
         default=None,
         description="You can provide multiple URLs as a list.",
         examples=[
@@ -93,8 +91,10 @@ class Cv(BaseModelWithoutExtraKeys):
         default=None,
         description=(
             "The sections of your CV. Keys are section titles (e.g., Experience,"
-            " Education), and values are lists of entries. Entry types are"
-            " automatically detected based on their fields."
+            " Education), and values are usually lists of entries. Sections can"
+            " also be defined as lists of subsection entries, where each subsection"
+            " has a title and its own list of entries. Entry types are automatically"
+            " detected based on their fields."
         ),
         examples=[
             {
@@ -102,6 +102,16 @@ class Cv(BaseModelWithoutExtraKeys):
                 "Education": "...",
                 "Projects": "...",
                 "Skills": "...",
+                "Selected Work": [
+                    {
+                        "title": "Featured Projects",
+                        "entries": "...",
+                    },
+                    {
+                        "title": "Open Source",
+                        "entries": "...",
+                    },
+                ],
             }
         ],
     )
@@ -152,14 +162,14 @@ class Cv(BaseModelWithoutExtraKeys):
             return data
 
         # Capture the input order before validation
-        key_order = list(data.keys()) if isinstance(data, dict) else []
+        key_order = [str(key) for key in data] if isinstance(data, dict) else []
 
         # Let Pydantic do its validation
         instance = handler(data)
 
         # Set the private attribute on the instance:
         # If the values of those keys are None, remove the key from the key_order
-        instance._key_order = [key for key in key_order if data.get(key) is not None]  # ty: ignore[invalid-assignment]
+        instance._key_order = [key for key in key_order if data.get(key) is not None]
 
         return instance
 
@@ -167,7 +177,7 @@ class Cv(BaseModelWithoutExtraKeys):
     @classmethod
     def validate_list_or_scalar_fields(
         cls, value: Any, info: pydantic.ValidationInfo
-    ) -> str | pydantic.HttpUrl | list[str] | list[pydantic.HttpUrl] | None:
+    ) -> str | list[str] | None:
         """Validate fields that accept single value or list with type-specific errors.
 
         Why:
@@ -190,11 +200,8 @@ class Cv(BaseModelWithoutExtraKeys):
             raise RenderCVInternalError("field_name is None in validator")
 
         validators: tuple[
-            pydantic.TypeAdapter[str] | pydantic.TypeAdapter[pydantic.HttpUrl],
-            (
-                pydantic.TypeAdapter[list[str]]
-                | pydantic.TypeAdapter[list[pydantic.HttpUrl]]
-            ),
+            pydantic.TypeAdapter[str],
+            pydantic.TypeAdapter[list[str]],
         ] = {
             "website": (website_validator, websites_validator),
             "email": (email_validator, emails_validator),

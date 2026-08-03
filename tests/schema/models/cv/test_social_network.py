@@ -119,6 +119,7 @@ class TestSocialNetwork:
     ) -> None:
         username = f"@{user}@{domain}"
         sn = SocialNetwork(network="Mastodon", username=username)
+        assert sn.url is not None
         assert domain in sn.url
         assert f"/@{user}" in sn.url
         assert sn.url.startswith("https://")

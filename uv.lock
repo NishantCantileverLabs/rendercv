@@ -325,6 +325,22 @@ wheels = [
 ]
 
 [[package]]
+name = "fastapi"
+version = "0.139.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "annotated-doc" },
+    { name = "pydantic" },
+    { name = "starlette" },
+    { name = "typing-extensions" },
+    { name = "typing-inspection" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d3/af/a5f50ccfa659ec1802cb4ca842c23f06d906a8cc9aef6016a2caeea3d4ed/fastapi-0.139.0.tar.gz", hash = "sha256:99ab7b2d92223c76d6cf10757ab3f89d45b38267fc20b2a136cf02f6beac3145", size = 423016, upload-time = "2026-07-01T16:35:33.436Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9e/7c/8e3c6ad324ea5cb36604fc3f968554887891c316d9dfde57761611d907ad/fastapi-0.139.0-py3-none-any.whl", hash = "sha256:cf15e1e9e667ddb0ad63811e60bd11390d1aac838ca4a7a23f421807b2308189", size = 130339, upload-time = "2026-07-01T16:35:32.19Z" },
+]
+
+[[package]]
 name = "ghp-import"
 version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1210,14 +1226,17 @@ dependencies = [
     { name = "pydantic", extra = ["email"] },
     { name = "pydantic-extra-types" },
     { name = "ruamel-yaml" },
+    { name = "tylax" },
 ]
 
 [package.optional-dependencies]
 full = [
+    { name = "fastapi" },
     { name = "packaging" },
     { name = "rendercv-fonts" },
     { name = "typer" },
     { name = "typst" },
+    { name = "uvicorn" },
     { name = "watchdog" },
 ]
 
@@ -1252,16 +1271,19 @@ update-entry-figures = [
 
 [package.metadata]
 requires-dist = [
+    { name = "fastapi", marker = "extra == 'full'", specifier = ">=0.110.0" },
     { name = "jinja2", specifier = ">=3.1.6" },
     { name = "markdown", specifier = ">=3.10.2" },
     { name = "packaging", marker = "extra == 'full'", specifier = ">=26.0" },
     { name = "phonenumbers", specifier = ">=9.0.24" },
     { name = "pydantic", extras = ["email"], specifier = ">=2.12.5" },
     { name = "pydantic-extra-types", specifier = ">=2.11.0" },
-    { name = "rendercv-fonts", marker = "extra == 'full'", specifier = ">=0.5.1" },
+    { name = "rendercv-fonts", marker = "extra == 'full'", git = "https://github.com/NishantCantileverLabs/rendercv-fonts.git" },
     { name = "ruamel-yaml", specifier = ">=0.19.1" },
+    { name = "tylax", specifier = ">=0.3.7" },
     { name = "typer", marker = "extra == 'full'", specifier = ">=0.24.1" },
     { name = "typst", marker = "extra == 'full'", specifier = ">=0.14.8" },
+    { name = "uvicorn", marker = "extra == 'full'", specifier = ">=0.28.0" },
     { name = "watchdog", marker = "extra == 'full'", specifier = ">=6.0.0" },
 ]
 provides-extras = ["full"]
@@ -1295,12 +1317,8 @@ update-entry-figures = [
 
 [[package]]
 name = "rendercv-fonts"
-version = "0.5.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2c/78/4c24bb2150a6e5b133ace2d4ec3b353bf7c0955b4ce85d5adac269104f9f/rendercv_fonts-0.5.1.tar.gz", hash = "sha256:f7ea8f33bb1338d9ce41c036066ffb8a482cc182c0f36e183d73a42e2da91ee5", size = 33041210, upload-time = "2025-12-09T11:56:12.365Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d7/1f/fb31a6659c8251373f4361266d2ca79d146b0d502702d1da43a567aa324d/rendercv_fonts-0.5.1-py3-none-any.whl", hash = "sha256:e82ee2cc9f6078c8aa05ea8bb5ab38b369e3487f638c44e4f329092f433dd460", size = 33124639, upload-time = "2025-12-09T11:56:08.987Z" },
-]
+version = "0.5.2"
+source = { git = "https://github.com/NishantCantileverLabs/rendercv-fonts.git#7295a0eb8f1954c0eff75e6c3697a88e5ce4029f" }
 
 [[package]]
 name = "requests"
@@ -1401,6 +1419,19 @@ wheels = [
 ]
 
 [[package]]
+name = "starlette"
+version = "1.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/eb/e3/7c1dc7381d9f8ab7d854328ebfa884e62cb3f3d8549ddfd37c7814f42afa/starlette-1.3.1.tar.gz", hash = "sha256:05d0213193f2fbaae60e2ecb593b4add4262ad4e46536b54abe36f11a71724e0", size = 2703240, upload-time = "2026-06-12T09:23:11.602Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ec/bb/2799cc2ede3ed41131f8975621e7213dfc7ef4acbbaadfa440f32500c370/starlette-1.3.1-py3-none-any.whl", hash = "sha256:c7372aae11c3c3f26a42df7bd626cec2f47d03483d261d369516a615a53714c6", size = 73632, upload-time = "2026-06-12T09:23:10.017Z" },
+]
+
+[[package]]
 name = "super-collections"
 version = "0.6.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1443,6 +1474,19 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/17/9f/f54bf3be01d2c2ed731d10a5afa3324dc66f987a6ae0a4a6cbfa2323d080/ty-0.0.24-py3-none-win32.whl", hash = "sha256:83013fb3a4764a8f8bcc6ca11ff8bdfd8c5f719fc249241cb2b8916e80778eb1", size = 9781542, upload-time = "2026-03-19T16:56:11.588Z" },
     { url = "https://files.pythonhosted.org/packages/fb/49/c004c5cc258b10b3a145666e9a9c28ae7678bc958c8926e8078d5d769081/ty-0.0.24-py3-none-win_amd64.whl", hash = "sha256:748a60eb6912d1cf27aaab105ffadb6f4d2e458a3fcadfbd3cf26db0d8062eeb", size = 10764801, upload-time = "2026-03-19T16:55:42.752Z" },
     { url = "https://files.pythonhosted.org/packages/e2/59/006a074e185bfccf5e4c026015245ab4fcd2362b13a8d24cf37a277909a9/ty-0.0.24-py3-none-win_arm64.whl", hash = "sha256:280a3d31e86d0721947238f17030c33f0911cae851d108ea9f4e3ab12a5ed01f", size = 10194093, upload-time = "2026-03-19T16:55:48.303Z" },
+]
+
+[[package]]
+name = "tylax"
+version = "0.3.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/57/2c/40a9183332c663064a144f518d138b3263370e9d3f81e36320d1fd27d63f/tylax-0.3.7.tar.gz", hash = "sha256:f93312b43a60d932e7ab4d27d8541abc0be50567bf56246fc2db47bb8cb022dd", size = 383007, upload-time = "2026-07-18T06:07:27.737Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a2/a3/58ae2dfd8324b4840510e7fc6c1b962ed8d2ae35f9ca1d969b29538936df/tylax-0.3.7-cp310-abi3-macosx_10_12_x86_64.whl", hash = "sha256:f75a432faa4c118a7bd6cf0155b90a18437e4b520ea069b03dbc7d5467e2c6cb", size = 1424890, upload-time = "2026-07-18T06:07:19.168Z" },
+    { url = "https://files.pythonhosted.org/packages/13/19/38c81684472480d0e5c78d31ee6eb23d6fda89e44902ae68733a2cdcc56a/tylax-0.3.7-cp310-abi3-macosx_11_0_arm64.whl", hash = "sha256:b0100677eb0fd079ab07a1af64a1516289b9f174833af302dd80046e58993247", size = 1375310, upload-time = "2026-07-18T06:07:21.046Z" },
+    { url = "https://files.pythonhosted.org/packages/58/b6/bac826928676e9ef1cda1662f181fd08acc5faa3b2a80e27b9874438961c/tylax-0.3.7-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:09c1ec7f6e01a3c07e11c8cbcd048ccd1f5da875446847550c2ae0aa06545dff", size = 1410512, upload-time = "2026-07-18T06:07:22.772Z" },
+    { url = "https://files.pythonhosted.org/packages/b5/ec/74c6365141d73d04393361507b215ab2178f390905db7d4073fdda850d31/tylax-0.3.7-cp310-abi3-manylinux_2_34_x86_64.whl", hash = "sha256:478dc2047687f6ca5e984597ba39179d1fa8f03a7a809c8f7e53a5467d615313", size = 1466986, upload-time = "2026-07-18T06:07:24.278Z" },
+    { url = "https://files.pythonhosted.org/packages/c9/c8/f3b932d19585ff87e60838d52692e21baaa52b3a7c3e86f8aa4e2d73131a/tylax-0.3.7-cp310-abi3-win_amd64.whl", hash = "sha256:4562070fba2b162c0d27681f52f3a8e446c8ad71200dc39e70e426794e50905d", size = 1427216, upload-time = "2026-07-18T06:07:26.029Z" },
 ]
 
 [[package]]
@@ -1512,6 +1556,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/c7/24/5f1b3bdffd70275f6661c76461e25f024d5a38a46f04aaca912426a2b1d3/urllib3-2.6.3.tar.gz", hash = "sha256:1b62b6884944a57dbe321509ab94fd4d3b307075e0c2eae991ac71ee15ad38ed", size = 435556, upload-time = "2026-01-07T16:24:43.925Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/39/08/aaaad47bc4e9dc8c725e68f9d04865dbcb2052843ff09c97b08904852d84/urllib3-2.6.3-py3-none-any.whl", hash = "sha256:bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4", size = 131584, upload-time = "2026-01-07T16:24:42.685Z" },
+]
+
+[[package]]
+name = "uvicorn"
+version = "0.51.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "h11" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a2/65/b7c6c443ccc58678c91e1e973bbe2a878591538655d6e1d47f24ba1c51f3/uvicorn-0.51.0.tar.gz", hash = "sha256:f6f4b69b657c312f516dd2d268ab9ae6f254b11e4bac504f37b2ab58b24dd0b0", size = 94412, upload-time = "2026-07-08T10:59:05.962Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/45/ec/dbb7e5a6b91f86bfb9eb7d2988a2730907b6a729875b949c7f022e8b88fa/uvicorn-0.51.0-py3-none-any.whl", hash = "sha256:5d38af6cd620f2ae3849fb44fd4879e0890aa1febe8d47eb355fb45d93fe6a5b", size = 73219, upload-time = "2026-07-08T10:59:04.44Z" },
 ]
 
 [[package]]
