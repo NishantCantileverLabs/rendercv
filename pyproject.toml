@@ -55,6 +55,7 @@ dependencies = [
   "pydantic-extra-types>=2.11.0",  # Validate extra types
   "pydantic[email]>=2.12.5",  # Validate and parse input files
   "ruamel.yaml>=0.19.1",  # Parse YAML files
+  "tylax>=0.3.7",  # Convert LaTeX math to Typst math
 ]
 
 [project.optional-dependencies]
