@@ -1,3 +1,4 @@
+import contextlib
 import functools
 from typing import Self
 
@@ -10,13 +11,15 @@ url_validator = pydantic.TypeAdapter[pydantic.HttpUrl](pydantic.HttpUrl)
 
 
 class BasePublicationEntry(BaseEntry):
-    title: str = pydantic.Field(
+    title: str | None = pydantic.Field(
+        default=None,
         examples=[
             "Deep Learning for Computer Vision",
             "Advances in Quantum Computing",
         ],
     )
-    authors: list[str] = pydantic.Field(
+    authors: list[str] | None = pydantic.Field(
+        default=None,
         description="You can bold your name with **double asterisks**.",
         examples=[["John Doe", "**Jane Smith**", "Bob Johnson"]],
     )
@@ -31,9 +34,8 @@ class BasePublicationEntry(BaseEntry):
             " link instead of the URL."
         ),
         examples=["10.48550/arXiv.2310.03138"],
-        pattern=r"\b10\..*",
     )
-    url: pydantic.HttpUrl | None = pydantic.Field(
+    url: str | None = pydantic.Field(
         default=None,
         description="A URL link to the publication. Ignored if DOI is provided.",
     )
@@ -67,13 +69,16 @@ class BasePublicationEntry(BaseEntry):
 
         Why:
             DOI URL generation from DOI string might produce invalid URLs.
-            Post-validation ensures generated URLs are valid.
+            Post-validation ensures generated URLs are valid. This check is
+            tolerant because DOIs may be partially typed during incremental
+            editing.
 
         Returns:
             Validated publication instance.
         """
         if self.doi_url:
-            url_validator.validate_strings(self.doi_url)
+            with contextlib.suppress(pydantic.ValidationError):
+                url_validator.validate_strings(self.doi_url)
 
         return self
 

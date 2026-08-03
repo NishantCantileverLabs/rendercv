@@ -1,7 +1,6 @@
 from datetime import date as Date
 from unittest.mock import patch
 
-import pydantic
 import pytest
 from hypothesis import assume, given, settings
 from hypothesis import strategies as st
@@ -117,7 +116,7 @@ class TestProcessUrl:
             title="Paper",
             authors=["Author"],
             doi="10.1/abc",
-            url=pydantic.HttpUrl("https://example.com"),
+            url="https://example.com",
         )
 
         result = process_url(entry)
@@ -126,7 +125,7 @@ class TestProcessUrl:
 
     def test_returns_markdown_link_for_generic_url(self):
         entry = NormalEntry.model_validate(
-            {"name": "Linked", "url": pydantic.HttpUrl("https://example.com/path/")}
+            {"name": "Linked", "url": "https://example.com/path/"}
         )
 
         result = process_url(entry)
@@ -152,7 +151,7 @@ class TestProcessDoi:
         entry = PublicationEntry(
             title="Paper without DOI",
             authors=["Author"],
-            url=pydantic.HttpUrl("https://example.com"),
+            url="https://example.com",
         )
 
         with pytest.raises(RenderCVInternalError):
@@ -350,7 +349,7 @@ class TestRenderEntryTemplates:
         entry = NormalEntry.model_validate(
             {
                 "name": "Linked Item",
-                "url": pydantic.HttpUrl("https://example.com/page/"),
+                "url": "https://example.com/page/",
             }
         )
 
@@ -594,6 +593,27 @@ class TestRenderEntryTemplates:
             {"main": "**JOB_TITLE** at COMPANY_NAME (LOCATION)"},
             {"JOB_TITLE": "Engineer"},
             {"main": "**JOB_TITLE**"},
+        ),
+        # Orphaned emphasis marker removed when a placeholder inside an
+        # emphasis phrase is missing (would otherwise produce unbalanced
+        # markdown that fails to compile)
+        (
+            {"main": "*DEGREE in AREA*"},
+            {"AREA": "Mechanical Engineering"},
+            {"main": " AREA"},
+        ),
+        # Orphaned trailing bold marker removed when the matching opener was
+        # consumed together with the missing placeholder
+        (
+            {"main": "**X in AREA**"},
+            {"AREA": "Mechanical Engineering"},
+            {"main": " AREA"},
+        ),
+        # A complete bold phrase around a provided placeholder is preserved
+        (
+            {"main": "**NAME** -- **LOCATION**"},
+            {"LOCATION": "Istanbul, Turkey"},
+            {"main": " -- **LOCATION**"},
         ),
     ],
 )

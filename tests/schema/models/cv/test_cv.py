@@ -51,7 +51,7 @@ class TestCv:
         with pytest.raises(pydantic.ValidationError):
             Cv.model_validate(input)
 
-    def test_rejects_invalid_entries(self):
+    def test_accepts_entries_without_detectable_type(self):
         input: dict[str, Any] = {"name": "John Doe", "sections": {}}
         input["sections"]["section_title"] = [
             {
@@ -61,8 +61,11 @@ class TestCv:
             }
         ]
 
-        with pytest.raises(pydantic.ValidationError):
-            Cv.model_validate(input)
+        # Entries without any characteristic field fall back to NormalEntry so
+        # that incremental rendering does not fail while the user is typing.
+        cv = Cv.model_validate(input)
+        assert len(cv.rendercv_sections) == 1
+        assert cv.rendercv_sections[0].entry_type == "NormalEntry"
 
     def test_rejects_section_without_list(self):
         input: dict[str, Any] = {"name": "John Doe", "sections": {}}

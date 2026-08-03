@@ -53,7 +53,7 @@ class TestParseValidationErrors:
                 f"expected {expected_error} but got {validation_error}"
             )
 
-    def test_provides_helpful_message_for_invalid_date_format(self, tmp_path):
+    def test_accepts_partially_typed_dates(self, tmp_path):
         yaml_content = """
 cv:
     name: John Doe
@@ -68,28 +68,16 @@ cv:
 
         yaml_object = read_yaml(yaml_file)
 
-        with pytest.raises(pydantic.ValidationError) as exc_info:
-            RenderCVModel.model_validate(
-                yaml_object,
-                context={
-                    "context": ValidationContext(
-                        input_file_path=yaml_file,
-                    )
-                },
-            )
-
-        errors = parse_validation_errors(exc_info.value, yaml_object)
-        end_date_error = next(
-            (
-                err
-                for err in errors
-                if err.schema_location is not None and "end_date" in err.schema_location
-            ),
-            None,
+        # Partially typed dates are accepted so incremental rendering does not
+        # fail while the user is typing.
+        RenderCVModel.model_validate(
+            yaml_object,
+            context={
+                "context": ValidationContext(
+                    input_file_path=yaml_file,
+                )
+            },
         )
-        assert end_date_error is not None
-        assert "YYYY-MM-DD, YYYY-MM" in end_date_error.message
-        assert 'or "present"' in end_date_error.message
 
     def test_reports_nested_location_for_subsection_errors(self, tmp_path):
         yaml_content = """
@@ -99,8 +87,8 @@ cv:
         publications:
             - title: Journal Articles
               entries:
-                - authors:
-                    - John Doe
+                - title:
+                    - This should be a string, not a list.
 """
         yaml_file = tmp_path / "test.yaml"
         yaml_file.write_text(yaml_content, encoding="utf-8")
@@ -136,7 +124,7 @@ cv:
             None,
         )
         assert title_error is not None
-        assert title_error.message == "This field is required."
+        assert title_error.message == "Input should be a valid string."
 
 
 class TestParseValidationErrorsWithOverlaySources:

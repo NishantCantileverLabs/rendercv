@@ -132,10 +132,8 @@ def subsections_rendercv_model() -> RenderCVModel:
                 {
                     "title": "Career Highlights",
                     "entries": [
-                        (
-                            "Built a research platform that supports **mixed subsection"
-                            " entry types**."
-                        )
+                        "Built a research platform that supports **mixed subsection"
+                        " entry types**."
                     ],
                 },
                 {
@@ -190,7 +188,7 @@ def full_rendercv_model(testdata_dir: pathlib.Path) -> RenderCVModel:
         email="john_doe@example.com",
         photo=testdata_dir.parent / "profile_picture.jpg",
         phone=pydantic_phone_numbers.PhoneNumber("+905419999999"),
-        website=pydantic.HttpUrl("https://example.com"),
+        website="https://example.com",
         social_networks=[
             SocialNetwork(network="LinkedIn", username="johndoe"),
             SocialNetwork(network="GitHub", username="johndoe"),

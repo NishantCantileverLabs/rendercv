@@ -132,7 +132,7 @@ class TestProcessModel:
         # Connections and last updated date are added to cv
         assert result.cv._connections == [
             "[jane@example.com](mailto:jane@example.com)",
-            "[janedoe.dev](https://janedoe.dev/)",
+            "[janedoe.dev](https://janedoe.dev)",
         ]
         assert result.cv._top_note == "*Last updated in Feb 2024*"
 

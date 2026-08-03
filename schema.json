@@ -204,17 +204,22 @@
       "description": null,
       "properties": {
         "bullet": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "Python, JavaScript, C++",
             "Excellent communication skills"
           ],
-          "title": "Bullet",
-          "type": "string"
+          "title": "Bullet"
         }
       },
-      "required": [
-        "bullet"
-      ],
       "title": "BulletEntry",
       "type": "object"
     },
@@ -331,33 +336,57 @@
       "description": "User-defined contact method with custom icon and URL.\n\nWhy:\n    Built-in social networks cover common platforms, but users need\n    arbitrary contact methods (personal websites, custom platforms).\n    CustomConnection provides a FontAwesome icon, display text, and\n    optional URL for any contact channel.",
       "properties": {
         "fontawesome_icon": {
-          "title": "Fontawesome Icon",
-          "type": "string"
-        },
-        "placeholder": {
-          "title": "Placeholder",
-          "type": "string"
-        },
-        "url": {
           "anyOf": [
             {
-              "format": "uri",
-              "maxLength": 2083,
-              "minLength": 1,
               "type": "string"
             },
             {
               "type": "null"
             }
           ],
+          "default": null,
+          "description": "The Font Awesome icon name to render (from https://fontawesome.com/search).",
+          "examples": [
+            "calendar-days",
+            "link"
+          ],
+          "title": "Fontawesome Icon"
+        },
+        "placeholder": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The displayed text of the connection.",
+          "examples": [
+            "Book a call",
+            "Portfolio"
+          ],
+          "title": "Placeholder"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "A URL link for the connection.",
+          "examples": [
+            "https://cal.com/johndoe",
+            "https://portfolio.com"
+          ],
           "title": "Url"
         }
       },
-      "required": [
-        "fontawesome_icon",
-        "placeholder",
-        "url"
-      ],
       "title": "CustomConnection",
       "type": "object"
     },
@@ -753,23 +782,39 @@
       "description": null,
       "properties": {
         "institution": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "Boğaziçi University",
             "MIT",
             "Harvard University"
           ],
-          "title": "Institution",
-          "type": "string"
+          "title": "Institution"
         },
         "area": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "description": "Field of study or major.",
           "examples": [
             "Mechanical Engineering",
             "Computer Science",
             "Electrical Engineering"
           ],
-          "title": "Area",
-          "type": "string"
+          "title": "Area"
         },
         "degree": {
           "anyOf": [
@@ -905,10 +950,6 @@
           "title": "Highlights"
         }
       },
-      "required": [
-        "institution",
-        "area"
-      ],
       "title": "EducationEntry",
       "type": "object"
     },
@@ -1357,22 +1398,38 @@
       "description": null,
       "properties": {
         "company": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "Microsoft",
             "Google",
             "Princeton Plasma Physics Laboratory"
           ],
-          "title": "Company",
-          "type": "string"
+          "title": "Company"
         },
         "position": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "Software Engineer",
             "Research Assistant",
             "Project Manager"
           ],
-          "title": "Position",
-          "type": "string"
+          "title": "Position"
         },
         "date": {
           "anyOf": [
@@ -1490,10 +1547,6 @@
           "title": "Highlights"
         }
       },
-      "required": [
-        "company",
-        "position"
-      ],
       "title": "ExperienceEntry",
       "type": "object"
     },
@@ -3393,13 +3446,21 @@
       "description": null,
       "properties": {
         "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "Some Project",
             "Some Event",
             "Some Award"
           ],
-          "title": "Name",
-          "type": "string"
+          "title": "Name"
         },
         "date": {
           "anyOf": [
@@ -3517,9 +3578,6 @@
           "title": "Highlights"
         }
       },
-      "required": [
-        "name"
-      ],
       "title": "NormalEntry",
       "type": "object"
     },
@@ -3724,17 +3782,22 @@
       "description": null,
       "properties": {
         "number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "First publication about XYZ",
             "Patent for ABC technology"
           ],
-          "title": "Number",
-          "type": "string"
+          "title": "Number"
         }
       },
-      "required": [
-        "number"
-      ],
       "title": "NumberedEntry",
       "type": "object"
     },
@@ -3743,28 +3806,40 @@
       "description": null,
       "properties": {
         "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "Languages",
             "Citizenship",
             "Security Clearance"
           ],
-          "title": "Label",
-          "type": "string"
+          "title": "Label"
         },
         "details": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "English (native), Spanish (fluent)",
             "US Citizen",
             "Top Secret"
           ],
-          "title": "Details",
-          "type": "string"
+          "title": "Details"
         }
       },
-      "required": [
-        "label",
-        "details"
-      ],
       "title": "OneLineEntry",
       "type": "object"
     },
@@ -4327,14 +4402,34 @@
       "description": null,
       "properties": {
         "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "Deep Learning for Computer Vision",
             "Advances in Quantum Computing"
           ],
-          "title": "Title",
-          "type": "string"
+          "title": "Title"
         },
         "authors": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "description": "You can bold your name with **double asterisks**.",
           "examples": [
             [
@@ -4343,11 +4438,7 @@
               "Bob Johnson"
             ]
           ],
-          "items": {
-            "type": "string"
-          },
-          "title": "Authors",
-          "type": "array"
+          "title": "Authors"
         },
         "summary": {
           "anyOf": [
@@ -4367,7 +4458,6 @@
         "doi": {
           "anyOf": [
             {
-              "pattern": "\\b10\\..*",
               "type": "string"
             },
             {
@@ -4384,9 +4474,6 @@
         "url": {
           "anyOf": [
             {
-              "format": "uri",
-              "maxLength": 2083,
-              "minLength": 1,
               "type": "string"
             },
             {
@@ -4435,10 +4522,6 @@
           ]
         }
       },
-      "required": [
-        "title",
-        "authors"
-      ],
       "title": "PublicationEntry",
       "type": "object"
     },
@@ -4569,18 +4652,23 @@
       "description": null,
       "properties": {
         "reversed_number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "description": "Reverse-numbered list item. Numbering goes in reverse (5, 4, 3, 2, 1), making recent items have higher numbers.",
           "examples": [
             "Latest research paper",
             "Recent patent application"
           ],
-          "title": "Reversed Number",
-          "type": "string"
+          "title": "Reversed Number"
         }
       },
-      "required": [
-        "reversed_number"
-      ],
       "title": "ReversedNumberedEntry",
       "type": "object"
     },
@@ -4862,22 +4950,39 @@
       "additionalProperties": true,
       "properties": {
         "network": {
-          "$ref": "#/$defs/SocialNetworkName"
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SocialNetworkName"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "examples": [
+            "LinkedIn",
+            "GitHub",
+            "Mastodon"
+          ]
         },
         "username": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
           "examples": [
             "john_doe",
             "@johndoe@mastodon.social",
             "12345/john-doe"
           ],
-          "title": "Username",
-          "type": "string"
+          "title": "Username"
         }
       },
-      "required": [
-        "network",
-        "username"
-      ],
       "title": "SocialNetwork",
       "type": "object"
     },
@@ -5005,15 +5110,23 @@
       "additionalProperties": true,
       "properties": {
         "title": {
-          "title": "Title",
-          "type": "string"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The title of the subsection.",
+          "title": "Title"
         },
         "entries": {
           "title": "Entries"
         }
       },
       "required": [
-        "title",
         "entries"
       ],
       "title": "SubsectionEntry",
@@ -11582,6 +11695,7 @@
         "EB Garamond",
         "Fontin",
         "Gentium Book Plus",
+        "Helvetica Neue",
         "Lato",
         "Libertinus Serif",
         "Mukta",

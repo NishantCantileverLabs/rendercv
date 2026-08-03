@@ -11,6 +11,7 @@ class BulletEntry(BaseEntry):
         institutions. This minimal entry type captures just the text content.
     """
 
-    bullet: str = pydantic.Field(
+    bullet: str | None = pydantic.Field(
+        default=None,
         examples=["Python, JavaScript, C++", "Excellent communication skills"],
     )

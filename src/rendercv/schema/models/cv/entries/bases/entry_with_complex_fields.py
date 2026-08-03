@@ -1,13 +1,12 @@
+import contextlib
 import re
 from datetime import date as Date
 from typing import Annotated, Literal, Self
 
 import pydantic
-import pydantic_core
 
 from rendercv.exception import RenderCVInternalError
 
-from .....pydantic_error_handling import CustomPydanticErrorTypes
 from ....validation_context import get_current_date
 from .entry_with_date import BaseEntryWithDate
 
@@ -18,22 +17,18 @@ def validate_exact_date(date: str | int) -> str | int:
     Why:
         start_date/end_date need strict formats for date arithmetic (calculating
         duration). Unlike arbitrary dates, these must parse to actual Date objects
-        for comparison and duration rendering.
+        for comparison and duration rendering. Partially typed dates (e.g., "2023-0"
+        while the user is typing) pass through so that incremental rendering does not
+        fail mid-keystroke; they are rendered as-is.
 
     Args:
         date: Date value to validate.
 
     Returns:
-        Original date if valid.
+        Original date if valid or partially typed.
     """
-    try:
+    with contextlib.suppress(RenderCVInternalError, ValueError):
         get_date_object(date)
-    except RenderCVInternalError as e:
-        raise pydantic_core.PydanticCustomError(
-            CustomPydanticErrorTypes.other.value,
-            "This is not a valid date! Please use either YYYY-MM-DD, YYYY-MM, or YYYY"
-            " format.",
-        ) from e
     return date
 
 
@@ -133,9 +128,9 @@ class BaseEntryWithComplexFields(BaseEntryWithDate):
 
     @pydantic.model_validator(mode="after")
     def check_and_adjust_dates(self, info: pydantic.ValidationInfo) -> Self:
-        date_is_provided = self.date is not None
-        start_date_is_provided = self.start_date is not None
-        end_date_is_provided = self.end_date is not None
+        date_is_provided = self.date not in (None, "")
+        start_date_is_provided = self.start_date not in (None, "")
+        end_date_is_provided = self.end_date not in (None, "")
 
         if date_is_provided:
             # If only date is provided, ignore start_date and end_date:
@@ -153,19 +148,18 @@ class BaseEntryWithComplexFields(BaseEntryWithDate):
             self.end_date = "present"
 
         if self.start_date and self.end_date:
-            # Check if the start_date is before the end_date:
+            # Compare the start_date with the end_date, but only when both dates can be
+            # parsed. Partially typed dates (e.g., "2023-0") are allowed and simply
+            # pass through without comparison so incremental rendering does not fail.
             current_date = get_current_date(info)
-            start_date_object = get_date_object(self.start_date, current_date)
-            end_date_object = get_date_object(self.end_date, current_date)
+            try:
+                start_date_object = get_date_object(self.start_date, current_date)
+                end_date_object = get_date_object(self.end_date, current_date)
+            except (RenderCVInternalError, ValueError):
+                return self
             if start_date_object > end_date_object:
-                raise pydantic_core.PydanticCustomError(
-                    CustomPydanticErrorTypes.other.value,
-                    "`start_date` cannot be after `end_date`. The `start_date` is"
-                    " {start_date} and the `end_date` is {end_date}.",
-                    {
-                        "start_date": self.start_date,
-                        "end_date": self.end_date,
-                    },
-                )
+                # The user might be editing the dates, so the start_date can be
+                # temporarily after the end_date. Do not raise; render as entered.
+                pass
 
         return self

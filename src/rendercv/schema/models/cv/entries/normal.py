@@ -5,7 +5,8 @@ from .bases.entry_with_complex_fields import BaseEntryWithComplexFields
 
 
 class BaseNormalEntry(BaseEntry):
-    name: str = pydantic.Field(
+    name: str | None = pydantic.Field(
+        default=None,
         examples=["Some Project", "Some Event", "Some Award"],
     )
 

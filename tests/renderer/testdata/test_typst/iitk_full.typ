@@ -155,8 +155,120 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #section-header("Publication Entries")
 
 #block(breakable: false)[
+- ** #h(1fr) __
+]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
@@ -168,7 +280,143 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
@@ -183,22 +431,6 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
 
 #block(breakable: false)[
-- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
-
-#block(breakable: false)[
-- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
-
-#block(breakable: false)[
-- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
-
-#block(breakable: false)[
-- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
-
-#block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
 
@@ -208,11 +440,11 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
@@ -220,6 +452,106 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- ** #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) __
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
 
 #block(breakable: false)[
@@ -232,11 +564,11 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
@@ -256,7 +588,51 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils* #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- ** #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) __
@@ -272,10 +648,18 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
-- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com/")[URL]]
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://example.com")[URL]]
 
 #block(breakable: false)[
 - *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+- J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- *Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils*, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
+  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
+
+#block(breakable: false)[
+- **, _IEEE Transactions on Applied Superconductivity_ #h(1fr) _2021-09_
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname  - #link("https://doi.org/10.1007/978-3-319-69626-3_101-1")[DOI: 10.1007/978-3-319-69626-3_101-1]]
 
 #block(breakable: false)[
@@ -289,9 +673,409 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #v(-2pt)
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
 #parts.push([*Some Company*])#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
 #v(-4pt)
 
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
 
 ]
 
@@ -350,6 +1134,606 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
 #parts.push([*Some Company*])#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
 #v(-4pt)
 
 #v(2pt)
@@ -539,6 +1923,706 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #v(-2pt)
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
 #parts.push([*Some Company*])#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
 #v(-4pt)
 
@@ -789,6 +2873,491 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #v(-2pt)
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
 #parts.push([*Some Company*])#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
 #v(-4pt)
 
@@ -989,6 +3558,191 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #v(-2pt)
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
 #parts.push([*Some Company*])#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
 #v(-4pt)
 
@@ -1060,6 +3814,36 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
 #parts.push([*Some Company*])#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([*Some Company*])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Software Engineer])#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
 #v(-4pt)
 
 #v(2pt)
@@ -1094,412 +3878,1332 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
     align: center,
     [*Year*], [*Degree/Certificate*], [*Institute*], [*CPI/%*],
 
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [],
+    [],
+    [],
 
-    [None],
-    [BS-Mechanical Engineering],
+    [],
+    [],
     [Boğaziçi University],
-    [None],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [],
 
     [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [],
+    [],
 
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [],
+    [],
+    [],
 
     [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [],
+    [],
 
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
+    [],
+    [],
+    [],
     [Istanbul, Turkey],
 
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [],
+    [],
+    [],
 
-    [None],
-    [None-Mechanical Engineering],
+    [],
+    [],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
     [Boğaziçi University],
-    [None],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
 
     [2021-09],
-    [BS-Mechanical Engineering],
+    [],
     [Boğaziçi University],
-    [None],
+    [],
 
-    [None],
-    [BS-Mechanical Engineering],
+    [],
+    [],
     [Boğaziçi University],
-    [None],
+    [],
 
     [2020-06],
-    [BS-Mechanical Engineering],
+    [],
     [Boğaziçi University],
-    [None],
+    [],
 
-    [None],
-    [BS-Mechanical Engineering],
+    [],
+    [],
     [Boğaziçi University],
     [Istanbul, Turkey],
 
-    [None],
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
     [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [],
 
     [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [-Mechanical Engineering],
+    [],
+    [],
 
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
 
     [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
     [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [],
 
     [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [],
 
     [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2020-06],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2020-06],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2020-06],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
+    [],
+    [],
     [Istanbul, Turkey],
 
     [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
+    [],
+    [],
+    [],
 
     [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
+    [],
+    [],
 
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
+    [],
+    [],
+    [],
     [Istanbul, Turkey],
 
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
+    [],
+    [],
+    [],
     [Istanbul, Turkey],
 
-    [2021-09],
+    [],
+    [],
+    [],
+    [],
+
+    [],
     [BS-Mechanical Engineering],
     [Boğaziçi University],
-    [None],
+    [],
 
     [2021-09],
-    [BS-Mechanical Engineering],
+    [-Mechanical Engineering],
     [Boğaziçi University],
-    [None],
+    [],
 
-    [2021-09],
-    [BS-Mechanical Engineering],
+    [],
+    [-Mechanical Engineering],
     [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
+    [],
 
     [2020-06],
-    [BS-Mechanical Engineering],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [],
     [Boğaziçi University],
     [Istanbul, Turkey],
 
     [2020-06],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [2020-06],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [],
+    [],
+
+    [2020-06],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [],
+
+    [2020-06],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [2020-06],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
     [BS-Mechanical Engineering],
     [Boğaziçi University],
     [Istanbul, Turkey],
@@ -1507,191 +5211,1181 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
     [2020-06],
     [BS-Mechanical Engineering],
     [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2020-06],
-    [None-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [2021-09],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [None],
-
-    [None],
-    [BS-Mechanical Engineering],
-    [Boğaziçi University],
-    [Istanbul, Turkey],
+    [],
 
     [2020-06],
     [BS-Mechanical Engineering],
     [Boğaziçi University],
-    [Istanbul, Turkey],
+    [],
 
-    [2021-09],
-    [None-Mechanical Engineering],
+    [],
+    [BS-Mechanical Engineering],
     [Boğaziçi University],
     [Istanbul, Turkey],
 
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
     [2021-09],
-    [None-Mechanical Engineering],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
     [Boğaziçi University],
     [Istanbul, Turkey],
 
     [2021-09],
-    [None-Mechanical Engineering],
+    [-Mechanical Engineering],
     [Boğaziçi University],
-    [None],
+    [],
 
     [2021-09],
-    [None-Mechanical Engineering],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
     [Boğaziçi University],
     [Istanbul, Turkey],
 
     [2021-09],
-    [None-Mechanical Engineering],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
     [Boğaziçi University],
     [Istanbul, Turkey],
 
-    [None],
-    [None-Mechanical Engineering],
+    [2021-09],
+    [-Mechanical Engineering],
     [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2020-06],
+    [BS-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [-Mechanical Engineering],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [],
+    [BS-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [-Mechanical Engineering],
+    [],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [],
     [Istanbul, Turkey],
 
     [2021-09],
@@ -1707,7 +6401,7 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
     [2021-09],
     [BS-Mechanical Engineering],
     [Boğaziçi University],
-    [None],
+    [],
 
     [2021-09],
     [BS-Mechanical Engineering],
@@ -1719,14 +6413,24 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
     [Boğaziçi University],
     [Istanbul, Turkey],
 
-    [None],
+    [],
     [BS-Mechanical Engineering],
     [Boğaziçi University],
     [Istanbul, Turkey],
 
     [2021-09],
-    [None-Mechanical Engineering],
+    [-Mechanical Engineering],
     [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS],
+    [Boğaziçi University],
+    [Istanbul, Turkey],
+
+    [2021-09],
+    [BS-Mechanical Engineering],
+    [],
     [Istanbul, Turkey],
 
     [2021-09],
@@ -1740,7 +6444,52 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #section-header("Normal Entries")
 
 #block(breakable: false)[
+-  #h(1fr) 
+]
+
+#block(breakable: false)[
 - My Project #h(1fr) 
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+-  #h(1fr) 
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2020-06_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) 
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
 ]
 
 #block(breakable: false)[
@@ -1775,6 +6524,145 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
       #parts.push([*My Project*])
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) 
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) 
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2020-06_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
   #parts.join([ | ]) #h(1fr) ]
 #v(-4pt)
 
@@ -1935,6 +6823,232 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 ]
 
 #block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) 
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
 - My Project #h(1fr) _2021-09_
 ]
 
@@ -2180,6 +7294,200 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #v(-2pt)
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+-  #h(1fr) _2021-09_
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2020-06)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
       #parts.push([*My Project*])
 #parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
 #v(-4pt)
@@ -2388,6 +7696,91 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 #v(-2pt)
 #block(fill: luma(220), width: 100%, inset: 4pt)[
   #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
       #parts.push([*My Project*])
 #parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
 #v(-4pt)
@@ -2465,6 +7858,21 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
   #let parts = ()
       #parts.push([*My Project*])
 #parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) ]
+#v(-4pt)
+
+#v(2pt)
+- Did #emph[this] and this is a #strong[bold] #link("https://example.com")[link]. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. - Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+- Did that. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+#v(3pt)
+
+]
+
+#block(breakable: false)[
+#v(-2pt)
+#block(fill: luma(220), width: 100%, inset: 4pt)[
+  #let parts = ()
+#parts.push([Istanbul, Turkey])  #parts.join([ | ]) #h(1fr) _(2021-09)_]
 #v(-4pt)
 
 #v(2pt)

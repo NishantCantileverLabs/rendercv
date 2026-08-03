@@ -1,7 +1,6 @@
 import calendar
 from datetime import date as Date
 
-import pydantic
 import pytest
 from hypothesis import given, settings
 from hypothesis import strategies as st
@@ -77,11 +76,20 @@ class TestBaseEntryWithComplexFields:
             (None, None, "2020-20-20"),
         ],
     )
-    def test_rejects_invalid_dates(self, start_date, end_date, date):
-        with pytest.raises(pydantic.ValidationError):
-            BaseEntryWithComplexFields(
-                start_date=start_date, end_date=end_date, date=date
-            )
+    def test_accepts_partially_typed_or_inconsistent_dates(
+        self, start_date, end_date, date
+    ):
+        # All fields are optional and dates are not strictly validated so that
+        # incremental rendering does not fail while the user is typing.
+        entry = BaseEntryWithComplexFields(
+            start_date=start_date, end_date=end_date, date=date
+        )
+        if date is not None:
+            assert entry.date == date
+            assert entry.start_date is None
+            assert entry.end_date is None
+        else:
+            assert entry.date is None
 
     @settings(deadline=None)
     @given(date=valid_date_strings())  # ty: ignore[missing-argument]
@@ -134,10 +142,9 @@ class TestValidateArbitraryDate:
         result = validate_arbitrary_date(text)
         assert result == text
 
-    def test_invalid_month_raises(self) -> None:
-        with pytest.raises(ValueError, match="month"):
-            validate_arbitrary_date("2020-13-01")
+    def test_invalid_month_passes_through(self) -> None:
+        # Partially typed dates are allowed so incremental rendering does not fail.
+        assert validate_arbitrary_date("2020-13-01") == "2020-13-01"
 
-    def test_invalid_day_raises(self) -> None:
-        with pytest.raises(ValueError, match="day"):
-            validate_arbitrary_date("2020-02-30")
+    def test_invalid_day_passes_through(self) -> None:
+        assert validate_arbitrary_date("2020-02-30") == "2020-02-30"

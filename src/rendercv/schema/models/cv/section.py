@@ -245,11 +245,31 @@ def validate_flat_section_entries(sections_input: list[Any]) -> FlatSectionEntri
             continue
 
     if entry_type_name is None or section_type is None:
-        raise pydantic_core.PydanticCustomError(
-            CustomPydanticErrorTypes.other.value,
-            "RenderCV couldn't match this section with any entry types. Please"
-            " check the entries and make sure they are provided correctly.",
-        )
+        # Fall back to NormalEntry so that empty or partially typed sections render
+        # instead of failing. This keeps incremental rendering working while the
+        # user is still typing the entries.
+        entry_type_name = "NormalEntry"
+        section_type = section_models[NormalEntry]
+
+    # Verify that all other entries that have a detectable type match the section
+    # type. Entries without any characteristic field (empty or partially typed)
+    # are skipped so incremental rendering does not fail mid-keystroke.
+    for entry in sections_input:
+        try:
+            detected_entry_type_name, _ = get_entry_type_name_and_section_model(entry)
+        except pydantic_core.PydanticCustomError:
+            continue
+        if detected_entry_type_name != entry_type_name:
+            raise pydantic_core.PydanticCustomError(
+                CustomPydanticErrorTypes.other.value,
+                "This section contains entries of different types. RenderCV detected"
+                " the entry type of this section to be {entry_type_name}, but an"
+                " entry is of type {detected_entry_type_name}.",
+                {
+                    "entry_type_name": entry_type_name,
+                    "detected_entry_type_name": detected_entry_type_name,
+                },
+            )
 
     section = {
         "title": "Dummy Section for Validation",
@@ -272,7 +292,10 @@ def validate_flat_section_entries(sections_input: list[Any]) -> FlatSectionEntri
 
 
 class SubsectionEntry(BaseModelWithoutExtraKeys):
-    title: str
+    title: str | None = pydantic.Field(
+        default=None,
+        description="The title of the subsection.",
+    )
     entries: FlatSectionEntries
 
     @pydantic.field_validator("entries", mode="plain")
@@ -445,7 +468,9 @@ def get_rendercv_sections(
                 entry_type_name = "SubsectionEntry"
                 subsections = [
                     BaseRenderCVSubsection(
-                        title=dictionary_key_to_proper_section_title(subsection.title),
+                        title=dictionary_key_to_proper_section_title(
+                            subsection.title or ""
+                        ),
                         entry_type=get_entry_type_name_from_entries(subsection.entries),
                         entries=subsection.entries,
                     )
