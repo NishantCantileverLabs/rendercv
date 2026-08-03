@@ -1,24 +1,24 @@
 #set document(
   date: datetime(
-    year: {{ settings._resolved_current_date.year }},
-    month: {{ settings._resolved_current_date.month }},
-    day: {{ settings._resolved_current_date.day }},
+    year: 2025,
+    month: 11,
+    day: 30,
   ),
 )
 
 #set page(
-  paper: "{{ design.page.size }}",
+  paper: "a4",
   margin: (
-    top: {{ design.page.top_margin }},
-    bottom: {{ design.page.bottom_margin }},
-    left: {{ design.page.left_margin }},
-    right: {{ design.page.right_margin }}
+    top: 1cm,
+    bottom: 1cm,
+    left: 1.25cm,
+    right: 1.25cm
   ),
 )
 
 #set text(
-  font: ({{ design.typography.font_family.body.split(',') | map('trim') | map('tojson') | join(', ') }}),
-  size: {{ design.typography.font_size.body }},
+  font: ("Helvetica Neue", "Arial", "Helvetica", "Liberation Sans", "sans-serif"),
+  size: 9.5pt,
   kerning: true,
   costs: (runt: 200%),
   hyphenate: false,
@@ -34,7 +34,7 @@
     align: bottom,
     column-gutter: 2mm,
     line(length: 100%, stroke: 1.5pt),
-    text(size: {{ design.typography.font_size.section_titles }})[#title]
+    text(size: 11pt)[#title]
   )
   v(-0.35em)
 }
@@ -71,3 +71,28 @@
     )
   }
 }
+
+#grid(
+  columns: (auto, 1fr, auto),
+  column-gutter: 3mm,
+
+  [],
+
+  [
+    #text(size: 15pt)[John Doe] \
+  ],
+
+  align(right)[
+    #grid(
+      columns: (auto, auto),
+      column-gutter: 2mm,
+      align(right + horizon)[Indian Institute of \ Technology \ Roorkee],
+      image("logo.svg", width: 2cm)
+    )
+  ]
+)
+
+#section("Experience")
+
+
+- Software Engineer at Company X, 2020-2023

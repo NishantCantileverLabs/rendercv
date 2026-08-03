@@ -11,7 +11,7 @@
     right: 0.7in
   )
 )
-#set text(font: "Source Sans 3", size: 10pt)
+#set text(font: ("Source Sans 3"), size: 10pt, kerning: true, costs: (runt: 200%), hyphenate: false)
 #set par(spacing: 0.6em)
 #set list(indent: 0pt, body-indent: 4pt, tight: true)
 #set block(spacing: 0.38em)
@@ -21,7 +21,11 @@
 #set document(
   title: "John Doe",
   author: "John Doe",
-  date: auto,
+  date: datetime(
+    year: 2025,
+    month: 11,
+    day: 30,
+  ),
 )
 
 #let section-header(title, right-text: none) = {
@@ -76,26 +80,27 @@
   let labels = ()
   let details = ()
   for i in range(0, cells.len(), step: 2) {
-    labels.push(cells.at(i))
-    details.push(cells.at(i+1))
+    labels.push(table.cell(align: center + horizon)[#cells.at(i)])
+    details.push(table.cell(align: left + horizon)[#cells.at(i+1)])
   }
 
-  // Set the first columns to auto for content size, and the last one to 1fr
-  // to expand and flush the table to the right edge.
-  let cols = range(0, labels.len()).map(i => {
-    if i == labels.len() - 1 { 1fr } else { auto }
-  })
+  let num-cols = labels.len()
+  let cols = ()
+  for i in range(num-cols) {
+    if i == 0 or i == num-cols - 1 {
+      cols.push(1fr)
+    } else {
+      cols.push(auto)
+    }
+  }
 
-  // Force table container to fill width completely
-  box(width: 100%)[
-    #table(
-      columns: cols,
-      stroke: 0.5pt + black,
-      align: left,
-      ..labels,
-      ..details
-    )
-  ]
+  table(
+    columns: cols,
+    stroke: 0.5pt + black,
+    inset: 3pt,
+    ..labels,
+    ..details
+  )
 }
 
 #align(left)[
