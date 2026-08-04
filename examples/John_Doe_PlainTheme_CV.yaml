@@ -210,11 +210,11 @@ design:
   #   alignment: justified
   #   date_and_location_column_alignment: right
   #   font_family:
-  #     body: Arial, Helvetica, Liberation Sans, sans-serif
-  #     name: Arial, Helvetica, Liberation Sans, sans-serif
-  #     headline: Arial, Helvetica, Liberation Sans, sans-serif
-  #     connections: Arial, Helvetica, Liberation Sans, sans-serif
-  #     section_titles: Arial, Helvetica, Liberation Sans, sans-serif
+  #     body: Arial, Helvetica Neue, Liberation Sans, sans-serif
+  #     name: Arial, Helvetica Neue, Liberation Sans, sans-serif
+  #     headline: Arial, Helvetica Neue, Liberation Sans, sans-serif
+  #     connections: Arial, Helvetica Neue, Liberation Sans, sans-serif
+  #     section_titles: Arial, Helvetica Neue, Liberation Sans, sans-serif
   #   font_size:
   #     body: 10pt
   #     name: 28pt
@@ -253,7 +253,7 @@ design:
   # section_titles:
   #   type: with_partial_line
   #   line_thickness: 0.5pt
-  #   space_above: 12pt
+  #   space_above: 10pt
   #   space_below: 4pt
   # subsection_titles:
   #   space_above: 0cm

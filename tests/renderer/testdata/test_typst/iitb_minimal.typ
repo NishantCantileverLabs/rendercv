@@ -32,6 +32,7 @@
     width: 100%,
     inset: (top: 4pt, bottom: 4pt, left: 4pt),
     radius: 0pt,
+    sticky: true,
     text(weight: "bold", size: 10pt)[#title]
   )
   v(0.015em)

@@ -35,30 +35,44 @@
 // --- Helpers ---
 
 // Section headings with a bottom border
+// The sticky block keeps the heading with the following content when a page
+// break would otherwise leave it alone at the bottom of a page. The above and
+// below values compensate for the spacing the block wrapper introduces.
 #let section-heading(title) = {
-  v({{ design.section_titles.space_above }})
-  text(size: {{ design.typography.font_size.section_titles }}, weight: "bold", fill: {{ design.colors.section_titles }})[#title]
-  v(-8pt)
-  line(length: 100%, stroke: 0.8pt + {{ design.colors.section_titles }})
-  v({{ design.section_titles.space_below }})
+  block(
+    sticky: true,
+    width: 100%,
+    above: 16.7pt,
+    below: 12pt,
+  )[
+    #v({{ design.section_titles.space_above }})
+    #text(size: {{ design.typography.font_size.section_titles }}, weight: "bold", fill: {{ design.colors.section_titles }})[#title]
+    #v(-8pt)
+    #line(length: 100%, stroke: 0.8pt + {{ design.colors.section_titles }})
+    #v({{ design.section_titles.space_below }})
+  ]
 }
 
 // Standard Entry Formatting (title/location left, subtitle/date right)
+// The block keeps the whole entry on a single page instead of letting it
+// split across a page break.
 #let cv-entry(title, location, subtitle, date, body: none) = {
-  grid(
-    columns: (1fr, auto),
-    text(weight: "bold")[#title],
-    text()[#location]
-  )
-  v(-8pt)
-  grid(
-    columns: (1fr, auto),
-    text()[#subtitle],
-    text()[#date]
-  )
-  if body != none {
-    v(-4pt)
-    body
-  }
-  v(4pt)
+  block(breakable: false)[
+    #grid(
+      columns: (1fr, auto),
+      text(weight: "bold")[#title],
+      text()[#location]
+    )
+    #v(-8pt)
+    #grid(
+      columns: (1fr, auto),
+      text()[#subtitle],
+      text()[#date]
+    )
+    #if body != none {
+      v(-4pt)
+      body
+    }
+    #v(4pt)
+  ]
 }

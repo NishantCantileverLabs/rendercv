@@ -21,7 +21,9 @@
     columns: (14%, 32%, 1fr, 9%),
     stroke: 0.5pt + black,
     align: center,
-    [*Year*], [*Degree/Certificate*], [*Institute*], [*CPI/%*],
+    table.header(
+      [*Year*], [*Degree/Certificate*], [*Institute*], [*CPI/%*],
+    ),
 {% elif entry_type == "OneLineEntry" %}
 #v(-2pt)
 #align(center)[

@@ -9455,8 +9455,8 @@
         },
         "space_above": {
           "$ref": "#/$defs/TypstDimension",
-          "default": "12pt",
-          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `12pt`."
+          "default": "10pt",
+          "description": "It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `10pt`."
         },
         "space_below": {
           "$ref": "#/$defs/TypstDimension",

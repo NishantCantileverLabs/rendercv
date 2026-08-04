@@ -28,19 +28,21 @@
 // HELPER FUNCTIONS
 // ==========================================
 #let section(title) = {
-  v(-0.2em)
-  grid(
-    columns: (22%, auto),
-    align: bottom,
-    column-gutter: 2mm,
-    line(length: 100%, stroke: 1.5pt),
-    text(size: 11pt)[#title]
-  )
-  v(-0.35em)
+  block(sticky: true, width: 100%)[
+    #v(-0.2em)
+    #grid(
+      columns: (22%, auto),
+      align: bottom,
+      column-gutter: 2mm,
+      line(length: 100%, stroke: 1.5pt),
+      text(size: 11pt)[#title]
+    )
+    #v(-0.35em)
+  ]
 }
 
 #let entry(title, org, date, body) = {
-  block(width: 100%)[
+  block(width: 100%, breakable: false)[
     #grid(
       columns: (1fr, auto),
       [ *#title* #if org != none and org != "" [ | #org ] ],
@@ -95,270 +97,532 @@ Contact No: +905419999999 \ Email: john_doe\@example.com \   ],
 #section("Text Entries")
 
 
+#block(breakable: false)[
 - This is a #emph[TextEntry]. It is only a text and can be useful for sections like #strong[Summary]. To showcase the TextEntry completely, this sentence is added, but it doesn't contain any information.
+]
 
+#block(breakable: false)[
 - Another text entry with #emph[markdown] and #strong[bold] text. This is the second text entry.
+]
 
+#block(breakable: false)[
 - Third text with #link("https://example.com")[link] and more content.
+]
 
 #section("Publication Entries")
 
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in **, 
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, 
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in **, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - , "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
+#block(breakable: false)[
 - J. Doe, #strong[#emph[H. Tom]], S. Doe, A. Andsurname, S. Doe, A. Andsurname, "Magneto-Thermal Thin Shell Approximation for 3D Finite Element Analysis of No-Insulation Coils", in *IEEE Transactions on Applied Superconductivity*, Sept 2021
+]
 
 #section("Experience Entries")
 
