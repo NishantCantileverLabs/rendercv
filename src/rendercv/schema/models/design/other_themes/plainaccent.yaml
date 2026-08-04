@@ -24,11 +24,11 @@ design:
   typography:
     alignment: left
     font_family:
-      body: Arial, Helvetica, Liberation Sans, sans-serif
-      connections: Arial, Helvetica, Liberation Sans, sans-serif
-      headline: Arial, Helvetica, Liberation Sans, sans-serif
-      name: Arial, Helvetica, Liberation Sans, sans-serif
-      section_titles: Arial, Helvetica, Liberation Sans, sans-serif
+      body: Helvetica Neue, Liberation Sans, sans-serif
+      connections: Helvetica Neue, Liberation Sans, sans-serif
+      headline: Helvetica Neue, Liberation Sans, sans-serif
+      name: Helvetica Neue, Liberation Sans, sans-serif
+      section_titles: Helvetica Neue, Liberation Sans, sans-serif
     font_size:
       body: 10pt
       connections: 10pt

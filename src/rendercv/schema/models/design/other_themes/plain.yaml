@@ -16,7 +16,7 @@ design:
     section_titles: rgb(0, 0, 0)
     links: rgb(0, 0, 0)
   section_titles:
-    space_above: 12pt
+    space_above: 10pt
     space_below: 4pt
   sections:
     show_time_spans_in: []
@@ -24,11 +24,11 @@ design:
   typography:
     alignment: justified
     font_family:
-      body: Arial, Helvetica, Liberation Sans, sans-serif
-      connections: Arial, Helvetica, Liberation Sans, sans-serif
-      headline: Arial, Helvetica, Liberation Sans, sans-serif
-      name: Arial, Helvetica, Liberation Sans, sans-serif
-      section_titles: Arial, Helvetica, Liberation Sans, sans-serif
+      body: Arial, Helvetica Neue, Liberation Sans, sans-serif
+      connections: Arial, Helvetica Neue, Liberation Sans, sans-serif
+      headline: Arial, Helvetica Neue, Liberation Sans, sans-serif
+      name: Arial, Helvetica Neue, Liberation Sans, sans-serif
+      section_titles: Arial, Helvetica Neue, Liberation Sans, sans-serif
     font_size:
       body: 10pt
       connections: 10pt

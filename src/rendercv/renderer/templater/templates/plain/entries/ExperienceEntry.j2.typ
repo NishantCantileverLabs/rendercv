@@ -1,10 +1,10 @@
-#block[
-  #text(weight: "bold", size: 11pt)[{{ entry.position }}]
-  #linebreak()
-  #entry-line(
-    [{% if entry.company %}{{ entry.company }}{% endif %}{% if entry.company and entry.location %} | {% endif %}{% if entry.location %}{{ entry.location }}{% endif %}],
+#block(breakable: false)[
+  #entry-header(
+    [{{ entry.position }}],
     [{% if entry.DATE %}{{ entry.DATE }}{% endif %}]
   )
+  #v(2pt)
+  #text(style: "italic")[{% if entry.company %}{{ entry.company }}{% endif %}{% if entry.company and entry.location %} | {% endif %}{% if entry.location %}{{ entry.location }}{% endif %}]
   {% if entry.summary %}
   #v(2pt)
   {{ entry.summary }}
@@ -16,4 +16,3 @@
   {% endfor %}
   {% endif %}
 ]
-#v(8pt)

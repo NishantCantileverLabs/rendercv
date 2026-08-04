@@ -1,10 +1,10 @@
-#block[
-  #text(weight: "bold", size: 11pt)[{{ entry.degree }}]
-  #linebreak()
-  #entry-line(
-    [{% if entry.institution %}{{ entry.institution }}{% endif %}{% if entry.institution and entry.area %} — {% endif %}{% if entry.area %}{{ entry.area }}{% endif %}],
+#block(breakable: false)[
+  #entry-header(
+    [{{ entry.degree }}],
     [{% if entry.location %}{{ entry.location }} | {% endif %}{% if entry.DATE %}{{ entry.DATE }}{% endif %}]
   )
+  #v(2pt)
+  #text(style: "italic")[{% if entry.institution %}{{ entry.institution }}{% endif %}{% if entry.institution and entry.area %} — {% endif %}{% if entry.area %}{{ entry.area }}{% endif %}]
   {% if entry.summary %}
   #v(2pt)
   {{ entry.summary }}
@@ -16,4 +16,3 @@
   {% endfor %}
   {% endif %}
 ]
-#v(8pt)

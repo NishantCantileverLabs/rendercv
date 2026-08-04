@@ -24,31 +24,42 @@
   )
 )
 #set text(
-  font: ("Arial", "Helvetica", "Liberation Sans", "sans-serif"),
+  font: ("Arial", "Helvetica Neue", "Liberation Sans", "sans-serif"),
   size: 10pt,
   fill: rgb(0, 0, 0),
 )
 
-// Paragraph justification for the summary
-#set par(justify: true)
+// Paragraph and list formatting for a balanced layout
+#set par(justify: true, leading: 0.6em)
+#set list(tight: true, spacing: 3pt)
 
 // --- Helpers ---
 
 // Section headings with a bottom border
+// The sticky block keeps the heading with the following content when a page
+// break would otherwise leave it alone at the bottom of a page. The above and
+// below values compensate for the spacing the block wrapper introduces.
 #let section-heading(title) = {
-  v(12pt)
-  text(size: 14pt, weight: "bold", fill: rgb(0, 0, 0))[#title]
-  v(-8pt)
-  line(length: 100%, stroke: 0.8pt + rgb(0, 0, 0))
-  v(4pt)
+  block(
+    sticky: true,
+    width: 100%,
+    above: 16.7pt,
+    below: 12pt,
+  )[
+    #v(10pt)
+    #text(size: 14pt, weight: "bold", fill: rgb(0, 0, 0))[#title]
+    #v(-6pt)
+    #line(length: 100%, stroke: 0.8pt + rgb(0, 0, 0))
+    #v(4pt)
+  ]
 }
 
-// Two-column line: title left, date/place right
-#let entry-line(title, right) = {
+// Helper to put the entry title (left) and the date (right) on the same line
+#let entry-header(title, date, date-weight: "bold") = {
   grid(
     columns: (1fr, auto),
-    text(weight: "bold")[#title],
-    text(weight: "bold")[#right]
+    text(weight: "bold", size: 11pt)[#title],
+    text(weight: date-weight)[#date]
   )
 }
 
@@ -59,7 +70,7 @@
   #v(2pt)
   #text(size: 10pt)[#contact().join(text("  |  "))]
 ]
-#v(8pt)
+#v(6pt)
 
 #section-heading("EXPERIENCE")
 Software Engineer at Company X, 2020-2023

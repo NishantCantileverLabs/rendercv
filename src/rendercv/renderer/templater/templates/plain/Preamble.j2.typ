@@ -29,25 +29,36 @@
   fill: {{ design.colors.body }},
 )
 
-// Paragraph justification for the summary
-#set par(justify: true)
+// Paragraph and list formatting for a balanced layout
+#set par(justify: true, leading: 0.6em)
+#set list(tight: true, spacing: 3pt)
 
 // --- Helpers ---
 
 // Section headings with a bottom border
+// The sticky block keeps the heading with the following content when a page
+// break would otherwise leave it alone at the bottom of a page. The above and
+// below values compensate for the spacing the block wrapper introduces.
 #let section-heading(title) = {
-  v({{ design.section_titles.space_above }})
-  text(size: {{ design.typography.font_size.section_titles }}, weight: "bold", fill: {{ design.colors.section_titles }})[#title]
-  v(-8pt)
-  line(length: 100%, stroke: 0.8pt + {{ design.colors.section_titles }})
-  v({{ design.section_titles.space_below }})
+  block(
+    sticky: true,
+    width: 100%,
+    above: 16.7pt,
+    below: 12pt,
+  )[
+    #v({{ design.section_titles.space_above }})
+    #text(size: {{ design.typography.font_size.section_titles }}, weight: "bold", fill: {{ design.colors.section_titles }})[#title]
+    #v(-6pt)
+    #line(length: 100%, stroke: 0.8pt + {{ design.colors.section_titles }})
+    #v({{ design.section_titles.space_below }})
+  ]
 }
 
-// Two-column line: title left, date/place right
-#let entry-line(title, right) = {
+// Helper to put the entry title (left) and the date (right) on the same line
+#let entry-header(title, date, date-weight: "bold") = {
   grid(
     columns: (1fr, auto),
-    text(weight: "bold")[#title],
-    text(weight: "bold")[#right]
+    text(weight: "bold", size: 11pt)[#title],
+    text(weight: date-weight)[#date]
   )
 }

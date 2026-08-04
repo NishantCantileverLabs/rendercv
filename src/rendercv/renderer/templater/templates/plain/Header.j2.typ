@@ -10,4 +10,4 @@
   {% endif %}
   #text(size: {{ design.typography.font_size.connections }})[#contact().join(text("  |  "))]
 ]
-#v(8pt)
+#v(6pt)

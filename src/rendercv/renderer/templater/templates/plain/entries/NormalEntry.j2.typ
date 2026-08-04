@@ -1,10 +1,10 @@
-#block[
-  #entry-line(
+#block(breakable: false)[
+  #entry-header(
     [{{ entry.name }}],
     [{% if entry.DATE %}{{ entry.DATE }}{% endif %}]
   )
   {% if entry.location or entry.summary %}
-  #v(-8pt)
+  #v(2pt)
   #text(style: "italic")[{% if entry.location %}{{ entry.location }}{% endif %}{% if entry.location and entry.summary %} — {% endif %}{% if entry.summary %}{{ entry.summary }}{% endif %}]
   {% endif %}
   {% if entry.highlights %}
@@ -14,4 +14,3 @@
   {% endfor %}
   {% endif %}
 ]
-#v(8pt)

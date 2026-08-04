@@ -11,7 +11,7 @@
   date: datetime(
     year: 2026,
     month: 8,
-    day: 3,
+    day: 4,
   ),
 )
 #set page(
@@ -24,31 +24,42 @@
   )
 )
 #set text(
-  font: ("Arial", "Helvetica", "Liberation Sans", "sans-serif"),
+  font: ("Arial", "Helvetica Neue", "Liberation Sans", "sans-serif"),
   size: 10pt,
   fill: rgb(0, 0, 0),
 )
 
-// Paragraph justification for the summary
-#set par(justify: true)
+// Paragraph and list formatting for a balanced layout
+#set par(justify: true, leading: 0.6em)
+#set list(tight: true, spacing: 3pt)
 
 // --- Helpers ---
 
 // Section headings with a bottom border
+// The sticky block keeps the heading with the following content when a page
+// break would otherwise leave it alone at the bottom of a page. The above and
+// below values compensate for the spacing the block wrapper introduces.
 #let section-heading(title) = {
-  v(12pt)
-  text(size: 14pt, weight: "bold", fill: rgb(0, 0, 0))[#title]
-  v(-8pt)
-  line(length: 100%, stroke: 0.8pt + rgb(0, 0, 0))
-  v(4pt)
+  block(
+    sticky: true,
+    width: 100%,
+    above: 16.7pt,
+    below: 12pt,
+  )[
+    #v(10pt)
+    #text(size: 14pt, weight: "bold", fill: rgb(0, 0, 0))[#title]
+    #v(-6pt)
+    #line(length: 100%, stroke: 0.8pt + rgb(0, 0, 0))
+    #v(4pt)
+  ]
 }
 
-// Two-column line: title left, date/place right
-#let entry-line(title, right) = {
+// Helper to put the entry title (left) and the date (right) on the same line
+#let entry-header(title, date, date-weight: "bold") = {
   grid(
     columns: (1fr, auto),
-    text(weight: "bold")[#title],
-    text(weight: "bold")[#right]
+    text(weight: "bold", size: 11pt)[#title],
+    text(weight: date-weight)[#date]
   )
 }
 
@@ -64,7 +75,7 @@
   #v(2pt)
   #text(size: 10pt)[#contact().join(text("  |  "))]
 ]
-#v(8pt)
+#v(6pt)
 
 #section-heading("WELCOME TO RENDERCV")
 RenderCV reads a CV written in a YAML file, and generates a PDF with professional typography.
@@ -76,168 +87,155 @@ You can choose any of the 9 entry types for each section.
 Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], and #link("https://example.com")[link].
 #v(0.01em)
 #section-heading("EDUCATION")
-#block[
-  #text(weight: "bold", size: 11pt)[PhD]
-  #linebreak()
-  #entry-line(
-    [Princeton University — Computer Science],
+#block(breakable: false)[
+  #entry-header(
+    [PhD],
     [Princeton, NJ | Sept 2018 - May 2023]
   )
+  #v(2pt)
+  #text(style: "italic")[Princeton University — Computer Science]
   #v(2pt)
   - Thesis: Efficient Neural Architecture Search for Resource-Constrained Deployment
   - Advisor: Prof. Sanjeev Arora
   - NSF Graduate Research Fellowship, Siebel Scholar (Class of 2022)
 ]
-#v(8pt)
 
-#block[
-  #text(weight: "bold", size: 11pt)[BS]
-  #linebreak()
-  #entry-line(
-    [Boğaziçi University — Computer Engineering],
+#block(breakable: false)[
+  #entry-header(
+    [BS],
     [Istanbul, Türkiye | Sept 2014 - June 2018]
   )
+  #v(2pt)
+  #text(style: "italic")[Boğaziçi University — Computer Engineering]
   #v(2pt)
   - GPA: 3.97\/4.00, Valedictorian
   - Fulbright Scholarship recipient for Graduate Studies
 ]
-#v(8pt)
 #v(0.01em)
 #section-heading("EXPERIENCE")
-#block[
-  #text(weight: "bold", size: 11pt)[Co-Founder & CTO]
-  #linebreak()
-  #entry-line(
-    [Nexus AI | San Francisco, CA],
+#block(breakable: false)[
+  #entry-header(
+    [Co-Founder & CTO],
     [June 2023 - present]
   )
+  #v(2pt)
+  #text(style: "italic")[Nexus AI | San Francisco, CA]
   #v(2pt)
   - Built foundation model infrastructure serving 2M+ monthly API requests with 99.97\% uptime
   - Raised \$18M Series A led by Sequoia Capital, with participation from a16z and Founders Fund
   - Scaled engineering team from 3 to 28 across ML research, platform, and applied AI divisions
   - Developed proprietary inference optimization reducing latency by 73\% compared to baseline
 ]
-#v(8pt)
 
-#block[
-  #text(weight: "bold", size: 11pt)[Research Intern]
-  #linebreak()
-  #entry-line(
-    [NVIDIA Research | Santa Clara, CA],
+#block(breakable: false)[
+  #entry-header(
+    [Research Intern],
     [May 2022 - Aug 2022]
   )
+  #v(2pt)
+  #text(style: "italic")[NVIDIA Research | Santa Clara, CA]
   #v(2pt)
   - Designed sparse attention mechanism reducing transformer memory footprint by 4.2x
   - Co-authored paper accepted at NeurIPS 2022 (spotlight presentation, top 5\% of submissions)
 ]
-#v(8pt)
 
-#block[
-  #text(weight: "bold", size: 11pt)[Research Intern]
-  #linebreak()
-  #entry-line(
-    [Google DeepMind | London, UK],
+#block(breakable: false)[
+  #entry-header(
+    [Research Intern],
     [May 2021 - Aug 2021]
   )
+  #v(2pt)
+  #text(style: "italic")[Google DeepMind | London, UK]
   #v(2pt)
   - Developed reinforcement learning algorithms for multi-agent coordination
   - Published research at top-tier venues with significant academic impact - ICML 2022 main conference paper, cited 340+ times within two years - NeurIPS 2022 workshop paper on emergent communication protocols - Invited journal extension in JMLR (2023)
 ]
-#v(8pt)
 
-#block[
-  #text(weight: "bold", size: 11pt)[Research Intern]
-  #linebreak()
-  #entry-line(
-    [Apple ML Research | Cupertino, CA],
+#block(breakable: false)[
+  #entry-header(
+    [Research Intern],
     [May 2020 - Aug 2020]
   )
+  #v(2pt)
+  #text(style: "italic")[Apple ML Research | Cupertino, CA]
   #v(2pt)
   - Created on-device neural network compression pipeline deployed across 50M+ devices
   - Filed 2 patents on efficient model quantization techniques for edge inference
 ]
-#v(8pt)
 
-#block[
-  #text(weight: "bold", size: 11pt)[Research Intern]
-  #linebreak()
-  #entry-line(
-    [Microsoft Research | Redmond, WA],
+#block(breakable: false)[
+  #entry-header(
+    [Research Intern],
     [May 2019 - Aug 2019]
   )
+  #v(2pt)
+  #text(style: "italic")[Microsoft Research | Redmond, WA]
   #v(2pt)
   - Implemented novel self-supervised learning framework for low-resource language modeling
   - Research integrated into Azure Cognitive Services, reducing training data requirements by 60\%
 ]
-#v(8pt)
 #v(0.01em)
 #section-heading("PROJECTS")
-#block[
-  #entry-line(
+#block(breakable: false)[
+  #entry-header(
     [#link("https://github.com/")[FlashInfer]],
     [Jan 2023 - present]
   )
-  #v(-8pt)
+  #v(2pt)
   #text(style: "italic")[Open-source library for high-performance LLM inference kernels]
   #v(2pt)
   - Achieved 2.8x speedup over baseline attention implementations on A100 GPUs
   - Adopted by 3 major AI labs, 8,500+ GitHub stars, 200+ contributors
 ]
-#v(8pt)
 
-#block[
-  #entry-line(
+#block(breakable: false)[
+  #entry-header(
     [#link("https://github.com/")[NeuralPrune]],
     [Jan 2021]
   )
-  #v(-8pt)
+  #v(2pt)
   #text(style: "italic")[Automated neural network pruning toolkit with differentiable masks]
   #v(2pt)
   - Reduced model size by 90\% with less than 1\% accuracy degradation on ImageNet
   - Featured in PyTorch ecosystem tools, 4,200+ GitHub stars
 ]
-#v(8pt)
 #v(0.01em)
 #section-heading("PUBLICATIONS")
-#block[
-  #entry-line(
+#block(breakable: false)[
+  #entry-header(
     [Sparse Mixture-of-Experts at Scale: Efficient Routing for Trillion-Parameter Models],
     [July 2023]
   )
-  #v(-8pt)
+  #v(2pt)
   #text(style: "italic")[#emph[John Doe], Sarah Williams, David Park — NeurIPS 2023]
 ]
-#v(8pt)
 
-#block[
-  #entry-line(
+#block(breakable: false)[
+  #entry-header(
     [Neural Architecture Search via Differentiable Pruning],
     [Dec 2022]
   )
-  #v(-8pt)
+  #v(2pt)
   #text(style: "italic")[James Liu, #emph[John Doe] — NeurIPS 2022, Spotlight]
 ]
-#v(8pt)
 
-#block[
-  #entry-line(
+#block(breakable: false)[
+  #entry-header(
     [Multi-Agent Reinforcement Learning with Emergent Communication],
     [July 2022]
   )
-  #v(-8pt)
+  #v(2pt)
   #text(style: "italic")[Maria Garcia, #emph[John Doe], Tom Anderson — ICML 2022]
 ]
-#v(8pt)
 
-#block[
-  #entry-line(
+#block(breakable: false)[
+  #entry-header(
     [On-Device Model Compression via Learned Quantization],
     [May 2021]
   )
-  #v(-8pt)
+  #v(2pt)
   #text(style: "italic")[#emph[John Doe], Kevin Wu — ICLR 2021, Best Paper Award]
 ]
-#v(8pt)
 #v(0.01em)
 #section-heading("SELECTED HONORS")
 - MIT Technology Review 35 Under 35 Innovators (2024)
