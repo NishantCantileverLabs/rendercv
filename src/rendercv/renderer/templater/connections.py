@@ -121,11 +121,14 @@ def parse_connections(rendercv_model: RenderCVModel) -> list[Connection]:
                     )
 
             case "location":
-                url = None
-                body = str(rendercv_model.cv.location)
+                location = rendercv_model.cv.location
+                if not location or not location.strip():
+                    # Skip empty or whitespace-only locations so a lone location
+                    # icon is not rendered when no location is provided.
+                    continue
                 connections.append(
                     Connection(
-                        fontawesome_icon=fontawesome_icons[key], url=None, body=body
+                        fontawesome_icon=fontawesome_icons[key], url=None, body=location
                     )
                 )
 

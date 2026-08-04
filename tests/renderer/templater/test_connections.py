@@ -162,6 +162,18 @@ class TestParseConnections:
         assert connections[0].url is None
         assert connections[0].body == "New York, NY"
 
+    @pytest.mark.parametrize("location", ["", "   "])
+    def test_empty_location_produces_no_connection(self, location):
+        cv = create_cv(
+            key_order=["location", "email"], location=location, email="john@example.com"
+        )
+        model = create_rendercv_model(cv)
+
+        connections = parse_connections(model)
+
+        assert len(connections) == 1
+        assert connections[0].fontawesome_icon == fontawesome_icons["email"]
+
     def test_social_network_connection(self):
         social = SocialNetwork(network="LinkedIn", username="johndoe")
         cv = create_cv(key_order=[], social_networks=[social])
