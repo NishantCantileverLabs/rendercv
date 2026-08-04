@@ -7,6 +7,8 @@
     stroke: none,
     inset: (top: 4pt, bottom: 4pt, left: 4pt, right: 4pt),
     table.hline(),
-    [*Degree*], [*University/Institute*], [*Year*], [*CGPA/(%)*],
+    table.header(
+      [*Degree*], [*University/Institute*], [*Year*], [*CGPA/(%)*],
+    ),
     table.hline(),
 {% endif %}

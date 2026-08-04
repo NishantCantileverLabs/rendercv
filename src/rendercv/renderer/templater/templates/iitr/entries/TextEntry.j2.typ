@@ -1,1 +1,3 @@
+#block(breakable: false)[
 - {{ entry }}
+]

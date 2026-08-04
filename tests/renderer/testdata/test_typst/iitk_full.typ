@@ -35,6 +35,7 @@
     width: 100%,
     inset: 3pt,
     radius: 0pt,
+    sticky: true,
   )[
     *#text(title)*
     #if right-text != none and right-text != "" [
@@ -3876,7 +3877,9 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
     columns: (14%, 32%, 1fr, 9%),
     stroke: 0.5pt + black,
     align: center,
-    [*Year*], [*Degree/Certificate*], [*Institute*], [*CPI/%*],
+    table.header(
+      [*Year*], [*Degree/Certificate*], [*Institute*], [*CPI/%*],
+    ),
 
     [],
     [],
@@ -7914,9 +7917,13 @@ AI Researcher and Entrepreneur #h(1fr) #contact-info.join([ | ])
 
 #section-header("Bullet Entries")
 
+#block(breakable: false, spacing: 0.6em)[
 - This is a bullet entry.
+]
 
+#block(breakable: false, spacing: 0.6em)[
 - This is a bullet entry.
+]
 
 
 #section-header("Numbered Entries")

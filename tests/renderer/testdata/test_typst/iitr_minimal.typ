@@ -28,19 +28,21 @@
 // HELPER FUNCTIONS
 // ==========================================
 #let section(title) = {
-  v(-0.2em)
-  grid(
-    columns: (22%, auto),
-    align: bottom,
-    column-gutter: 2mm,
-    line(length: 100%, stroke: 1.5pt),
-    text(size: 11pt)[#title]
-  )
-  v(-0.35em)
+  block(sticky: true, width: 100%)[
+    #v(-0.2em)
+    #grid(
+      columns: (22%, auto),
+      align: bottom,
+      column-gutter: 2mm,
+      line(length: 100%, stroke: 1.5pt),
+      text(size: 11pt)[#title]
+    )
+    #v(-0.35em)
+  ]
 }
 
 #let entry(title, org, date, body) = {
-  block(width: 100%)[
+  block(width: 100%, breakable: false)[
     #grid(
       columns: (1fr, auto),
       [ *#title* #if org != none and org != "" [ | #org ] ],
@@ -95,4 +97,6 @@
 #section("Experience")
 
 
+#block(breakable: false)[
 - Software Engineer at Company X, 2020-2023
+]

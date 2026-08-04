@@ -35,6 +35,7 @@
     width: 100%,
     inset: 3pt,
     radius: 0pt,
+    sticky: true,
   )[
     *#text(title)*
     #if right-text != none and right-text != "" [

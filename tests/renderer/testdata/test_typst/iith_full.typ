@@ -32,6 +32,7 @@
     width: 100%,
     inset: (top: 4pt, bottom: 4pt, left: 4pt),
     radius: 0pt,
+    sticky: true,
     align(center)[#text(weight: "bold", size: 10pt)[#title]]
   )
   v(0.015em)
@@ -2261,7 +2262,9 @@ Third text with #link("https://example.com")[link] and more content.
     stroke: none,
     inset: (top: 4pt, bottom: 4pt, left: 4pt, right: 4pt),
     table.hline(),
-    [*Degree*], [*University/Institute*], [*Year*], [*CGPA/(%)*],
+    table.header(
+      [*Degree*], [*University/Institute*], [*Year*], [*CGPA/(%)*],
+    ),
     table.hline(),
 
     [],
@@ -5672,9 +5675,13 @@ Third text with #link("https://example.com")[link] and more content.
 
 #section-header("BULLET ENTRIES")
 
+#block(breakable: false, spacing: 0.6em)[
 - This is a bullet entry.
+]
 
+#block(breakable: false, spacing: 0.6em)[
 - This is a bullet entry.
+]
 #v(0.01em)
 
 #section-header("NUMBERED ENTRIES")
