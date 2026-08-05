@@ -899,6 +899,13 @@ class ClassicTheme(BaseModelWithoutExtraKeys):
     gender: str | None = pydantic.Field(
         default=None, description="Gender for custom themes."
     )
+    show_institute_banner: bool = pydantic.Field(
+        default=True,
+        description=(
+            "Show the institute name and logo banner in the header. The default value"
+            " is `true`."
+        ),
+    )
     page: Page = pydantic.Field(default_factory=Page)
     colors: Colors = pydantic.Field(default_factory=Colors)
     typography: Typography = pydantic.Field(default_factory=Typography)

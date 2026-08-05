@@ -297,6 +297,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
         },
@@ -1027,6 +1033,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__2"
         },
@@ -1135,6 +1147,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
         },
@@ -1242,6 +1260,12 @@
           "default": null,
           "description": "Gender for custom themes.",
           "title": "Gender"
+        },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__3"
@@ -1878,6 +1902,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__4"
         },
@@ -2280,6 +2310,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__5"
         },
@@ -2387,6 +2423,12 @@
           "default": null,
           "description": "Gender for custom themes.",
           "title": "Gender"
+        },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
@@ -2496,6 +2538,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
         },
@@ -2603,6 +2651,12 @@
           "default": null,
           "description": "Gender for custom themes.",
           "title": "Gender"
+        },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__6"
@@ -2809,6 +2863,12 @@
           "default": null,
           "description": "Gender for custom themes.",
           "title": "Gender"
+        },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__7"
@@ -3407,6 +3467,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"
         },
@@ -3930,6 +3996,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__8"
         },
@@ -4153,6 +4225,12 @@
           "description": "Gender for custom themes.",
           "title": "Gender"
         },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
+        },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__9"
         },
@@ -4260,6 +4338,12 @@
           "default": null,
           "description": "Gender for custom themes.",
           "title": "Gender"
+        },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__10"
@@ -4843,6 +4927,12 @@
           "default": null,
           "description": "Gender for custom themes.",
           "title": "Gender"
+        },
+        "show_institute_banner": {
+          "default": true,
+          "description": "Show the institute name and logo banner in the header. The default value is `true`.",
+          "title": "Show Institute Banner",
+          "type": "boolean"
         },
         "page": {
           "$ref": "#/$defs/rendercv__schema__models__design__classic_theme__Page__1"

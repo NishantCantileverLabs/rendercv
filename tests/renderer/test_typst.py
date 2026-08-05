@@ -50,6 +50,44 @@ def test_generate_typst_subsections(
     assert compare_file_with_reference(generate_file, f"{theme}_subsections.typ")
 
 
+def test_iitr_institute_banner_is_rendered_by_default(
+    tmp_path, minimal_rendercv_model: RenderCVModel
+):
+    model = RenderCVModel(
+        cv=minimal_rendercv_model.cv,
+        design={"theme": "iitr"},
+        locale=minimal_rendercv_model.locale,
+        settings=minimal_rendercv_model.settings,
+    )
+
+    model.settings.render_command.typst_path = tmp_path / "iitr.typ"
+    typst_path = generate_typst(model)
+
+    assert typst_path is not None
+    typst_contents = typst_path.read_text(encoding="utf-8")
+    assert "Indian Institute of" in typst_contents
+    assert "logo.svg" in typst_contents
+
+
+def test_iitr_institute_banner_can_be_disabled(
+    tmp_path, minimal_rendercv_model: RenderCVModel
+):
+    model = RenderCVModel(
+        cv=minimal_rendercv_model.cv,
+        design={"theme": "iitr", "show_institute_banner": False},
+        locale=minimal_rendercv_model.locale,
+        settings=minimal_rendercv_model.settings,
+    )
+
+    model.settings.render_command.typst_path = tmp_path / "iitr.typ"
+    typst_path = generate_typst(model)
+
+    assert typst_path is not None
+    typst_contents = typst_path.read_text(encoding="utf-8")
+    assert "Indian Institute of" not in typst_contents
+    assert "logo.svg" not in typst_contents
+
+
 def test_subsection_spacing_is_rendered(
     tmp_path, subsections_rendercv_model: RenderCVModel
 ):

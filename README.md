@@ -111,6 +111,16 @@ design:
   # ...and much more
 ```
 
+Some themes expose theme-specific options. For example, the `iitr` theme shows
+the IIT Roorkee logo and "Indian Institute of Technology Roorkee" in the header
+by default. Set `show_institute_banner` to `false` to hide them:
+
+```yaml
+design:
+  theme: iitr
+  show_institute_banner: false
+```
+
 ![Design Options of RenderCV](https://raw.githubusercontent.com/rendercv/rendercv/main/docs/assets/images/design_options.gif)
 
 > [!TIP]
