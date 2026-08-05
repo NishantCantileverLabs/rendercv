@@ -55,6 +55,7 @@ dependencies = [
   "pydantic-extra-types>=2.11.0",  # Validate extra types
   "pydantic[email]>=2.12.5",  # Validate and parse input files
   "ruamel.yaml>=0.19.1",  # Parse YAML files
+  "tylax>=0.3.7",  # Convert LaTeX math to Typst math
 ]
 
 [project.optional-dependencies]
@@ -62,8 +63,10 @@ full = [
   "typer>=0.24.1",  # Command-line interface
   "watchdog>=6.0.0",  # Monitor files for updates
   "typst>=0.14.8",  # Render PDF from Typst source files
-  "rendercv-fonts>=0.5.1",  # Font files for RenderCV
+  "rendercv-fonts @ git+https://github.com/NishantCantileverLabs/rendercv-fonts.git",  # Font files for RenderCV (fork)
   "packaging>=26.0",  # For version checking
+  "fastapi>=0.110.0",  # Web framework for the web interface
+  "uvicorn>=0.28.0",  # ASGI server for the web interface
 ]
 
 [project.urls]

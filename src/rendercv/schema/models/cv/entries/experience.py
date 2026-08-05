@@ -5,10 +5,12 @@ from .bases.entry_with_complex_fields import BaseEntryWithComplexFields
 
 
 class BaseExperienceEntry(BaseEntry):
-    company: str = pydantic.Field(
+    company: str | None = pydantic.Field(
+        default=None,
         examples=["Microsoft", "Google", "Princeton Plasma Physics Laboratory"],
     )
-    position: str = pydantic.Field(
+    position: str | None = pydantic.Field(
+        default=None,
         examples=["Software Engineer", "Research Assistant", "Project Manager"],
     )
 

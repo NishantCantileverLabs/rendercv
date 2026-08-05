@@ -88,13 +88,13 @@ class Cv(BaseModelWithoutExtraKeys):
     name: str | None = pydantic.Field(default=None, examples=['John Doe', 'Jane Smith'])
     headline: str | None = pydantic.Field(default=None, examples=['Software Engineer', 'Data Scientist', 'Product Manager'])
     location: str | None = pydantic.Field(default=None, examples=['New York, NY', 'London, UK', 'Istanbul, Türkiye'])
-    email: pydantic.EmailStr | list[pydantic.EmailStr] | None = pydantic.Field(default=None, examples=['john.doe@example.com', ['john.doe.1@example.com', 'john.doe.2@example.com']])
+    email: str | list[str] | None = pydantic.Field(default=None, examples=['john.doe@example.com', ['john.doe.1@example.com', 'john.doe.2@example.com']])
     photo: ExistingPathRelativeToInput | pydantic.HttpUrl | None = pydantic.Field(default=None, union_mode='left_to_right', examples=['photo.jpg', 'images/profile.png', 'https://example.com/photo.jpg'])
-    phone: pydantic_phone_numbers.PhoneNumber | list[pydantic_phone_numbers.PhoneNumber] | None = pydantic.Field(default=None, examples=['+1-234-567-8900', ['+1-234-567-8900', '+44 20 1234 5678']])
-    website: pydantic.HttpUrl | list[pydantic.HttpUrl] | None = pydantic.Field(default=None, examples=['https://johndoe.com', ['https://johndoe.com', 'https://www.janesmith.dev']])
+    phone: str | list[str] | None = pydantic.Field(default=None, examples=['+1-234-567-8900', ['+1-234-567-8900', '+44 20 1234 5678']])
+    website: str | list[str] | None = pydantic.Field(default=None, examples=['https://johndoe.com', ['https://johndoe.com', 'https://www.janesmith.dev']])
     social_networks: list[SocialNetwork] | None = pydantic.Field(default=None)
     custom_connections: list[CustomConnection] | None = pydantic.Field(default=None, examples=[[{'placeholder': 'Book a call', 'url': 'https://cal.com/johndoe', 'fontawesome_icon': 'calendar-days'}]])
-    sections: dict[str, Section] | None = pydantic.Field(default=None, examples=[{'Experience': '...', 'Education': '...', 'Projects': '...', 'Skills': '...'}])
+    sections: dict[str, Section] | None = pydantic.Field(default=None, examples=[{'Experience': '...', 'Education': '...', 'Projects': '...', 'Skills': '...', 'Selected Work': [{'title': 'Featured Projects', 'entries': '...'}, {'title': 'Open Source', 'entries': '...'}]}])
 
 ```
 
@@ -104,16 +104,16 @@ type SocialNetworkName = Literal['LinkedIn', 'GitHub', 'GitLab', 'IMDB', 'Instag
 available_social_networks = get_args(SocialNetworkName.__value__)
 
 class SocialNetwork(BaseModelWithoutExtraKeys):
-    network: SocialNetworkName = pydantic.Field()
-    username: str = pydantic.Field(examples=['john_doe', '@johndoe@mastodon.social', '12345/john-doe'])
+    network: SocialNetworkName | None = pydantic.Field(default=None, examples=['LinkedIn', 'GitHub', 'Mastodon'])
+    username: str | None = pydantic.Field(default=None, examples=['john_doe', '@johndoe@mastodon.social', '12345/john-doe'])
 
 ```
 
 ```python
 class CustomConnection(BaseModelWithoutExtraKeys):
-    fontawesome_icon: str
-    placeholder: str
-    url: pydantic.HttpUrl | None
+    fontawesome_icon: str | None = pydantic.Field(default=None, examples=['calendar-days', 'link'])
+    placeholder: str | None = pydantic.Field(default=None, description='The displayed text of the connection.', examples=['Book a call', 'Portfolio'])
+    url: str | None = pydantic.Field(default=None, description='A URL link for the connection.', examples=['https://cal.com/johndoe', 'https://portfolio.com'])
 
 ```
 
@@ -442,6 +442,11 @@ This shows every available design field with its default value. All themes share
 ```yaml
 design:
   theme: classic
+  degree:
+  department:
+  institute:
+  roll_no:
+  gender:
   page:
     size: us-letter
     top_margin: 0.7in
@@ -509,6 +514,9 @@ design:
     line_thickness: 0.5pt
     space_above: 0.5cm
     space_below: 0.3cm
+  subsection_titles:
+    space_above: 0cm
+    space_below: 0cm
   sections:
     allow_page_break: true
     space_between_regular_entries: 1.2em

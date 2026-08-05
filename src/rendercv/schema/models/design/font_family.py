@@ -23,6 +23,11 @@ available_font_families = sorted(
         "Poppins",
         "Raleway",
         "XCharter",
+        "Helvetica Neue",
+        "Arial",
+        "Helvetica",
+        "Calibri",
+        "Times New Roman",
     ]
 )
 

@@ -110,24 +110,113 @@ def render_full_template(
             file_type,
             f"SectionEnding.j2.{extension}",
             rendercv_model,
-            section_title=rendercv_section.title,
             snake_case_section_title=rendercv_section.snake_case_title,
             entry_type=rendercv_section.entry_type,
         )
-        entry_codes = []
-        for entry in rendercv_section.entries:
-            entry_code = render_single_template(
-                file_type,
-                f"entries/{rendercv_section.entry_type}.j2.{extension}",
+        section_blocks = []
+        if rendercv_section.subsections is None:
+            entries_code = render_section_entries(
                 rendercv_model,
-                entry=entry,
+                file_type,
+                extension,
+                rendercv_section.entry_type,
+                rendercv_section.entries,
             )
-            entry_codes.append(entry_code)
-        entries_code = "\n\n".join(entry_codes)
-        section_code = f"{section_beginning}\n{entries_code}\n{section_ending}"
+            if entries_code:
+                section_blocks.append(entries_code)
+        else:
+            for subsection in rendercv_section.subsections:
+                if len(subsection.entries) == 0:
+                    continue
+
+                subsection_heading = render_single_template(
+                    file_type,
+                    f"SubsectionHeading.j2.{extension}",
+                    rendercv_model,
+                    subsection_title=subsection.title,
+                    snake_case_subsection_title=subsection.snake_case_title,
+                    entry_type=subsection.entry_type,
+                )
+                entries_code = render_section_entries(
+                    rendercv_model,
+                    file_type,
+                    extension,
+                    subsection.entry_type,
+                    subsection.entries,
+                )
+                section_blocks.append(f"{subsection_heading}\n\n{entries_code}")
+
+        section_body = "\n\n".join(section_blocks)
+        section_code = f"{section_beginning}\n{section_body}\n{section_ending}"
         code += f"\n{section_code}"
 
     return code
+
+
+def theme_uses_rendercv_package(rendercv_model: RenderCVModel) -> bool:
+    """Check if the theme's effective Preamble imports the rendercv typst package.
+
+    Why:
+        The `reversed-numbered-entries` container markup is only available in
+        themes that import the rendercv typst package. Self-contained themes
+        such as the IIT themes define their own templates and do not provide
+        this function, so ReversedNumberedEntry sections must be left unwrapped
+        for them.
+
+    Args:
+        rendercv_model: CV model with theme information.
+
+    Returns:
+        True if the theme's Preamble template imports the rendercv package.
+    """
+    jinja2_environment = get_jinja2_environment(rendercv_model._input_file_path)
+    loader = jinja2_environment.loader
+    if loader is None:
+        raise RuntimeError("The Jinja2 environment has no loader.")
+    template_name = f"{rendercv_model.design.theme}/Preamble.j2.typ"
+    try:
+        source, _, _ = loader.get_source(jinja2_environment, template_name)
+    except jinja2.TemplateNotFound:
+        source, _, _ = loader.get_source(jinja2_environment, "typst/Preamble.j2.typ")
+    return "@preview/rendercv" in source
+
+
+def render_section_entries(
+    rendercv_model: RenderCVModel,
+    file_type: Literal["typst", "markdown"],
+    extension: str,
+    entry_type: str,
+    entries: list[object],
+) -> str:
+    """Render a homogeneous list of entries with the template for its entry type."""
+    entry_codes = []
+    for entry in entries:
+        entry_code = render_single_template(
+            file_type,
+            f"entries/{entry_type}.j2.{extension}",
+            rendercv_model,
+            entry=entry,
+        )
+        entry_codes.append(entry_code)
+
+    entries_code = "\n\n".join(entry_codes)
+    return wrap_entries_code(rendercv_model, file_type, entry_type, entries_code)
+
+
+def wrap_entries_code(
+    rendercv_model: RenderCVModel,
+    file_type: Literal["typst", "markdown"],
+    entry_type: str,
+    entries_code: str,
+) -> str:
+    """Wrap rendered entry blocks for entry types that need extra container markup."""
+    if entries_code == "" or entry_type != "ReversedNumberedEntry":
+        return entries_code
+
+    if file_type == "typst" and theme_uses_rendercv_package(rendercv_model):
+        return f"#reversed-numbered-entries(\n  [\n\n{entries_code}\n  ],\n)"
+
+    return entries_code
 
 
 def render_html(rendercv_model: RenderCVModel, markdown: str) -> str:

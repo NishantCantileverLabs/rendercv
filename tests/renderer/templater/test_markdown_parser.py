@@ -52,9 +52,11 @@ class TestEscapeTypstCharacters:
 
         assert escape_typst_characters(string) == expected
 
-    def test_preserves_math_blocks(self):
+    def test_escapes_math_delimiters_in_prose(self):
+        # Math spans are handled before this function runs; a `$` that reaches
+        # it is prose or currency and must be escaped.
         string = "$$a*b + c$$ and #1"
-        expected = "$a*b + c$ and \\#1"
+        expected = "\\$\\$a#sym.ast.basic#h(0pt, weak: true) b + c\\$\\$ and \\#1"
 
         assert escape_typst_characters(string) == expected
 
@@ -114,7 +116,7 @@ class TestEscapeTypstCharacters:
         ),
         (
             "* test",
-            "#sym.ast.basic test",
+            "- test",
         ),
         (
             "*test",
@@ -148,7 +150,7 @@ class TestEscapeTypstCharacters:
         ),
         (
             "#test-typst-command",
-            "#test-typst-command",
+            r"\#test-typst-command",
         ),
         (
             "#test-typst-command(a, b)",
@@ -161,11 +163,6 @@ class TestEscapeTypstCharacters:
         # things that look like commands but aren't:
         ("#1", r"\#1"),
         ("I made $100", r"I made \$100"),
-        # inside math: no escaping, keep everything as is:
-        (
-            r"$$a*b * c #cmd[x]$$",
-            r"$a*b * c #cmd[x]$",
-        ),
         ("My # Text", "My \\# Text"),
         ("My % Text", "My \\% Text"),
         ("My ~ Text", "My \\~ Text"),
@@ -180,11 +177,67 @@ class TestEscapeTypstCharacters:
             "[link_test#](Shouldn't be escaped in here & % # ~)",
             '#link("Shouldn\'t be escaped in here & % # ~")[link\\_test\\#]',
         ),
-        (
-            "$$a=5_4^3 % & #$$ # $$aaaa ___ &&$$",
-            "$a=5_4^3 % & #$ \\# $aaaa ___ &&$",
-        ),
         ("60%", "60\\%"),
+        # Bare #word without arguments is a hashtag in prose, not a command
+        ("visit #tag", r"visit \#tag"),
+        ("Email me at a@b.com or visit #tag", r"Email me at a\@b.com or visit \#tag"),
+        # Currency and prose $ must not be confused with inline math
+        ("I made $100 today", r"I made \$100 today"),
+        ("Save $20 to $50", r"Save \$20 to \$50"),
+        ("Cost: $5-$10 per item", r"Cost: \$5-\$10 per item"),
+        ("price range $x to $y", r"price range \$x to \$y"),
+        ("Earn $1,000-$2,000", r"Earn \$1,000-\$2,000"),
+        # Inline LaTeX math is converted to Typst math
+        ("Use $x^2 + y$ here", "Use $x^(2) + y$ here"),
+        ("Result: $a/b$", "Result: $a slash b$"),
+        (
+            "Euler: $e^{i\\pi} + 1 = 0$",
+            "Euler: $e^(i pi) + 1 = 0$",
+        ),
+        ("$x_1 + y_2$", "$x_(1) + y_(2)$"),
+        ("$\\alpha + \\beta$", "$alpha + beta$"),
+        (
+            "$\\sum_{i=1}^{n} \\frac{i^2}{2}$",
+            "$sum_(i = 1)^(n) frac(i^(2), 2)$",
+        ),
+        # * inside math must not be treated as Markdown emphasis
+        ("$a*b*c$", "$a *b *c$"),
+        # Math-looking content inside inline code stays literal
+        ("`$x^2$`", "`$x^2$`"),
+        ("`code with $5$`", "`code with $5$`"),
+        ("code `$a/b$` and math $c^2$", "code `$a/b$` and math $c^(2)$"),
+        ("`$a*b*c$` vs $a*b*c$", "`$a*b*c$` vs $a *b *c$"),
+        # Display math ($$...$$) becomes Typst block math with spaces
+        ("$$\\frac{1}{2}$$", "$ 1/2 $"),
+        (
+            "$$\\sum_{i=1}^{n} \\frac{i^2}{2}$$",
+            "$ sum_(i = 1)^(n) frac(i^(2), 2) $",
+        ),
+        # Math inside other Markdown constructs still works
+        ("**bold $x^2$ bold**", "#strong[bold $x^(2)$ bold]"),
+        ("- item with $y$", "- item with $y$"),
+        (
+            "[link with $z$](https://myurl.com)",
+            '#link("https://myurl.com")[link with $z$]',
+        ),
+        # Links
+        (
+            '[Google](https://www.google.com/search?q="quoted")',
+            '#link("https://www.google.com/search?q=")[Google]',
+        ),
+        ("[no url]()", "no url"),
+        # Emphasis spanning lines within a paragraph
+        ("**bold\nspanning**", "#strong[bold\nspanning]"),
+        # Lists
+        ("1. first\n2. second", "1. first\n2. second"),
+        ("- a\n- b", "- a\n- b"),
+        ("- a\n  - b", "- a\n  - b"),
+        ("- a\n    - b", "- a\n  - b"),
+        # Blockquotes
+        ("> quote", "#quote[quote]"),
+        # Indented code
+        ("    code here", "`code here`"),
+        ("3 * 4", "3 #sym.ast.basic 4"),
         (
             (
                 "!!! summary\n"
@@ -242,6 +295,26 @@ class TestMarkdownToTypst:
     def test_empty_lines_preserved(self):
         result = markdown_to_typst("**bold**\n\n*italic*")
         assert result == "#strong[bold]\n\n#emph[italic]"
+
+    def test_multiline_display_math_is_converted(self):
+        result = markdown_to_typst("$$\n\\frac{1}{2}\n$$")
+        assert result == "$ 1/2 $"
+
+    def test_multiple_math_spans_do_not_interfere(self):
+        result = markdown_to_typst("$x^2$ and $y_3$")
+        assert result == "$x^(2)$ and $y_(3)$"
+
+    def test_math_is_protected_from_markdown_emphasis(self):
+        result = markdown_to_typst("$a*b*c$ and **bold**")
+        assert result == "$a *b *c$ and #strong[bold]"
+
+    def test_math_inside_inline_code_is_not_converted(self):
+        result = markdown_to_typst("`$x^2$` and $x^2$")
+        assert result == "`$x^2$` and $x^(2)$"
+
+    def test_code_and_math_on_same_line(self):
+        result = markdown_to_typst("`$a/b$` vs $a/b$")
+        assert result == "`$a/b$` vs $a slash b$"
 
     @settings(deadline=None)
     @given(text=st.text(max_size=300))

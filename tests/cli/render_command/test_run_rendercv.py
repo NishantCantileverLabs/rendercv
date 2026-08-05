@@ -4,7 +4,6 @@ import sys
 from unittest.mock import patch
 
 import pytest
-import typer
 
 from rendercv.cli.render_command.progress_panel import ProgressPanel
 from rendercv.cli.render_command.run_rendercv import (
@@ -12,7 +11,7 @@ from rendercv.cli.render_command.run_rendercv import (
     run_rendercv,
     timed_step,
 )
-from rendercv.exception import RenderCVUserError
+from rendercv.exception import RenderCVUserError, RenderCVUserValidationError
 
 
 class TestTimedStep:
@@ -91,10 +90,10 @@ class TestRunRendercv:
 
         progress = ProgressPanel(quiet=True)
 
-        with pytest.raises(typer.Exit) as exc_info, progress:
+        with pytest.raises(RenderCVUserValidationError) as exc_info, progress:
             run_rendercv(invalid_yaml, progress)
 
-        assert exc_info.value.exit_code == 1
+        assert str(exc_info.value) != ""
 
     def test_invalid_input_file(self, tmp_path):
         invalid_schema = tmp_path / "invalid_schema.yaml"
@@ -102,10 +101,10 @@ class TestRunRendercv:
 
         progress = ProgressPanel(quiet=True)
 
-        with pytest.raises(typer.Exit) as exc_info, progress:
+        with pytest.raises(RenderCVUserValidationError) as exc_info, progress:
             run_rendercv(invalid_schema, progress)
 
-        assert exc_info.value.exit_code == 1
+        assert str(exc_info.value) != ""
 
     def test_template_syntax_error(self, tmp_path):
         os.chdir(tmp_path)
@@ -130,16 +129,18 @@ design:
 
         progress = ProgressPanel(quiet=True)
 
-        with pytest.raises(typer.Exit) as exc_info, progress:
+        with pytest.raises(RenderCVUserError) as exc_info, progress:
             run_rendercv(yaml_file, progress)
 
-        assert exc_info.value.exit_code == 1
+        assert "template" in str(exc_info.value)
 
     def test_user_error(self, tmp_path):
         yaml_file = tmp_path / "doesnt_exist.yaml"
         progress = ProgressPanel(quiet=True)
-        with pytest.raises(typer.Exit) as _, progress:
+        with pytest.raises(RenderCVUserError) as exc_info, progress:
             run_rendercv(yaml_file, progress)
+
+        assert "OS Error" in str(exc_info.value)
 
     @pytest.mark.skipif(
         sys.platform == "win32", reason="chmod doesn't work the same on Windows"
@@ -156,10 +157,10 @@ design:
         progress = ProgressPanel(quiet=True)
 
         try:
-            with pytest.raises(typer.Exit) as exc_info, progress:
+            with pytest.raises(RenderCVUserError) as exc_info, progress:
                 run_rendercv(yaml_file, progress)
 
-            assert exc_info.value.exit_code == 1
+            assert "OS Error" in str(exc_info.value)
         finally:
             # Restore permissions for cleanup
             yaml_file.chmod(original_mode)
@@ -175,12 +176,12 @@ design:
                 ".build_rendercv_dictionary_and_model",
                 side_effect=RenderCVUserError(message="test error"),
             ),
-            pytest.raises(typer.Exit) as exc_info,
+            pytest.raises(RenderCVUserError) as exc_info,
             progress,
         ):
             run_rendercv(yaml_file, progress)
 
-        assert exc_info.value.exit_code == 1
+        assert str(exc_info.value) == "test error"
 
 
 class TestCollectInputFilePaths:

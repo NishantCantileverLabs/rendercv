@@ -14,10 +14,12 @@ class BaseEducationEntry(BaseEntry):
         the final model so institution/area/degree appear before dates.
     """
 
-    institution: str = pydantic.Field(
+    institution: str | None = pydantic.Field(
+        default=None,
         examples=["Boğaziçi University", "MIT", "Harvard University"],
     )
-    area: str = pydantic.Field(
+    area: str | None = pydantic.Field(
+        default=None,
         description="Field of study or major.",
         examples=[
             "Mechanical Engineering",

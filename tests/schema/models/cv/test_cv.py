@@ -51,7 +51,7 @@ class TestCv:
         with pytest.raises(pydantic.ValidationError):
             Cv.model_validate(input)
 
-    def test_rejects_invalid_entries(self):
+    def test_accepts_entries_without_detectable_type(self):
         input: dict[str, Any] = {"name": "John Doe", "sections": {}}
         input["sections"]["section_title"] = [
             {
@@ -61,8 +61,11 @@ class TestCv:
             }
         ]
 
-        with pytest.raises(pydantic.ValidationError):
-            Cv.model_validate(input)
+        # Entries without any characteristic field fall back to NormalEntry so
+        # that incremental rendering does not fail while the user is typing.
+        cv = Cv.model_validate(input)
+        assert len(cv.rendercv_sections) == 1
+        assert cv.rendercv_sections[0].entry_type == "NormalEntry"
 
     def test_rejects_section_without_list(self):
         input: dict[str, Any] = {"name": "John Doe", "sections": {}}
@@ -81,6 +84,49 @@ class TestCv:
         assert section.title == "References"
         assert section.entry_type == "TextEntry"
         assert section.entries == []
+
+    def test_subsection_based_section(self, publication_entry):
+        input_data = {
+            "name": "John Doe",
+            "sections": {
+                "selected_work": [
+                    {
+                        "title": "summary",
+                        "entries": ["A text entry."],
+                    },
+                    {
+                        "title": "journal_articles",
+                        "entries": [publication_entry],
+                    },
+                    {
+                        "title": "conference_proceedings",
+                        "entries": [],
+                    },
+                ]
+            },
+        }
+
+        cv = Cv.model_validate(input_data)
+
+        assert len(cv.rendercv_sections) == 1
+        section = cv.rendercv_sections[0]
+        assert section.title == "Selected Work"
+        assert section.entry_type == "SubsectionEntry"
+        assert len(section.entries) == 2
+        assert section.subsections is not None
+        assert [subsection.title for subsection in section.subsections] == [
+            "Summary",
+            "Journal Articles",
+            "Conference Proceedings",
+        ]
+        assert [subsection.entry_type for subsection in section.subsections] == [
+            "TextEntry",
+            "PublicationEntry",
+            "TextEntry",
+        ]
+        assert section.subsections[0].entries == ["A text entry."]
+        assert len(section.subsections[1].entries) == 1
+        assert section.subsections[2].entries == []
 
     def test_phone_serialization(self):
         input_data = {"name": "John Doe", "phone": "+905419999999"}

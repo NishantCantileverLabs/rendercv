@@ -1,3 +1,11 @@
+#set document(
+  date: datetime(
+    year: {{ settings._resolved_current_date.year }},
+    month: {{ settings._resolved_current_date.month }},
+    day: {{ settings._resolved_current_date.day }},
+  ),
+)
+
 #set page(
   paper: "{{ design.page.size }}",
   margin: (
@@ -20,19 +28,21 @@
 // HELPER FUNCTIONS
 // ==========================================
 #let section(title) = {
-  v(-0.2em)
-  grid(
-    columns: (22%, auto),
-    align: bottom,
-    column-gutter: 2mm,
-    line(length: 100%, stroke: 1.5pt),
-    text(size: {{ design.typography.font_size.section_titles }})[#title]
-  )
-  v(-0.35em)
+  block(sticky: true, width: 100%)[
+    #v(-0.2em)
+    #grid(
+      columns: (22%, auto),
+      align: bottom,
+      column-gutter: 2mm,
+      line(length: 100%, stroke: 1.5pt),
+      text(size: {{ design.typography.font_size.section_titles }})[#title]
+    )
+    #v(-0.35em)
+  ]
 }
 
 #let entry(title, org, date, body) = {
-  block(width: 100%)[
+  block(width: 100%, breakable: false)[
     #grid(
       columns: (1fr, auto),
       [ *#title* #if org != none and org != "" [ | #org ] ],

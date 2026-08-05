@@ -1,10 +1,11 @@
 import re
 import textwrap
 from datetime import date as Date
+from typing import cast, get_args, get_origin
 
 from rendercv.exception import RenderCVInternalError
 from rendercv.schema.models.cv.entries.publication import PublicationEntry
-from rendercv.schema.models.cv.section import Entry
+from rendercv.schema.models.cv.section import Entry, EntryModel
 from rendercv.schema.models.design.classic_theme import Templates
 from rendercv.schema.models.locale.locale import Locale
 
@@ -223,7 +224,34 @@ def render_entry_templates[EntryType: Entry](
             substitute_placeholders(template, entry_fields),
         )
 
+    fill_missing_fields_with_empty_values(cast(EntryModel, entry))
+
     return entry
+
+
+def fill_missing_fields_with_empty_values(entry: EntryModel) -> None:
+    """Fill None fields with empty strings or lists so templates never render None.
+
+    Why:
+        All entry fields are optional to support incremental rendering while the
+        user is still typing. Some theme templates access entry fields directly
+        (e.g., ``{{ entry.authors|join(", ") }}``), which would crash or render
+        "None" for missing fields. Filling missing fields with empty values after
+        placeholder processing keeps direct field access safe without changing
+        the placeholder-based cleanup behavior.
+
+    Args:
+        entry: Entry whose None fields will be filled in-place.
+    """
+    for field_name, field_info in entry.__class__.model_fields.items():
+        if getattr(entry, field_name, None) is not None:
+            continue
+
+        annotation = field_info.annotation
+        if any(get_origin(arg) is list for arg in get_args(annotation)):
+            setattr(entry, field_name, [])
+        else:
+            setattr(entry, field_name, "")
 
 
 def process_highlights(highlights: list[str]) -> str:
@@ -343,16 +371,33 @@ def process_date(
             date_range_template=date_range_template,
         )
         if show_time_span:
-            time_span = compute_time_span_string(
-                start_date,
-                end_date,
-                locale=locale,
-                current_date=current_date,
-                time_span_template=time_span_template,
-            )
-            return f"{date_range}\n\n{time_span}"
+            try:
+                time_span = compute_time_span_string(
+                    start_date,
+                    end_date,
+                    locale=locale,
+                    current_date=current_date,
+                    time_span_template=time_span_template,
+                )
+            except (RenderCVInternalError, ValueError):
+                # The time span cannot be computed for partially typed dates.
+                time_span = ""
+            return f"{date_range}\n\n{time_span}".rstrip()
 
         return date_range
+
+    if start_date:
+        # Only start_date is provided (e.g., while the user is still typing the
+        # end date). Render just the start date.
+        return format_single_date(
+            start_date, locale=locale, single_date_template=single_date_template
+        )
+
+    if end_date:
+        # Only end_date is provided. Render just the end date.
+        return format_single_date(
+            end_date, locale=locale, single_date_template=single_date_template
+        )
 
     raise RenderCVInternalError("Date is not provided for this entry.")
 
@@ -478,12 +523,55 @@ def remove_not_provided_placeholders(
         )
         entry_templates = {
             key: clean_trailing_parts(
-                re.sub(r" {2,}", " ", not_provided_placeholders_pattern.sub("", value))
+                re.sub(
+                    r" {2,}",
+                    " ",
+                    balance_emphasis_markers(
+                        not_provided_placeholders_pattern.sub("", value)
+                    ),
+                )
             )
             for key, value in entry_templates.items()
         }
 
     return entry_templates
+
+
+def balance_emphasis_markers(text: str) -> str:
+    """Remove orphaned Markdown emphasis markers left by placeholder removal.
+
+    Why:
+        Removing a placeholder from inside a Markdown emphasis phrase (e.g.,
+        ``*DEGREE in AREA*``) can leave an unmatched asterisk (e.g., ``AREA*``
+        when DEGREE is missing). Markdown parsers treat that orphaned ``*`` as
+        the start of a new emphasis spanning lines, producing unbalanced Typst
+        markup that fails to compile. Balancing per line keeps the remaining
+        text renderable.
+
+    Args:
+        text: Template with potentially orphaned emphasis markers.
+
+    Returns:
+        Template with orphaned emphasis markers removed.
+    """
+    new_lines = []
+    for original_line in text.splitlines():
+        line = original_line
+
+        # An odd number of asterisks means one marker is orphaned. Remove the
+        # last asterisk until the count is even.
+        while line.count("*") % 2 == 1:
+            line = line[::-1].replace("*", "", 1)[::-1]
+
+        # A trailing "**" whose matching opening marker was removed (e.g., the
+        # opener was consumed together with a removed placeholder) is also an
+        # orphan. Drop it unless a complete bold phrase precedes it.
+        while line.endswith("**") and "**" not in line[:-2]:
+            line = line[:-2]
+
+        new_lines.append(line)
+
+    return "\n".join(new_lines)
 
 
 unwanted_trailing_parts_pattern = re.compile(r"[^A-Za-z0-9.!?\[\]\(\)\*_%]+$")

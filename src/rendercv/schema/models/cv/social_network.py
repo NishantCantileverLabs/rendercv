@@ -53,8 +53,12 @@ url_dictionary: dict[SocialNetworkName, str] = {
 
 
 class SocialNetwork(BaseModelWithoutExtraKeys):
-    network: SocialNetworkName = pydantic.Field()
-    username: str = pydantic.Field(
+    network: SocialNetworkName | None = pydantic.Field(
+        default=None,
+        examples=["LinkedIn", "GitHub", "Mastodon"],
+    )
+    username: str | None = pydantic.Field(
+        default=None,
         examples=["john_doe", "@johndoe@mastodon.social", "12345/john-doe"],
     )
 
@@ -66,7 +70,8 @@ class SocialNetwork(BaseModelWithoutExtraKeys):
         Why:
             Different platforms have specific username formats (e.g., Mastodon needs
             @user@domain, StackOverflow needs id/name). Early validation prevents
-            broken URL generation.
+            broken URL generation. Partially typed values (missing network or
+            username) pass through so incremental rendering does not fail.
 
         Args:
             username: Username to validate.
@@ -75,7 +80,10 @@ class SocialNetwork(BaseModelWithoutExtraKeys):
         Returns:
             Validated username.
         """
-        if "network" not in info.data:
+        if username is None:
+            return username
+
+        if "network" not in info.data or info.data["network"] is None:
             # the network is either not provided or not one of the available social
             # networks. In this case, don't check the username, since Pydantic will
             # raise an error for the network.
@@ -157,25 +165,33 @@ class SocialNetwork(BaseModelWithoutExtraKeys):
 
         Why:
             URL generation from username might produce invalid URLs if username
-            format is wrong. Post-validation check catches edge cases.
+            format is wrong. Post-validation check catches edge cases. Only
+            runs when both network and username are provided, since partially
+            typed networks are allowed during incremental editing.
 
         Returns:
             Validated social network instance.
         """
-        url_validator.validate_strings(self.url)
+        if self.url is not None:
+            url_validator.validate_strings(self.url)
         return self
 
     @functools.cached_property
-    def url(self) -> str:
+    def url(self) -> str | None:
         """Generate profile URL from network and username.
 
         Why:
             Users provide network+username for brevity. Property generates full
             URLs with platform-specific logic (e.g., Mastodon domain extraction).
+            Returns None when network or username is missing so that partially
+            typed social networks can be skipped during rendering.
 
         Returns:
-            Complete profile URL.
+            Complete profile URL or None if network/username are missing.
         """
+        if self.network is None or self.username is None:
+            return None
+
         if self.network == "Mastodon":
             _, username, domain = self.username.split("@")
             url = f"https://{domain}/@{username}"

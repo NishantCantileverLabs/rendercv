@@ -1,3 +1,4 @@
+import contextlib
 import re
 from datetime import date as Date
 from typing import Annotated
@@ -27,9 +28,11 @@ def validate_arbitrary_date(date: int | str) -> int | str:
     date_str = str(date)
 
     if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_str):
-        Date.fromisoformat(date_str)
+        with contextlib.suppress(ValueError):
+            Date.fromisoformat(date_str)
     elif re.fullmatch(r"\d{4}-\d{2}", date_str):
-        Date.fromisoformat(f"{date_str}-01")
+        with contextlib.suppress(ValueError):
+            Date.fromisoformat(f"{date_str}-01")
 
     return date
 

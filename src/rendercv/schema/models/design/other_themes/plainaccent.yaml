@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../../../../schema.json
+design:
+  page:
+    bottom_margin: 1.5cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_footer: false
+    show_top_note: false
+    size: a4
+    top_margin: 1.5cm
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(106, 90, 158)
+    headline: rgb(106, 90, 158)
+    connections: rgb(106, 90, 158)
+    section_titles: rgb(106, 90, 158)
+    links: rgb(106, 90, 158)
+  section_titles:
+    space_above: 10pt
+    space_below: 4pt
+  sections:
+    show_time_spans_in: []
+  theme: plainaccent
+  typography:
+    alignment: left
+    font_family:
+      body: Helvetica, Arial, Liberation Sans, sans-serif
+      connections: Helvetica, Arial, Liberation Sans, sans-serif
+      headline: Helvetica, Arial, Liberation Sans, sans-serif
+      name: Helvetica, Arial, Liberation Sans, sans-serif
+      section_titles: Helvetica, Arial, Liberation Sans, sans-serif
+    font_size:
+      body: 10pt
+      connections: 10pt
+      headline: 10pt
+      name: 22pt
+      section_titles: 12pt
+  templates:
+    date_range: "START_DATE - END_DATE"

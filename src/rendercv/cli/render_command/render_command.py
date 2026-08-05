@@ -3,6 +3,7 @@ from typing import Annotated
 
 import typer
 
+from rendercv.exception import RenderCVUserError, RenderCVUserValidationError
 from rendercv.schema.rendercv_model_builder import (
     BuildRendercvModelArguments,
 )
@@ -13,6 +14,31 @@ from .parse_override_arguments import parse_override_arguments
 from .progress_panel import ProgressPanel
 from .run_rendercv import collect_input_file_paths, run_rendercv
 from .watcher import run_function_if_files_change
+
+
+def watch_render(
+    input_file_path: pathlib.Path,
+    progress_panel: ProgressPanel,
+    arguments: BuildRendercvModelArguments,
+) -> None:
+    """Render input file and display user errors without exiting watch mode.
+
+    Why:
+        Watch mode must keep running after a failed render so the user can fix
+        the input. run_rendercv raises the actual error; here it is displayed
+        in the live panel and swallowed so the watcher continues.
+
+    Args:
+        input_file_path: Path to the main YAML input file.
+        progress_panel: Progress panel to display errors in.
+        arguments: Arguments forwarded to run_rendercv.
+    """
+    try:
+        run_rendercv(input_file_path, progress_panel, **arguments)
+    except RenderCVUserValidationError as e:
+        progress_panel.print_validation_errors(e.validation_errors)
+    except RenderCVUserError as e:
+        progress_panel.print_user_error(e)
 
 
 @app.command(
@@ -252,7 +278,7 @@ def cli_command_render(
         if watch:
             run_function_if_files_change(
                 list(resolved_files.values()),
-                lambda: run_rendercv(input_file_path, progress_panel, **arguments),
+                lambda: watch_render(input_file_path, progress_panel, arguments),
             )
         else:
             run_rendercv(input_file_path, progress_panel, **arguments)

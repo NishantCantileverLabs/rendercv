@@ -121,11 +121,14 @@ def parse_connections(rendercv_model: RenderCVModel) -> list[Connection]:
                     )
 
             case "location":
-                url = None
-                body = str(rendercv_model.cv.location)
+                location = rendercv_model.cv.location
+                if not location or not location.strip():
+                    # Skip empty or whitespace-only locations so a lone location
+                    # icon is not rendered when no location is provided.
+                    continue
                 connections.append(
                     Connection(
-                        fontawesome_icon=fontawesome_icons[key], url=None, body=body
+                        fontawesome_icon=fontawesome_icons[key], url=None, body=location
                     )
                 )
 
@@ -135,7 +138,18 @@ def parse_connections(rendercv_model: RenderCVModel) -> list[Connection]:
                         "social_networks key present but value is None"
                     )
                 for social_network in rendercv_model.cv.social_networks:
+                    if (
+                        social_network.network is None
+                        or social_network.username is None
+                    ):
+                        # Skip partially typed social networks so incremental
+                        # rendering does not fail while the user is typing.
+                        continue
                     url = social_network.url
+                    if url is None:
+                        raise RenderCVInternalError(
+                            "Social network URL is None but username is present"
+                        )
                     if rendercv_model.design.header.connections.display_urls_instead_of_usernames:
                         body = clean_url(url)
                     else:
@@ -158,6 +172,13 @@ def parse_connections(rendercv_model: RenderCVModel) -> list[Connection]:
                         "custom_connections key present but value is None"
                     )
                 for custom_connection in rendercv_model.cv.custom_connections:
+                    if (
+                        custom_connection.fontawesome_icon is None
+                        or custom_connection.placeholder is None
+                    ):
+                        # Skip partially typed custom connections so incremental
+                        # rendering does not fail while the user is typing.
+                        continue
                     url = (
                         str(custom_connection.url)
                         if custom_connection.url is not None

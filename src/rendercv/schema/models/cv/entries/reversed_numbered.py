@@ -4,7 +4,8 @@ from .bases.entry import BaseEntry
 
 
 class ReversedNumberedEntry(BaseEntry):
-    reversed_number: str = pydantic.Field(
+    reversed_number: str | None = pydantic.Field(
+        default=None,
         description=(
             "Reverse-numbered list item. Numbering goes in reverse (5, 4, 3, 2, 1),"
             " making recent items have higher numbers."
