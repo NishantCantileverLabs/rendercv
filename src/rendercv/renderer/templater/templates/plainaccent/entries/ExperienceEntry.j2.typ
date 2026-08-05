@@ -1,8 +1,8 @@
 #cv-entry(
   [{{ entry.company }}],
-  [{% if entry.location %}{{ entry.location }}{% endif %}],
-  [{{ entry.position }}],
   [{% if entry.DATE %}{{ entry.DATE }}{% endif %}],
+  [{{ entry.position }}],
+  [{% if entry.location %}{{ entry.location }}{% endif %}],
   body: [
 {% if entry.summary %}
 {{ entry.summary }}

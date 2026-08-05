@@ -1,10 +1,14 @@
 #block(breakable: false)[
   #entry-header(
-    [{{ entry.position }}],
-    [{% if entry.DATE %}{{ entry.DATE }}{% endif %}]
+    [{{ entry.company }}],
+    [{% if entry.location %}{{ entry.location }}{% endif %}]
   )
   #v(2pt)
-  #text(style: "italic")[{% if entry.company %}{{ entry.company }}{% endif %}{% if entry.company and entry.location %} | {% endif %}{% if entry.location %}{{ entry.location }}{% endif %}]
+  #grid(
+    columns: (1fr, auto),
+    text(style: "italic")[{% if entry.position %}{{ entry.position }}{% endif %}],
+    text(style: "italic")[{% if entry.DATE %}{{ entry.DATE }}{% endif %}]
+  )
   {% if entry.summary %}
   #v(2pt)
   {{ entry.summary }}
