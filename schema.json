@@ -11691,10 +11691,13 @@
     },
     "rendercv__schema__models__design__font_family__FontFamily": {
       "enum": [
+        "Arial",
+        "Calibri",
         "DejaVu Sans Mono",
         "EB Garamond",
         "Fontin",
         "Gentium Book Plus",
+        "Helvetica",
         "Helvetica Neue",
         "Lato",
         "Libertinus Serif",
@@ -11707,6 +11710,7 @@
         "Raleway",
         "Roboto",
         "Source Sans 3",
+        "Times New Roman",
         "Ubuntu",
         "XCharter"
       ],
