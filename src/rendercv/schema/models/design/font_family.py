@@ -24,6 +24,10 @@ available_font_families = sorted(
         "Raleway",
         "XCharter",
         "Helvetica Neue",
+        "Arial",
+        "Helvetica",
+        "Calibri",
+        "Times New Roman",
     ]
 )
 

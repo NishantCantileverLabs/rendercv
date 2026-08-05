@@ -11,7 +11,7 @@
   date: datetime(
     year: 2026,
     month: 8,
-    day: 4,
+    day: 5,
   ),
 )
 #set page(
@@ -24,7 +24,7 @@
   )
 )
 #set text(
-  font: ("Arial", "Helvetica Neue", "Liberation Sans", "sans-serif"),
+  font: ("Helvetica", "Arial", "Liberation Sans", "sans-serif"),
   size: 10pt,
   fill: rgb(0, 0, 0),
 )
@@ -115,11 +115,15 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 #section-heading("EXPERIENCE")
 #block(breakable: false)[
   #entry-header(
-    [Co-Founder & CTO],
-    [June 2023 - present]
+    [Nexus AI],
+    [San Francisco, CA]
   )
   #v(2pt)
-  #text(style: "italic")[Nexus AI | San Francisco, CA]
+  #grid(
+    columns: (1fr, auto),
+    text(style: "italic")[Co-Founder & CTO],
+    text(style: "italic")[June 2023 - present]
+  )
   #v(2pt)
   - Built foundation model infrastructure serving 2M+ monthly API requests with 99.97\% uptime
   - Raised \$18M Series A led by Sequoia Capital, with participation from a16z and Founders Fund
@@ -129,11 +133,15 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #block(breakable: false)[
   #entry-header(
-    [Research Intern],
-    [May 2022 - Aug 2022]
+    [NVIDIA Research],
+    [Santa Clara, CA]
   )
   #v(2pt)
-  #text(style: "italic")[NVIDIA Research | Santa Clara, CA]
+  #grid(
+    columns: (1fr, auto),
+    text(style: "italic")[Research Intern],
+    text(style: "italic")[May 2022 - Aug 2022]
+  )
   #v(2pt)
   - Designed sparse attention mechanism reducing transformer memory footprint by 4.2x
   - Co-authored paper accepted at NeurIPS 2022 (spotlight presentation, top 5\% of submissions)
@@ -141,11 +149,15 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #block(breakable: false)[
   #entry-header(
-    [Research Intern],
-    [May 2021 - Aug 2021]
+    [Google DeepMind],
+    [London, UK]
   )
   #v(2pt)
-  #text(style: "italic")[Google DeepMind | London, UK]
+  #grid(
+    columns: (1fr, auto),
+    text(style: "italic")[Research Intern],
+    text(style: "italic")[May 2021 - Aug 2021]
+  )
   #v(2pt)
   - Developed reinforcement learning algorithms for multi-agent coordination
   - Published research at top-tier venues with significant academic impact - ICML 2022 main conference paper, cited 340+ times within two years - NeurIPS 2022 workshop paper on emergent communication protocols - Invited journal extension in JMLR (2023)
@@ -153,11 +165,15 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #block(breakable: false)[
   #entry-header(
-    [Research Intern],
-    [May 2020 - Aug 2020]
+    [Apple ML Research],
+    [Cupertino, CA]
   )
   #v(2pt)
-  #text(style: "italic")[Apple ML Research | Cupertino, CA]
+  #grid(
+    columns: (1fr, auto),
+    text(style: "italic")[Research Intern],
+    text(style: "italic")[May 2020 - Aug 2020]
+  )
   #v(2pt)
   - Created on-device neural network compression pipeline deployed across 50M+ devices
   - Filed 2 patents on efficient model quantization techniques for edge inference
@@ -165,11 +181,15 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #block(breakable: false)[
   #entry-header(
-    [Research Intern],
-    [May 2019 - Aug 2019]
+    [Microsoft Research],
+    [Redmond, WA]
   )
   #v(2pt)
-  #text(style: "italic")[Microsoft Research | Redmond, WA]
+  #grid(
+    columns: (1fr, auto),
+    text(style: "italic")[Research Intern],
+    text(style: "italic")[May 2019 - Aug 2019]
+  )
   #v(2pt)
   - Implemented novel self-supervised learning framework for low-resource language modeling
   - Research integrated into Azure Cognitive Services, reducing training data requirements by 60\%
@@ -203,39 +223,35 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 #section-heading("PUBLICATIONS")
 #block(breakable: false)[
   #entry-header(
-    [Sparse Mixture-of-Experts at Scale: Efficient Routing for Trillion-Parameter Models],
+    [#emph[John Doe], Sarah Williams, David Park],
     [July 2023]
   )
   #v(2pt)
-  #text(style: "italic")[#emph[John Doe], Sarah Williams, David Park — NeurIPS 2023]
-]
+#link("10.1234/neurips.2023.1234")[Sparse Mixture-of-Experts at Scale: Efficient Routing for Trillion-Parameter Models] — #text(style: "italic")[NeurIPS 2023]]
 
 #block(breakable: false)[
   #entry-header(
-    [Neural Architecture Search via Differentiable Pruning],
+    [James Liu, #emph[John Doe]],
     [Dec 2022]
   )
   #v(2pt)
-  #text(style: "italic")[James Liu, #emph[John Doe] — NeurIPS 2022, Spotlight]
-]
+#link("10.1234/neurips.2022.5678")[Neural Architecture Search via Differentiable Pruning] — #text(style: "italic")[NeurIPS 2022, Spotlight]]
 
 #block(breakable: false)[
   #entry-header(
-    [Multi-Agent Reinforcement Learning with Emergent Communication],
+    [Maria Garcia, #emph[John Doe], Tom Anderson],
     [July 2022]
   )
   #v(2pt)
-  #text(style: "italic")[Maria Garcia, #emph[John Doe], Tom Anderson — ICML 2022]
-]
+#link("10.1234/icml.2022.9012")[Multi-Agent Reinforcement Learning with Emergent Communication] — #text(style: "italic")[ICML 2022]]
 
 #block(breakable: false)[
   #entry-header(
-    [On-Device Model Compression via Learned Quantization],
+    [#emph[John Doe], Kevin Wu],
     [May 2021]
   )
   #v(2pt)
-  #text(style: "italic")[#emph[John Doe], Kevin Wu — ICLR 2021, Best Paper Award]
-]
+#link("10.1234/iclr.2021.3456")[On-Device Model Compression via Learned Quantization] — #text(style: "italic")[ICLR 2021, Best Paper Award]]
 #v(0.01em)
 #section-heading("SELECTED HONORS")
 - MIT Technology Review 35 Under 35 Innovators (2024)

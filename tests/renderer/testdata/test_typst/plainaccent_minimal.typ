@@ -24,7 +24,7 @@
   )
 )
 #set text(
-  font: ("Helvetica Neue", "Liberation Sans", "sans-serif"),
+  font: ("Helvetica", "Arial", "Liberation Sans", "sans-serif"),
   size: 10pt,
   fill: rgb(0, 0, 0),
 )

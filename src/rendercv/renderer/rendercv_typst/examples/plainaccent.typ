@@ -11,7 +11,7 @@
   date: datetime(
     year: 2026,
     month: 8,
-    day: 4,
+    day: 5,
   ),
 )
 #set page(
@@ -24,7 +24,7 @@
   )
 )
 #set text(
-  font: ("Helvetica Neue", "Liberation Sans", "sans-serif"),
+  font: ("Helvetica", "Arial", "Liberation Sans", "sans-serif"),
   size: 10pt,
   fill: rgb(0, 0, 0),
 )
@@ -127,9 +127,9 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 #section-heading("Experience")
 #cv-entry(
   [Nexus AI],
-  [San Francisco, CA],
-  [Co-Founder & CTO],
   [June 2023 - present],
+  [Co-Founder & CTO],
+  [San Francisco, CA],
   body: [
 - Built foundation model infrastructure serving 2M+ monthly API requests with 99.97\% uptime
 - Raised \$18M Series A led by Sequoia Capital, with participation from a16z and Founders Fund
@@ -140,9 +140,9 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #cv-entry(
   [NVIDIA Research],
-  [Santa Clara, CA],
-  [Research Intern],
   [May 2022 - Aug 2022],
+  [Research Intern],
+  [Santa Clara, CA],
   body: [
 - Designed sparse attention mechanism reducing transformer memory footprint by 4.2x
 - Co-authored paper accepted at NeurIPS 2022 (spotlight presentation, top 5\% of submissions)
@@ -151,9 +151,9 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #cv-entry(
   [Google DeepMind],
-  [London, UK],
-  [Research Intern],
   [May 2021 - Aug 2021],
+  [Research Intern],
+  [London, UK],
   body: [
 - Developed reinforcement learning algorithms for multi-agent coordination
 - Published research at top-tier venues with significant academic impact - ICML 2022 main conference paper, cited 340+ times within two years - NeurIPS 2022 workshop paper on emergent communication protocols - Invited journal extension in JMLR (2023)
@@ -162,9 +162,9 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #cv-entry(
   [Apple ML Research],
-  [Cupertino, CA],
-  [Research Intern],
   [May 2020 - Aug 2020],
+  [Research Intern],
+  [Cupertino, CA],
   body: [
 - Created on-device neural network compression pipeline deployed across 50M+ devices
 - Filed 2 patents on efficient model quantization techniques for edge inference
@@ -173,9 +173,9 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
 #cv-entry(
   [Microsoft Research],
-  [Redmond, WA],
-  [Research Intern],
   [May 2019 - Aug 2019],
+  [Research Intern],
+  [Redmond, WA],
   body: [
 - Implemented novel self-supervised learning framework for low-resource language modeling
 - Research integrated into Azure Cognitive Services, reducing training data requirements by 60\%
@@ -207,37 +207,37 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 #v(0.01em)
 #section-heading("Publications")
 #cv-entry(
-  [Sparse Mixture-of-Experts at Scale: Efficient Routing for Trillion-Parameter Models],
-  [],
-  [#emph[John Doe], Sarah Williams, David Park — NeurIPS 2023],
+  [#emph[John Doe], Sarah Williams, David Park],
   [July 2023],
+  [#link("10.1234/neurips.2023.1234")[Sparse Mixture-of-Experts at Scale: Efficient Routing for Trillion-Parameter Models] — #text(style: "italic")[NeurIPS 2023]],
+  [],
   body: [
   ]
 )
 
 #cv-entry(
-  [Neural Architecture Search via Differentiable Pruning],
-  [],
-  [James Liu, #emph[John Doe] — NeurIPS 2022, Spotlight],
+  [James Liu, #emph[John Doe]],
   [Dec 2022],
+  [#link("10.1234/neurips.2022.5678")[Neural Architecture Search via Differentiable Pruning] — #text(style: "italic")[NeurIPS 2022, Spotlight]],
+  [],
   body: [
   ]
 )
 
 #cv-entry(
-  [Multi-Agent Reinforcement Learning with Emergent Communication],
-  [],
-  [Maria Garcia, #emph[John Doe], Tom Anderson — ICML 2022],
+  [Maria Garcia, #emph[John Doe], Tom Anderson],
   [July 2022],
+  [#link("10.1234/icml.2022.9012")[Multi-Agent Reinforcement Learning with Emergent Communication] — #text(style: "italic")[ICML 2022]],
+  [],
   body: [
   ]
 )
 
 #cv-entry(
-  [On-Device Model Compression via Learned Quantization],
-  [],
-  [#emph[John Doe], Kevin Wu — ICLR 2021, Best Paper Award],
+  [#emph[John Doe], Kevin Wu],
   [May 2021],
+  [#link("10.1234/iclr.2021.3456")[On-Device Model Compression via Learned Quantization] — #text(style: "italic")[ICLR 2021, Best Paper Award]],
+  [],
   body: [
   ]
 )

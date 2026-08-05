@@ -210,11 +210,11 @@ design:
   #   alignment: left
   #   date_and_location_column_alignment: right
   #   font_family:
-  #     body: Helvetica Neue, Liberation Sans, sans-serif
-  #     name: Helvetica Neue, Liberation Sans, sans-serif
-  #     headline: Helvetica Neue, Liberation Sans, sans-serif
-  #     connections: Helvetica Neue, Liberation Sans, sans-serif
-  #     section_titles: Helvetica Neue, Liberation Sans, sans-serif
+  #     body: Helvetica, Arial, Liberation Sans, sans-serif
+  #     name: Helvetica, Arial, Liberation Sans, sans-serif
+  #     headline: Helvetica, Arial, Liberation Sans, sans-serif
+  #     connections: Helvetica, Arial, Liberation Sans, sans-serif
+  #     section_titles: Helvetica, Arial, Liberation Sans, sans-serif
   #   font_size:
   #     body: 10pt
   #     name: 22pt
