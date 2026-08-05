@@ -11,7 +11,9 @@
   row-gutter: 0.3em,
 
   align(left + horizon)[
+  {% if design.show_institute_banner %}
     #image("iith.svg", width: 0.7in)
+  {% endif %}
   ],
 
   align(center + horizon)[

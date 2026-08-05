@@ -111,9 +111,9 @@ design:
   # ...and much more
 ```
 
-Some themes expose theme-specific options. For example, the `iitr` theme shows
-the IIT Roorkee logo and "Indian Institute of Technology Roorkee" in the header
-by default. Set `show_institute_banner` to `false` to hide them:
+Some themes expose theme-specific options. For example, the `iitr`, `iitb`, and
+`iith` themes show their institute logo and name in the header by default. Set
+`show_institute_banner` to `false` to hide them:
 
 ```yaml
 design:
