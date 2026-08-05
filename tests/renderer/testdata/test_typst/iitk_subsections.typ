@@ -86,14 +86,7 @@
   }
 
   let num-cols = labels.len()
-  let cols = ()
-  for i in range(num-cols) {
-    if i == 0 or i == num-cols - 1 {
-      cols.push(1fr)
-    } else {
-      cols.push(auto)
-    }
-  }
+  let cols = (1fr,) * num-cols
 
   table(
     columns: cols,
