@@ -1,6 +1,6 @@
 import pytest
-import rendercv_fonts
 
+from rendercv.renderer import rendercv_fonts
 from rendercv.schema.models.design.font_family import available_font_families
 
 icon_font_families = {"Font Awesome 7"}
