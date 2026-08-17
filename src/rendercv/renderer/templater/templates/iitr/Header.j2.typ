@@ -17,6 +17,7 @@
     {% if cv.custom_fields and cv.custom_fields.reg_no %}Registration No: {{ cv.custom_fields.reg_no }}{% endif %}
   ],
 
+  {% if design.show_institute_banner %}
   align(right)[
     #grid(
       columns: (auto, auto),
@@ -25,4 +26,5 @@
       image("logo.svg", width: 2cm)
     )
   ]
+  {% endif %}
 )

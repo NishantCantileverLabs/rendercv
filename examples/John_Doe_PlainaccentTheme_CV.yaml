@@ -188,6 +188,7 @@ design:
   # institute:
   # roll_no:
   # gender:
+  # show_institute_banner: true
   # page:
   #   size: a4
   #   top_margin: 1.5cm

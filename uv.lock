@@ -1233,7 +1233,6 @@ dependencies = [
 full = [
     { name = "fastapi" },
     { name = "packaging" },
-    { name = "rendercv-fonts" },
     { name = "typer" },
     { name = "typst" },
     { name = "uvicorn" },
@@ -1278,7 +1277,6 @@ requires-dist = [
     { name = "phonenumbers", specifier = ">=9.0.24" },
     { name = "pydantic", extras = ["email"], specifier = ">=2.12.5" },
     { name = "pydantic-extra-types", specifier = ">=2.11.0" },
-    { name = "rendercv-fonts", marker = "extra == 'full'", git = "https://github.com/NishantCantileverLabs/rendercv-fonts.git" },
     { name = "ruamel-yaml", specifier = ">=0.19.1" },
     { name = "tylax", specifier = ">=0.3.7" },
     { name = "typer", marker = "extra == 'full'", specifier = ">=0.24.1" },
@@ -1314,11 +1312,6 @@ update-entry-figures = [
     { name = "pillow", specifier = "==10.4.0" },
     { name = "pymupdf", specifier = "==1.26.5" },
 ]
-
-[[package]]
-name = "rendercv-fonts"
-version = "0.5.2"
-source = { git = "https://github.com/NishantCantileverLabs/rendercv-fonts.git#fb0ebbeda4628b1e6ec177163cf408cd021bb033" }
 
 [[package]]
 name = "requests"
