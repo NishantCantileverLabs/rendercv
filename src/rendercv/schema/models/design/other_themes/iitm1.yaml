@@ -1,0 +1,21 @@
+design:
+  page:
+    bottom_margin: 0.2in
+    left_margin: 0.2in
+    right_margin: 0.2in
+    size: a4
+    top_margin: 0.2in
+  theme: iitm1
+  typography:
+    font_family:
+      body: Cambria
+      connections: Cambria
+      headline: Cambria
+      name: Cambria
+      section_titles: Cambria
+    font_size:
+      body: 9pt
+      connections: 9pt
+      headline: 9pt
+      name: 18pt
+      section_titles: 10pt
