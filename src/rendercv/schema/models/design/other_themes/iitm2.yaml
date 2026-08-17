@@ -1,0 +1,21 @@
+design:
+  page:
+    bottom_margin: 0.75cm
+    left_margin: 1cm
+    right_margin: 1cm
+    size: a4
+    top_margin: 0.75cm
+  theme: iitm2
+  typography:
+    font_family:
+      body: Times New Roman
+      connections: Times New Roman
+      headline: Times New Roman
+      name: Times New Roman
+      section_titles: Times New Roman
+    font_size:
+      body: 10pt
+      connections: 10pt
+      headline: 10pt
+      name: 14pt
+      section_titles: 11pt

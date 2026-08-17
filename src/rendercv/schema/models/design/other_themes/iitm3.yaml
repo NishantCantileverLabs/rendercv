@@ -1,0 +1,27 @@
+design:
+  colors:
+    body: rgb(0, 0, 0)
+    connections: rgb(43, 80, 140)
+    headline: rgb(0, 0, 0)
+    name: rgb(43, 80, 140)
+    section_titles: rgb(255, 255, 255)
+  page:
+    bottom_margin: 1em
+    left_margin: 0.5em
+    right_margin: 0.5em
+    size: a4
+    top_margin: 1.5em
+  theme: iitm3
+  typography:
+    font_family:
+      body: Times New Roman
+      connections: Times New Roman
+      headline: Times New Roman
+      name: Times New Roman
+      section_titles: Times New Roman
+    font_size:
+      body: 10pt
+      connections: 10pt
+      headline: 10pt
+      name: 16pt
+      section_titles: 11pt
