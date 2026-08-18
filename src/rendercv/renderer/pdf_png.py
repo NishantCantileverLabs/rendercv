@@ -5,12 +5,12 @@ import shutil
 import tempfile
 import tomllib
 
-import rendercv_fonts
 import typst
 
 from rendercv.exception import RenderCVInternalError
 from rendercv.schema.models.rendercv_model import RenderCVModel
 
+from . import rendercv_fonts
 from .path_resolver import resolve_rendercv_file_path
 from .templater.templater import templates_directory
 

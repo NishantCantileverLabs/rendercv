@@ -42,8 +42,6 @@ with tempfile.TemporaryDirectory() as temp_dir:
             "--collect-all",
             "rendercv",
             "--collect-all",
-            "rendercv_fonts",
-            "--collect-all",
             "rich",
             "--distpath",
             "bin",

@@ -1,7 +1,10 @@
+{% set institute_name = design.institute or "Indian Institute of Technology Bombay" %}
 #grid(
-  columns: (15%, 85%),
-  align: (center + horizon, left + horizon),
+  columns: {% if design.show_institute_banner %}(15%, 85%){% else %}(100%){% endif %},
+  align: {% if design.show_institute_banner %}(center + horizon, left + horizon){% else %}left + horizon{% endif %},
+  {% if design.show_institute_banner %}
   image("iitb.svg", width: 0.8in),
+  {% endif %}
   block(
     width: 100%,
     grid(
@@ -9,7 +12,7 @@
       row-gutter: 0.5em,
       text(size: {{ design.typography.font_size.name }}, weight: "bold")[{{ cv.name }}], [{% if design.roll_no %}{{ design.roll_no }}{% endif %}],
       text(weight: "bold")[{% if design.department %}{{ design.department }}{% endif %}], text(weight: "bold")[{% if design.degree %}{{ design.degree }}{% endif %}],
-      [{% if design.institute %}{{ design.institute }}{% else %}Indian Institute of Technology Bombay{% endif %}], [{% if design.gender %}{{ design.gender }}{% endif %}]
+      [{% if design.show_institute_banner %}{{ institute_name }}{% endif %}], [{% if design.gender %}{{ design.gender }}{% endif %}]
     )
   )
 )

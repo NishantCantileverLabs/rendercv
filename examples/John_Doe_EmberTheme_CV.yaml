@@ -188,6 +188,7 @@ design:
   # institute:
   # roll_no:
   # gender:
+  # show_institute_banner: true
   # page:
   #   size: us-letter
   #   top_margin: 0.6in

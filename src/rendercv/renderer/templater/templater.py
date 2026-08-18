@@ -105,6 +105,11 @@ def render_full_template(
             section_title=rendercv_section.title,
             snake_case_section_title=rendercv_section.snake_case_title,
             entry_type=rendercv_section.entry_type,
+            subsection_entry_type=(
+                rendercv_section.subsections[0].entry_type
+                if rendercv_section.subsections is not None
+                else None
+            ),
         )
         section_ending = render_single_template(
             file_type,
@@ -112,6 +117,7 @@ def render_full_template(
             rendercv_model,
             snake_case_section_title=rendercv_section.snake_case_title,
             entry_type=rendercv_section.entry_type,
+            section_entries=rendercv_section.entries,
         )
         section_blocks = []
         if rendercv_section.subsections is None:
@@ -121,6 +127,7 @@ def render_full_template(
                 extension,
                 rendercv_section.entry_type,
                 rendercv_section.entries,
+                rendercv_section.title,
             )
             if entries_code:
                 section_blocks.append(entries_code)
@@ -136,6 +143,7 @@ def render_full_template(
                     subsection_title=subsection.title,
                     snake_case_subsection_title=subsection.snake_case_title,
                     entry_type=subsection.entry_type,
+                    subsection_entries=subsection.entries,
                 )
                 entries_code = render_section_entries(
                     rendercv_model,
@@ -143,6 +151,7 @@ def render_full_template(
                     extension,
                     subsection.entry_type,
                     subsection.entries,
+                    rendercv_section.title,
                 )
                 section_blocks.append(f"{subsection_heading}\n\n{entries_code}")
 
@@ -187,15 +196,19 @@ def render_section_entries(
     extension: str,
     entry_type: str,
     entries: list[object],
+    section_title: str,
 ) -> str:
     """Render a homogeneous list of entries with the template for its entry type."""
     entry_codes = []
-    for entry in entries:
+    for entry_index, entry in enumerate(entries):
         entry_code = render_single_template(
             file_type,
             f"entries/{entry_type}.j2.{extension}",
             rendercv_model,
             entry=entry,
+            entry_index=entry_index,
+            section_entries=entries,
+            section_title=section_title,
         )
         entry_codes.append(entry_code)
 
