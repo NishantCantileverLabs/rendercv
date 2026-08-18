@@ -30,7 +30,7 @@
 #let t-stroke = 1pt + black
 
 // Remove spacing between tables to perfectly overlap the 1pt borders
-#show table: set block(spacing: 0pt)
+#show table: set block(spacing: 0pt, breakable: false)
 #set table(
   stroke: t-stroke,
   inset: (x: 4pt, y: 3.85pt),

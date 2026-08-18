@@ -38,7 +38,7 @@
 ]
 
 // Format for individual resume items
-#let resume-item(title, date, subtitle, body) = block(width: 100%, below: 1em)[
+#let resume-item(title, date, subtitle, body) = block(breakable: false, width: 100%, below: 1em)[
   *#title* #h(1fr) #date \
   #if subtitle != none [
     #subtitle \

@@ -28,6 +28,7 @@
 
 // Section header styling macro (matches template_2's heading rules)
 #let cv-section(title) = block(
+  sticky: true,
   width: 100%,
   stroke: (top: 0.5pt, bottom: 0.5pt),
   inset: (top: 3pt, bottom: 3pt),
@@ -37,7 +38,7 @@
 ]
 
 // Helper function for reusable experience/project entries
-#let cv-item(title, date, body) = block(spacing: 0.5em)[
+#let cv-item(title, date, body) = block(breakable: false, spacing: 0.5em)[
   *#title* #h(1fr) #date
   #body
 ]
